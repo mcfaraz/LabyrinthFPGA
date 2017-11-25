@@ -37,8 +37,8 @@ parameter cellWidth = 45;
 //TODO: Change the number of cases later
 reg [1:0] cells [yCells:0][xCells:0];
 
-reg [3:0] currCellX;
-reg [3:0] currCellY;
+reg [5:0] currCellX;
+reg [4:0] currCellY;
 reg [1:0] currCell;
 
 integer i;
@@ -90,7 +90,7 @@ begin
         draw_g = 0;
         draw_b = 0;
     end*/
-    /*if (currCell == 1)
+    if (currCell == 1)
     begin
         //Draw border
         draw_r = 8;
@@ -102,10 +102,10 @@ begin
         draw_r = 0;
         draw_g = 0;
         draw_b = 0;
-    end*/
-    draw_r = currCellX;
+    end
+    /*draw_r = currCellX;
     draw_g = currCellY;
-    draw_b = currCellX;
+    draw_b = currCellX;*/
 end
 
 endmodule
