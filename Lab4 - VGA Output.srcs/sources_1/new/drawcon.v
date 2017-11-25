@@ -107,9 +107,9 @@ begin
     else if (currCell == 3)
     begin
         //Draw Target
-        draw_r = 0;
-        draw_g = 0;
-        draw_b = 0;
+        draw_r = 15;
+        draw_g = 15;
+        draw_b = 15;
     end
     else
     begin
