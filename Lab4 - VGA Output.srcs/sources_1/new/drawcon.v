@@ -56,6 +56,27 @@ begin
         cells[yCells - 1][i] = 1;
     end
 
+    for (i=0; i < 16; i = i+1)
+    begin
+        cells[i][8] = 1;
+        cells[i][24] = 1;
+    end
+
+    for (i=0; i < 5; i = i+1)
+    begin
+        cells[i][16] = 1;
+    end
+
+    for (i=0; i < yCells-1; i = i+1)
+    begin
+        cells[i][16] = 1;
+    end
+
+
+
+    cells[1][30] = 3; //Finish Hole
+
+
 end
 
 
@@ -65,37 +86,30 @@ begin
     currCellY = draw_y / cellWidth;
     currCell = cells[currCellY][currCellX];
 
-    /*if (currCell == 1)
-    begin
-        //Draw border
-        draw_r = 12;
-        draw_g = 10;
-        draw_b = 3;
-    end
-    else if (currCell == 0)
+    if (currCell == 0)
     begin
         //Draw Board
     end
-    else if (currCell == 2)
-    begin
-        //Draw Hole
-    end
-    else if (currCell == 3)
-    begin
-        //Draw Target
-    end
-    else
-    begin
-        draw_r = 0;
-        draw_g = 0;
-        draw_b = 0;
-    end*/
-    if (currCell == 1)
+    else if (currCell == 1)
     begin
         //Draw border
         draw_r = 8;
         draw_g = 4;
         draw_b = 1;
+    end
+    else if (currCell == 2)
+    begin
+        //Draw Hole
+        draw_r = 0;
+        draw_g = 0;
+        draw_b = 0;
+    end
+    else if (currCell == 3)
+    begin
+        //Draw Target
+        draw_r = 0;
+        draw_g = 0;
+        draw_b = 0;
     end
     else
     begin
