@@ -73,9 +73,15 @@ begin
         cells[i][16] = 1;
     end
 
+    cells[2][29] = 3; //Finish Hole
 
+    //Holes
+    cells[yCells - 3][2] = 2;
+    cells[3][10] = 2;
+    cells[3][22] = 2;
+    cells[yCells - 3][12] = 2;
+    cells[14][26] = 2;
 
-    cells[1][30] = 3; //Finish Hole
 
 
 end
