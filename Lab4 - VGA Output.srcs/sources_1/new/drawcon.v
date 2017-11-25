@@ -45,6 +45,7 @@ integer i;
 
 initial
 begin
+//border start
     for (i=0; i < yCells; i = i+1)
     begin
         cells[i][0] = 1;
@@ -55,7 +56,7 @@ begin
         cells[0][i] = 1;
         cells[yCells - 1][i] = 1;
     end
-
+//border end
     for (i=0; i < 16; i = i+1)
     begin
         cells[i][8] = 1;
@@ -89,6 +90,9 @@ begin
     if (currCell == 0)
     begin
         //Draw Board
+        draw_r = 6;
+        draw_g = 11;
+        draw_b = 8;
     end
     else if (currCell == 1)
     begin
