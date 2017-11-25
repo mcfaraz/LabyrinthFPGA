@@ -62,12 +62,12 @@ begin
         cells[i][24] = 1;
     end
 
-    for (i=0; i < 5; i = i+1)
+    for (i=0; i < 7; i = i+1)
     begin
         cells[i][16] = 1;
     end
 
-    for (i=0; i < yCells-1; i = i+1)
+    for (i=10; i < yCells-1; i = i+1)
     begin
         cells[i][16] = 1;
     end
