@@ -1,2 +1,2 @@
 # LabyrinthFPGA
-ES3b2 Project
+ES3B2 Project
