@@ -14,6 +14,7 @@
 *.lso
 *.elf
 *.ace
+"Lab4 - VGA Output.cache/"
 *~
 *#
 *.swp
@@ -26,7 +27,6 @@
 *.xreport
 *.exe
 *.cmd_log
-*_beh.prj
 *.ncd
 isim
 db
