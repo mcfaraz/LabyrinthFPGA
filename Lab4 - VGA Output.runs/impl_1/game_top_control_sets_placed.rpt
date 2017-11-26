@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
-| Date         : Sat Nov 25 21:56:53 2017
+| Date         : Sun Nov 26 02:21:55 2017
 | Host         : A205-07 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_control_sets -verbose -file game_top_control_sets_placed.rpt
 | Design       : game_top
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     4 |
-| Unused register locations in slices containing registers |    21 |
+| Number of unique control sets                            |     6 |
+| Unused register locations in slices containing registers |    33 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,34 +33,36 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               3 |            3 |
+| No           | No                    | No                     |              10 |            7 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              10 |            4 |
-| Yes          | No                    | No                     |              21 |            9 |
+| No           | Yes                   | No                     |              10 |            3 |
+| Yes          | No                    | No                     |              42 |           22 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               9 |            3 |
+| Yes          | Yes                   | No                     |               9 |            6 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+-------------------------+----------------+---------------------------+------------------+----------------+
-|       Clock Signal      |  Enable Signal |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
-+-------------------------+----------------+---------------------------+------------------+----------------+
-|  disp_clk/inst/clk_out1 |                |                           |                3 |              3 |
-|  disp_clk/inst/clk_out1 | display/vcount | display/vcount[9]_i_1_n_0 |                3 |              9 |
-|  disp_clk/inst/clk_out1 |                | display/vcount            |                4 |             10 |
-|  disp_clk/inst/clk_out1 | display/pix_r1 |                           |                9 |             21 |
-+-------------------------+----------------+---------------------------+------------------+----------------+
++-------------------------+-------------------------------+---------------------------+------------------+----------------+
+|       Clock Signal      |         Enable Signal         |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++-------------------------+-------------------------------+---------------------------+------------------+----------------+
+|  disp_clk/inst/clk_out1 | display/vcount                | display/vcount[9]_i_1_n_0 |                6 |              9 |
+|  display/CLK            | draw_mod/blkpos_y[9]_i_1_n_0  |                           |                5 |             10 |
+|  disp_clk/inst/clk_out1 |                               |                           |                7 |             10 |
+|  disp_clk/inst/clk_out1 |                               | display/vcount            |                3 |             10 |
+|  display/CLK            | draw_mod/blkpos_x[10]_i_1_n_0 |                           |                5 |             11 |
+|  disp_clk/inst/clk_out1 | display/pix_r1                |                           |               12 |             21 |
++-------------------------+-------------------------------+---------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
-| 3      |                     1 |
 | 9      |                     1 |
-| 10     |                     1 |
+| 10     |                     3 |
+| 11     |                     1 |
 | 16+    |                     1 |
 +--------+-----------------------+
 
