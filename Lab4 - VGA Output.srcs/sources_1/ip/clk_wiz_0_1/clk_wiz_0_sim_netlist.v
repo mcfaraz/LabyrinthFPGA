@@ -1,8 +1,8 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
-// Date        : Thu Nov 30 13:31:28 2017
-// Host        : F211-63 running 64-bit Service Pack 1  (build 7601)
+// Date        : Thu Nov 30 22:56:14 2017
+// Host        : A205-30 running 64-bit Service Pack 1  (build 7601)
 // Command     : write_verilog -force -mode funcsim {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA
 //               Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_sim_netlist.v}
 // Design      : clk_wiz_0

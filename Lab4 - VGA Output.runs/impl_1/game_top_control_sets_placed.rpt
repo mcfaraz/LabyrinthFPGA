@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
-| Date         : Thu Nov 30 13:40:15 2017
-| Host         : F211-63 running 64-bit Service Pack 1  (build 7601)
+| Date         : Thu Nov 30 23:03:28 2017
+| Host         : A205-30 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_control_sets -verbose -file game_top_control_sets_placed.rpt
 | Design       : game_top
 | Device       : xc7a100t
@@ -22,7 +22,7 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     6 |
+| Number of unique control sets                            |     5 |
 | Unused register locations in slices containing registers |    19 |
 +----------------------------------------------------------+-------+
 
@@ -35,26 +35,25 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               8 |            6 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              10 |            3 |
-| Yes          | No                    | No                     |              21 |           11 |
+| No           | Yes                   | No                     |              31 |           15 |
+| Yes          | No                    | No                     |              21 |           18 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              38 |           19 |
+| Yes          | Yes                   | No                     |               9 |            4 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+-------------------------+-------------------------------+---------------------------+------------------+----------------+
-|       Clock Signal      |         Enable Signal         |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
-+-------------------------+-------------------------------+---------------------------+------------------+----------------+
-|  disp_clk/inst/clk_out1 |                               |                           |                6 |              8 |
-|  disp_clk/inst/clk_out1 | display/vcount                | display/vcount[9]_i_1_n_0 |                5 |              9 |
-|  disp_clk/inst/clk_out1 |                               | display/vcount            |                3 |             10 |
-|  display/frameclk       | draw_mod/blkpos_y[10]_i_1_n_0 | ctrBtn_IBUF               |                9 |             13 |
-|  display/frameclk       | draw_mod/blkpos_x[0]_i_1_n_0  | ctrBtn_IBUF               |                5 |             16 |
-|  disp_clk/inst/clk_out1 | display/pix_r1                |                           |               11 |             21 |
-+-------------------------+-------------------------------+---------------------------+------------------+----------------+
++-------------------------+----------------+---------------------------+------------------+----------------+
+|       Clock Signal      |  Enable Signal |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++-------------------------+----------------+---------------------------+------------------+----------------+
+|  disp_clk/inst/clk_out1 |                |                           |                6 |              8 |
+|  disp_clk/inst/clk_out1 | display/vcount | display/vcount[9]_i_1_n_0 |                4 |              9 |
+|  disp_clk/inst/clk_out1 |                | display/vcount            |                4 |             10 |
+|  display/CLK            |                | ctrBtn_IBUF               |               11 |             21 |
+|  disp_clk/inst/clk_out1 | display/pix_r1 |                           |               18 |             21 |
++-------------------------+----------------+---------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
@@ -63,7 +62,6 @@ Table of Contents
 | 8      |                     1 |
 | 9      |                     1 |
 | 10     |                     1 |
-| 13     |                     1 |
 | 16+    |                     2 |
 +--------+-----------------------+
 

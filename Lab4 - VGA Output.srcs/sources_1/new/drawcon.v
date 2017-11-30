@@ -37,7 +37,7 @@ reg [9:0] LHoleCenterY;
 reg [5:0] LCurrCellX;
 reg [4:0] LCurrCellY;
 reg [1:0] LCurrCell;
-reg drawGrids = 1;
+reg drawGrids = 0;
 
 initial
 begin
@@ -140,7 +140,7 @@ begin
     currCellY = draw_y / cellWidth;
     currCell = cells[currCellY][currCellX];
 
-    if (drawGrids && (draw_x/cellWidth)*cellWidth == draw_x || (draw_y/cellWidth)*cellWidth == draw_y)
+    if (drawGrids && ((draw_x/cellWidth)*cellWidth == draw_x || (draw_y/cellWidth)*cellWidth == draw_y))
     begin
         draw_r = 15;
         draw_g = 15;
