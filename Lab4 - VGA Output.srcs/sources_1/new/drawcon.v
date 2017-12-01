@@ -8,7 +8,6 @@ module drawcon(
     input upBtn,
     input downBtn,
     input frameclk,
-    input moveclk,
     input pixclk,
     output reg [3:0] draw_r,
     output reg [3:0] draw_g,
@@ -28,16 +27,24 @@ reg [3:0] bkg_r = 0, bkg_g=6, bkg_b=0;
 //TODO: Change the number of cases later
 reg [1:0] cells [yCells:0][xCells:0];
 reg [5:0] currCellX;
-reg [4:0] currCellY;
+reg [5:0] currCellY;
 reg [1:0] currCell;
 integer i;
 
 reg [10:0] LHoleCenterX;
 reg [9:0] LHoleCenterY;
 reg [5:0] LCurrCellX;
-reg [4:0] LCurrCellY;
+reg [5:0] LCurrCellY;
 reg [1:0] LCurrCell;
-reg drawGrids = 0;
+reg drawGrids = 1;
+
+reg [10 : 0] a;
+wire [11 : 0] spo;
+
+dist_mem_gen_0 ROM (
+  .a(a),      // input wire [10 : 0] a
+  .spo(spo)  // output wire [11 : 0] spo
+);
 
 initial
 begin
@@ -70,7 +77,6 @@ begin
     end
 
     cells[2][29] = 3; //Finish Hole
-
     //Holes
     cells[yCells - 3][2] = 2;
     cells[3][10] = 2;
@@ -78,7 +84,6 @@ begin
     cells[yCells - 3][12] = 2;
     cells[14][26] = 2;
 end
-
 
 always @ (posedge frameclk)
 begin
@@ -134,7 +139,8 @@ begin
     end
 end
 
-always @ *
+reg [5:0] addrX, addrY;
+always @ (posedge pixclk)
 begin
     currCellX = draw_x / cellWidth;
     currCellY = draw_y / cellWidth;
@@ -146,7 +152,6 @@ begin
         draw_g = 15;
         draw_b = 15;
     end
-
     //Draw the ball
     else if (((draw_x - blkpos_x)**2 + (draw_y - blkpos_y)**2) <= (ballRad) ** 2)
     begin
@@ -184,18 +189,20 @@ begin
             //Draw Hole
             holeCenterX = ((currCellX * cellWidth)+((currCellX+1) * cellWidth))/2;
             holeCenterY = ((currCellY * cellWidth)+((currCellY+1) * cellWidth))/2;
-            if (((draw_x - holeCenterX)**2 + (draw_y - holeCenterY)**2) > (holeRad**2))
-            begin
-                draw_r = 0;
-                draw_g = 6;
-                draw_b = 0;
-            end
-            else
-            begin
-                draw_r = 0;
-                draw_g = 0;
-                draw_b = 0;
-            end
+            a = (draw_y - currCellY*cellWidth)*cellWidth +(draw_x - currCellX*cellWidth); 
+            draw_b[0] = spo[3];
+            draw_b[1] = spo[2];
+            draw_b[2] = spo[1];
+            draw_b[3] = spo[0];           
+            draw_g[0] = spo[7];
+            draw_g[1] = spo[6];
+            draw_g[2] = spo[5];
+            draw_g[3] = spo[4];
+            draw_r[0] = spo[11];
+            draw_r[1] = spo[10];
+            draw_r[2] = spo[9];
+            draw_r[3] = spo[8];    
+            
         end
         else if (currCell == 3)
         begin

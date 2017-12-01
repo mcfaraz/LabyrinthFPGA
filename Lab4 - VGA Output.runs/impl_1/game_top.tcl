@@ -42,6 +42,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -59,6 +60,8 @@ set rc [catch {
   add_files -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/game_top.dcp}}
   read_ip -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci}}
   set_property is_locked true [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci}}]
+  read_ip -quiet {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}}
+  set_property is_locked true [get_files {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}}]
   read_xdc {{H:/ES3B2/LabyrinthFPGA/Nexys4 _Master.xdc}}
   link_design -top game_top -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb

@@ -1,9 +1,8 @@
 `timescale 1ns / 1ps
-
+`define DELAY 1
 module vga_out(
     input clk,
     output frameclk,
-    output moveclk,
     input [3:0] in_R,
     input [3:0] in_G,
     input [3:0] in_B,
@@ -38,9 +37,9 @@ always@(posedge clk)
         end
     else
         hcount <= hcount + 11'd1;
-    if ((384<=hcount) & (hcount<=1823) & (31<= vcount) & (vcount<=930))
+    if ((384<=hcount+`DELAY) & (hcount+`DELAY<=1823) & (31<= vcount) & (vcount<=930))
        begin
-       curr_x <= hcount - 11'd384;
+       curr_x <= hcount - 11'd384 + `DELAY;
        curr_y <= vcount - 10'd31;
        end
     end
@@ -48,7 +47,6 @@ always@(posedge clk)
 assign hsync = (hcount > 151)? 1:0;
 assign vsync = (vcount >2)? 0:1;
 assign frameclk = (vcount==0 | vcount ==482 )?1:0;
-assign moveclk = (vcount==0 | vcount == 350 | vcount == 750)? 1:0;
 
 assign pix_r = (((384<=hcount) & (hcount<=1823))&((31<= vcount)&(vcount<=930)))? R_pix_r:0;
 assign pix_g = (((384<=hcount) & (hcount<=1823))&((31<= vcount)&(vcount<=930)))? R_pix_g:0;
