@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
-| Date         : Sat Dec  2 01:16:09 2017
-| Host         : A205-29 running 64-bit Service Pack 1  (build 7601)
+| Date         : Sat Dec  2 19:34:15 2017
+| Host         : A205-36 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_drc -file game_top_drc_opted.rpt
 | Design       : game_top
 | Device       : xc7a100tcsg324-1
@@ -24,16 +24,17 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 53
-+-------------+----------+-------------------------------------------------------------+------------+
-| Rule        | Severity | Description                                                 | Violations |
-+-------------+----------+-------------------------------------------------------------+------------+
-| CFGBVS-1    | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties         | 1          |
-| DPIP-1      | Warning  | Input pipelining                                            | 26         |
-| DPOP-1      | Warning  | PREG Output pipelining                                      | 13         |
-| DPOP-2      | Warning  | MREG Output pipelining                                      | 12         |
-| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
-+-------------+----------+-------------------------------------------------------------+------------+
+             Violations found: 54
++-------------+----------+------------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                      | Violations |
++-------------+----------+------------------------------------------------------------------+------------+
+| CFGBVS-1    | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties              | 1          |
+| CKLD-2      | Warning  | Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads | 1          |
+| DPIP-1      | Warning  | Input pipelining                                                 | 26         |
+| DPOP-1      | Warning  | PREG Output pipelining                                           | 13         |
+| DPOP-2      | Warning  | MREG Output pipelining                                           | 12         |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations      | 1          |
++-------------+----------+------------------------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -48,6 +49,11 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+CKLD-2#1 Warning
+Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads  
+Clock net clk_IBUF is directly driven by an IO rather than a Clock Buffer or may be an IO driving a mix of Clock Buffer and non-Clock loads. This connectivity should be reviewed and corrected as appropriate. Driver(s): clk_IBUF_inst/O
 Related violations: <none>
 
 DPIP-1#1 Warning

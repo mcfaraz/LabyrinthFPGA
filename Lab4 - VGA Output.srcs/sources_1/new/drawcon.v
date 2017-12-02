@@ -9,6 +9,8 @@ module drawcon(
     input downBtn,
     input frameclk,
     input pixclk,
+    input [7:0] xData,
+    input [7:0] yData,
     output reg [3:0] draw_r,
     output reg [3:0] draw_g,
     output reg [3:0] draw_b
@@ -90,6 +92,7 @@ begin
     cells[3][22] = 2;
     cells[yCells - 3][12] = 2;
     cells[14][26] = 2;
+
 end
 
 always @ (posedge frameclk)
@@ -101,7 +104,7 @@ begin
     begin
         LHoleCenterX = ((LCurrCellX * cellWidth)+((LCurrCellX+1) * cellWidth))/2;
         LHoleCenterY = ((LCurrCellY * cellWidth)+((LCurrCellY+1) * cellWidth))/2;
-        if (((LHoleCenterX - blkpos_x)**2 + (LHoleCenterY - blkpos_y)**2) <= (ballRad) ** 2)
+        if (((LHoleCenterX - blkpos_x)**2 + (LHoleCenterY - blkpos_y)**2) <= cellWidth)
         begin
             blkpos_x = 200;
             blkpos_y = 200;
@@ -114,34 +117,46 @@ begin
     end
     else
     begin
-        if (leftBtn)
+        if (~(xData[7]) && xData[6:0]>= 1) // left
         begin
-            if (cells[blkpos_y/cellWidth][(blkpos_x/cellWidth)-1]!=1)
-                blkpos_x = blkpos_x - 1;
-            else if ((cells[blkpos_y/cellWidth][(blkpos_x/cellWidth)-1]==1) && ((blkpos_x - ((blkpos_x/cellWidth)*cellWidth)) > ballRad))
-                blkpos_x = blkpos_x - 1;
+            if ((cells[blkpos_y/cellWidth][(blkpos_x/cellWidth)-1]!=1) || ((cells[blkpos_y/cellWidth][(blkpos_x/cellWidth)-1]==1) && ((blkpos_x - ((blkpos_x/cellWidth)*cellWidth)) > ballRad)))  begin
+                if(xData[6:0]>=40)begin
+                    blkpos_x=blkpos_x-((40-1)>>>3);
+                end else begin
+                    blkpos_x=blkpos_x-((xData[6:0]-1)>>>3);
+                end
+            end
         end
-
-        if (rightBtn)
+        if (xData[7] && (128-xData[6:0])>=1) // right
         begin
-            if (cells[blkpos_y/cellWidth][(blkpos_x/cellWidth+1)]!=1)
-                blkpos_x = blkpos_x + 1;
-            else if ((cells[blkpos_y/cellWidth][(blkpos_x/cellWidth+1)]==1) && (((((blkpos_x/cellWidth) + 1)*cellWidth) - blkpos_x) > ballRad))
-                blkpos_x = blkpos_x + 1;
+            if ((cells[blkpos_y/cellWidth][(blkpos_x/cellWidth+1)]!=1) || ((cells[blkpos_y/cellWidth][(blkpos_x/cellWidth+1)]==1) && (((((blkpos_x/cellWidth) + 1)*cellWidth) - blkpos_x) > ballRad))) 
+            begin
+                if((128-xData[6:0])>=40)begin
+                    blkpos_x=blkpos_x+((40-1)>>>3);
+                end else begin
+                    blkpos_x=blkpos_x+((128-xData[6:0]-1)>>>3);
+                end
+            end
         end
-        if (upBtn)
+        if (yData[7] && (128-yData[6:0])>=1) // up
         begin
-            if (cells[(blkpos_y/cellWidth)-1][blkpos_x/cellWidth]!=1)
-                blkpos_y = blkpos_y - 1;
-            else if ((cells[(blkpos_y/cellWidth)-1][blkpos_x/cellWidth]==1) && ((blkpos_y - ((blkpos_y/cellWidth)*cellWidth)) > ballRad))
-                blkpos_y = blkpos_y - 1;
+            if ((cells[(blkpos_y/cellWidth)-1][blkpos_x/cellWidth]!=1) ||  ((cells[(blkpos_y/cellWidth)-1][blkpos_x/cellWidth]==1) && ((blkpos_y - ((blkpos_y/cellWidth)*cellWidth)) > ballRad))) begin
+                if((128-yData[6:0])>=40)begin
+                    blkpos_y=blkpos_y-((40-1)>>>3);
+                end else begin
+                    blkpos_y=blkpos_y-((128-yData[6:0]-1)>>>3);
+                end
+            end
         end
-        if (downBtn)
+        if (~(yData[7]) && yData[6:0]>=1) //down
         begin
-            if (cells[(blkpos_y/cellWidth)+1][blkpos_x/cellWidth]!=1)
-                blkpos_y = blkpos_y + 1;
-            else if ((cells[(blkpos_y/cellWidth)+1][blkpos_x/cellWidth]==1) && (((((blkpos_y/cellWidth) + 1)*cellWidth) - blkpos_y) > ballRad))
-                blkpos_y = blkpos_y + 1;
+            if ((cells[(blkpos_y/cellWidth)+1][blkpos_x/cellWidth]!=1) || ((cells[(blkpos_y/cellWidth)+1][blkpos_x/cellWidth]==1) && (((((blkpos_y/cellWidth) + 1)*cellWidth) - blkpos_y) > ballRad))) begin
+                if(yData[6:0]>=40)begin
+                    blkpos_y=blkpos_y+((40-1)>>>3);
+                end else begin
+                    blkpos_y=blkpos_y+((yData[6:0]-1)>>>3);
+                end
+            end
         end
     end
 end

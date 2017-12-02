@@ -3,6 +3,7 @@
 # 
 
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -16,11 +17,11 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo {h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files H:/ES3B2/LabyrinthFPGA/blackholeCOE.coe
 add_files H:/ES3B2/LabyrinthFPGA/etc/COE/blackholeCOE.coe
 add_files H:/ES3B2/LabyrinthFPGA/etc/COE/minecraftDirtCOE.COE
-add_files h:/ES3B2/LabyrinthFPGA/etc/COE/minecraftOBSCOE.COE
+add_files H:/ES3B2/LabyrinthFPGA/etc/COE/minecraftOBSCOE.COE
 read_verilog -library xil_defaultlib {
+  {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/accel.v}
   {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v}
   {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/vga_out.v}
   {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/game_top.v}

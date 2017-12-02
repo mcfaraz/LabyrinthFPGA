@@ -39,6 +39,6 @@ wire [3:0] tmpG;
 wire [3:0] tmpB;
 
 vga_out display (.clk(pixclk), .frameclk(frameclk), .in_R(tmpR), .in_G(tmpG), .in_B(tmpB), .hsync(hsync), .vsync(vsync), .curr_x(curr_x), .curr_y(curr_y), .pix_r(pix_r), .pix_g(pix_g), .pix_b(pix_b));
-drawcon draw_mod (.pixclk(pixclk), .frameclk(frameclk), .ctrBtn(ctrBtn), .leftBtn(leftBtn), .rightBtn(rightBtn), .upBtn(upBtn), .downBtn(downBtn), .draw_r(tmpR), .draw_g(tmpG), .draw_b(tmpB), .draw_x(curr_x), .draw_y(curr_y));
-accel accel0(.clk(clk), .ACL_MISO(ACL_MISO),.ACL_MOSI(ACL_MOSI), .ACL_SCLK(ACL_SCLK), .ACL_CSN(ACL_CSN), .xData(xData), .yData(yData)); 
+drawcon draw_mod (.xData(yData), .yData(xData), .pixclk(pixclk), .frameclk(frameclk), .ctrBtn(ctrBtn), .leftBtn(leftBtn), .rightBtn(rightBtn), .upBtn(upBtn), .downBtn(downBtn), .draw_r(tmpR), .draw_g(tmpG), .draw_b(tmpB), .draw_x(curr_x), .draw_y(curr_y));
+accelControl accel0(.clk(clk), .ACL_MISO(ACL_MISO),.ACL_MOSI(ACL_MOSI), .ACL_SCLK(ACL_SCLK), .ACL_CSN(ACL_CSN), .xData(xData), .yData(yData)); 
 endmodule
