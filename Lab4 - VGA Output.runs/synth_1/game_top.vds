@@ -2,8 +2,8 @@
 # Vivado v2017.2.1 (64-bit)
 # SW Build 1957588 on Wed Aug  9 16:32:24 MDT 2017
 # IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
-# Start of session at: Fri Dec  1 23:07:44 2017
-# Process ID: 2488
+# Start of session at: Sat Dec  2 01:14:14 2017
+# Process ID: 10172
 # Current directory: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1
 # Command line: vivado.exe -log game_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source game_top.tcl
 # Log file: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/game_top.vds
@@ -15,13 +15,13 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9820 
+INFO: Helper process launched with PID 8472 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 325.363 ; gain = 75.652
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 326.148 ; gain = 75.590
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'game_top' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/game_top.v:3]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-2488-A205-29/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-2488-A205-29/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-10172-A205-29/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-10172-A205-29/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-638] synthesizing module 'vga_out' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/vga_out.v:3]
 INFO: [Synth 8-256] done synthesizing module 'vga_out' (2#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/vga_out.v:3]
 INFO: [Synth 8-638] synthesizing module 'drawcon' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:2]
@@ -30,19 +30,21 @@ INFO: [Synth 8-638] synthesizing module 'drawcon' [H:/ES3B2/LabyrinthFPGA/Lab4 -
 	Parameter yCells bound to: 20 - type: integer 
 	Parameter cellWidth bound to: 45 - type: integer 
 	Parameter ballRad bound to: 15 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-2488-A205-29/realtime/dist_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (3#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-2488-A205-29/realtime/dist_mem_gen_0_stub.v:6]
-WARNING: [Synth 8-689] width (11) of port connection 'a' does not match port width (15) of module 'dist_mem_gen_0' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:45]
-WARNING: [Synth 8-6014] Unused sequential element LCurrCellX_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:91]
-WARNING: [Synth 8-6014] Unused sequential element LCurrCellY_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:92]
-WARNING: [Synth 8-6014] Unused sequential element LCurrCell_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:93]
-WARNING: [Synth 8-6014] Unused sequential element LHoleCenterX_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:96]
-WARNING: [Synth 8-6014] Unused sequential element LHoleCenterY_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:97]
-WARNING: [Synth 8-6014] Unused sequential element currCellX_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:151]
-WARNING: [Synth 8-6014] Unused sequential element currCellY_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:152]
-WARNING: [Synth 8-6014] Unused sequential element currCell_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:153]
-WARNING: [Synth 8-6014] Unused sequential element holeCenterX_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:197]
-WARNING: [Synth 8-6014] Unused sequential element holeCenterY_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:198]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-10172-A205-29/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (3#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-10172-A205-29/realtime/dist_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (11) of port connection 'a' does not match port width (15) of module 'dist_mem_gen_0' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:47]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_minecraftDirt' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-10172-A205-29/realtime/dist_mem_gen_minecraftDirt_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_minecraftDirt' (4#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-10172-A205-29/realtime/dist_mem_gen_minecraftDirt_stub.v:6]
+WARNING: [Synth 8-6014] Unused sequential element LCurrCellX_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:97]
+WARNING: [Synth 8-6014] Unused sequential element LCurrCellY_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:98]
+WARNING: [Synth 8-6014] Unused sequential element LCurrCell_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:99]
+WARNING: [Synth 8-6014] Unused sequential element LHoleCenterX_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:102]
+WARNING: [Synth 8-6014] Unused sequential element LHoleCenterY_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:103]
+WARNING: [Synth 8-6014] Unused sequential element currCellX_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:152]
+WARNING: [Synth 8-6014] Unused sequential element currCellY_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:153]
+WARNING: [Synth 8-6014] Unused sequential element currCell_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:154]
+WARNING: [Synth 8-6014] Unused sequential element holeCenterX_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:208]
+WARNING: [Synth 8-6014] Unused sequential element holeCenterY_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:209]
 WARNING: [Synth 8-3848] Net cells[20][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:28]
 WARNING: [Synth 8-3848] Net cells[19][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:28]
 WARNING: [Synth 8-3848] Net cells[18][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:28]
@@ -144,10 +146,10 @@ WARNING: [Synth 8-3848] Net cells[20][26] in module/entity drawcon does not have
 WARNING: [Synth 8-3848] Net cells[18][26] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:28]
 WARNING: [Synth 8-3848] Net cells[17][26] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:28]
 INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-256] done synthesizing module 'drawcon' (4#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:2]
-INFO: [Synth 8-256] done synthesizing module 'game_top' (5#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/game_top.v:3]
+INFO: [Synth 8-256] done synthesizing module 'drawcon' (5#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:2]
+INFO: [Synth 8-256] done synthesizing module 'game_top' (6#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/game_top.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 372.016 ; gain = 122.305
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 373.426 ; gain = 122.867
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -157,17 +159,19 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 372.016 ; gain = 122.305
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 373.426 ; gain = 122.867
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-2488-A205-29/dcp5/clk_wiz_0_in_context.xdc] for cell 'disp_clk'
-Finished Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-2488-A205-29/dcp5/clk_wiz_0_in_context.xdc] for cell 'disp_clk'
-Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-2488-A205-29/dcp7/dist_mem_gen_0_in_context.xdc] for cell 'draw_mod/ROM'
-Finished Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-2488-A205-29/dcp7/dist_mem_gen_0_in_context.xdc] for cell 'draw_mod/ROM'
+Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-10172-A205-29/dcp7/clk_wiz_0_in_context.xdc] for cell 'disp_clk'
+Finished Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-10172-A205-29/dcp7/clk_wiz_0_in_context.xdc] for cell 'disp_clk'
+Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-10172-A205-29/dcp9/dist_mem_gen_0_in_context.xdc] for cell 'draw_mod/blackHoleROM'
+Finished Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-10172-A205-29/dcp9/dist_mem_gen_0_in_context.xdc] for cell 'draw_mod/blackHoleROM'
+Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-10172-A205-29/dcp11/dist_mem_gen_minecraftDirt_in_context.xdc] for cell 'draw_mod/minecraftDirtROM'
+Finished Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-10172-A205-29/dcp11/dist_mem_gen_minecraftDirt_in_context.xdc] for cell 'draw_mod/minecraftDirtROM'
 Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Nexys4 _Master.xdc]
 WARNING: [Vivado 12-584] No ports matched 'LEDTEST'. [H:/ES3B2/LabyrinthFPGA/Nexys4 _Master.xdc:34]
 Finished Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Nexys4 _Master.xdc]
@@ -179,32 +183,34 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 690.902 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 690.785 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 690.902 ; gain = 441.191
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 690.785 ; gain = 440.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 690.902 ; gain = 441.191
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 690.785 ; gain = 440.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-2488-A205-29/dcp5/clk_wiz_0_in_context.xdc}, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-2488-A205-29/dcp5/clk_wiz_0_in_context.xdc}, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-10172-A205-29/dcp7/clk_wiz_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-10172-A205-29/dcp7/clk_wiz_0_in_context.xdc}, line 4).
 Applied set_property DONT_TOUCH = true for disp_clk. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for draw_mod/ROM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for draw_mod/blackHoleROM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for draw_mod/minecraftDirtROM. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 690.902 ; gain = 441.191
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 690.785 ; gain = 440.227
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "vcount" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "draw_r" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element a_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:45]
+INFO: [Synth 8-5544] ROM "draw_r" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "draw_g" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 690.902 ; gain = 441.191
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:27 . Memory (MB): peak = 690.785 ; gain = 440.227
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -223,7 +229,7 @@ Detailed RTL Component Info :
 	   2 Input     11 Bit       Adders := 4     
 	   2 Input     10 Bit       Adders := 4     
 +---Registers : 
-	               11 Bit    Registers := 3     
+	               11 Bit    Registers := 5     
 	               10 Bit    Registers := 3     
 	                4 Bit    Registers := 6     
 +---Multipliers : 
@@ -231,14 +237,12 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     11 Bit        Muxes := 11    
 	   2 Input     10 Bit        Muxes := 8     
-	   2 Input      4 Bit        Muxes := 12    
-	   3 Input      4 Bit        Muxes := 1     
-	   4 Input      4 Bit        Muxes := 3     
-	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 8     
+	   3 Input      4 Bit        Muxes := 5     
 	   2 Input      2 Bit        Muxes := 1     
 	  21 Input      2 Bit        Muxes := 14    
 	  33 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
 	   4 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -270,7 +274,7 @@ Detailed RTL Component Info :
 	   2 Input     11 Bit       Adders := 2     
 	   2 Input     10 Bit       Adders := 2     
 +---Registers : 
-	               11 Bit    Registers := 1     
+	               11 Bit    Registers := 3     
 	               10 Bit    Registers := 1     
 	                4 Bit    Registers := 3     
 +---Multipliers : 
@@ -278,12 +282,11 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     11 Bit        Muxes := 10    
 	   2 Input     10 Bit        Muxes := 8     
-	   2 Input      4 Bit        Muxes := 9     
-	   3 Input      4 Bit        Muxes := 1     
-	   4 Input      4 Bit        Muxes := 3     
-	   4 Input      3 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 5     
 	  21 Input      2 Bit        Muxes := 14    
 	  33 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
 	   4 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
@@ -300,11 +303,10 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:98]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:98]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:104]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:104]
 INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:163]
 INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:163]
-WARNING: [Synth 8-6014] Unused sequential element a_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:45]
 DSP Report: Generating DSP blkpos_x3, operation Mode is: A*B.
 DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
 DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
@@ -353,42 +355,41 @@ DSP Report: operator draw_r3 is absorbed into DSP draw_r3.
 DSP Report: Generating DSP draw_r3, operation Mode is: (PCIN>>17)+A*B.
 DSP Report: operator draw_r3 is absorbed into DSP draw_r3.
 DSP Report: operator draw_r3 is absorbed into DSP draw_r3.
-DSP Report: Generating DSP a1, operation Mode is: A*(B:0x2d).
-DSP Report: operator a1 is absorbed into DSP a1.
-DSP Report: Generating DSP a_reg, operation Mode is: (PCIN+(A:0x0):B+C)'.
-DSP Report: register a_reg is absorbed into DSP a_reg.
-DSP Report: operator a0 is absorbed into DSP a_reg.
+DSP Report: Generating DSP aMinecraftDirt1, operation Mode is: A*(B:0x2d).
+DSP Report: operator aMinecraftDirt1 is absorbed into DSP aMinecraftDirt1.
+DSP Report: Generating DSP aMinecraftDirt0, operation Mode is: PCIN+(A:0x0):B+C.
+DSP Report: operator aMinecraftDirt0 is absorbed into DSP aMinecraftDirt0.
 INFO: [Synth 8-5546] ROM "display/vcount" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 690.902 ; gain = 441.191
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 690.785 ; gain = 440.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 DSP: Preliminary Mapping  Report (see note below)
-+------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name | DSP Mapping         | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|drawcon     | A*B                 | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | (PCIN>>17)+A*B      | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | A*B                 | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | (PCIN>>17)+A*B      | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | A*B                 | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | (PCIN>>17)+A*B      | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | A*B                 | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | (PCIN>>17)+A*B      | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | A*B                 | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | (PCIN>>17)+A*B      | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | A*B                 | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | (PCIN>>17)+A*B      | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | A*B                 | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | (PCIN>>17)+A*B      | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | A*B                 | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | (PCIN>>17)+A*B      | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | A*(B:0x2d)          | 11     | 6      | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | (PCIN+(A:0x0):B+C)' | 30     | 11     | 11     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
-+------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|drawcon     | A*B              | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B   | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B              | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B   | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B              | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B   | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B              | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B   | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B              | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B   | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B              | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B   | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B              | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B   | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B              | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B   | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*(B:0x2d)       | 11     | 6      | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | PCIN+(A:0x0):B+C | 30     | 11     | 11     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
@@ -406,13 +407,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'disp_clk/clk_out1' to pin 'disp_clk/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:53 . Memory (MB): peak = 721.754 ; gain = 472.043
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:52 . Memory (MB): peak = 726.520 ; gain = 475.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:01:03 . Memory (MB): peak = 888.516 ; gain = 638.805
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:01:00 . Memory (MB): peak = 872.242 ; gain = 621.684
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -424,7 +425,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:01:04 . Memory (MB): peak = 888.516 ; gain = 638.805
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:01:01 . Memory (MB): peak = 872.242 ; gain = 621.684
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -448,7 +449,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:01:04 . Memory (MB): peak = 888.516 ; gain = 638.805
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:01:02 . Memory (MB): peak = 872.242 ; gain = 621.684
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -461,7 +462,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:01:04 . Memory (MB): peak = 888.516 ; gain = 638.805
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:01:02 . Memory (MB): peak = 872.242 ; gain = 621.684
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -473,84 +474,86 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:01:05 . Memory (MB): peak = 888.516 ; gain = 638.805
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:01:02 . Memory (MB): peak = 872.242 ; gain = 621.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:01:05 . Memory (MB): peak = 888.516 ; gain = 638.805
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:01:02 . Memory (MB): peak = 872.242 ; gain = 621.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:01:05 . Memory (MB): peak = 888.516 ; gain = 638.805
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:01:02 . Memory (MB): peak = 872.242 ; gain = 621.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:01:05 . Memory (MB): peak = 888.516 ; gain = 638.805
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:01:02 . Memory (MB): peak = 872.242 ; gain = 621.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+------+---------------+----------+
-|      |BlackBox name  |Instances |
-+------+---------------+----------+
-|1     |clk_wiz_0      |         1|
-|2     |dist_mem_gen_0 |         1|
-+------+---------------+----------+
++------+---------------------------+----------+
+|      |BlackBox name              |Instances |
++------+---------------------------+----------+
+|1     |clk_wiz_0                  |         1|
+|2     |dist_mem_gen_0             |         1|
+|3     |dist_mem_gen_minecraftDirt |         1|
++------+---------------------------+----------+
 
 Report Cell Usage: 
-+------+---------------+------+
-|      |Cell           |Count |
-+------+---------------+------+
-|1     |clk_wiz_0      |     1|
-|2     |dist_mem_gen_0 |     1|
-|3     |CARRY4         |   205|
-|4     |DSP48E1        |    13|
-|5     |DSP48E1_2      |     1|
-|6     |LUT1           |    55|
-|7     |LUT2           |   432|
-|8     |LUT3           |   185|
-|9     |LUT4           |   264|
-|10    |LUT5           |   231|
-|11    |LUT6           |   396|
-|12    |FDRE           |    76|
-|13    |FDSE           |    11|
-|14    |IBUF           |     5|
-|15    |OBUF           |    14|
-+------+---------------+------+
++------+---------------------------+------+
+|      |Cell                       |Count |
++------+---------------------------+------+
+|1     |clk_wiz_0                  |     1|
+|2     |dist_mem_gen_0             |     1|
+|3     |dist_mem_gen_minecraftDirt |     1|
+|4     |CARRY4                     |   203|
+|5     |DSP48E1                    |    13|
+|6     |DSP48E1_2                  |     1|
+|7     |LUT1                       |    50|
+|8     |LUT2                       |   431|
+|9     |LUT3                       |   199|
+|10    |LUT4                       |   258|
+|11    |LUT5                       |   237|
+|12    |LUT6                       |   396|
+|13    |FDRE                       |   103|
+|14    |FDSE                       |     6|
+|15    |IBUF                       |     5|
+|16    |OBUF                       |    14|
++------+---------------------------+------+
 
 Report Instance Areas: 
 +------+-----------+--------+------+
 |      |Instance   |Module  |Cells |
 +------+-----------+--------+------+
-|1     |top        |        |  1901|
-|2     |  display  |vga_out |   385|
-|3     |  draw_mod |drawcon |  1275|
+|1     |top        |        |  1941|
+|2     |  display  |vga_out |   377|
+|3     |  draw_mod |drawcon |  1323|
 +------+-----------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:01:05 . Memory (MB): peak = 888.516 ; gain = 638.805
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:01:02 . Memory (MB): peak = 872.242 ; gain = 621.684
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:51 . Memory (MB): peak = 888.516 ; gain = 319.918
-Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:01:05 . Memory (MB): peak = 888.516 ; gain = 638.805
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 872.242 ; gain = 304.324
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:01:02 . Memory (MB): peak = 872.242 ; gain = 621.684
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 224 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 222 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-31 Infos, 115 Warnings, 0 Critical Warnings and 0 Errors encountered.
+35 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:10 . Memory (MB): peak = 888.516 ; gain = 648.895
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:01:06 . Memory (MB): peak = 872.242 ; gain = 632.348
 INFO: [Common 17-1381] The checkpoint 'H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/game_top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 888.516 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Dec  1 23:08:59 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 872.242 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  2 01:15:26 2017...

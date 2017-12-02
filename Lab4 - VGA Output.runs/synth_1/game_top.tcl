@@ -3,7 +3,6 @@
 # 
 
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -17,7 +16,10 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo {h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files h:/ES3B2/LabyrinthFPGA/blackholeCOE.coe
+add_files H:/ES3B2/LabyrinthFPGA/blackholeCOE.coe
+add_files H:/ES3B2/LabyrinthFPGA/etc/COE/blackholeCOE.coe
+add_files H:/ES3B2/LabyrinthFPGA/etc/COE/minecraftDirtCOE.COE
+add_files h:/ES3B2/LabyrinthFPGA/etc/COE/minecraftOBSCOE.COE
 read_verilog -library xil_defaultlib {
   {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v}
   {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/vga_out.v}
@@ -29,9 +31,13 @@ set_property used_in_implementation false [get_files -all {{h:/ES3B2/LabyrinthFP
 set_property used_in_implementation false [get_files -all {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_ooc.xdc}}]
 set_property is_locked true [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci}}]
 
-read_ip -quiet {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}}
+read_ip -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}}
 set_property used_in_implementation false [get_files -all {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_ooc.xdc}}]
-set_property is_locked true [get_files {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}}]
+set_property is_locked true [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}}]
+
+read_ip -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_minecraftDirt/dist_mem_gen_minecraftDirt.xci}}
+set_property used_in_implementation false [get_files -all {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_minecraftDirt/dist_mem_gen_minecraftDirt_ooc.xdc}}]
+set_property is_locked true [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_minecraftDirt/dist_mem_gen_minecraftDirt.xci}}]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

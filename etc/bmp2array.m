@@ -1,5 +1,5 @@
 imgWidth = 45;
-im = imread('blackhole - Copy.bmp');
+im = imread('map/minecraftOBS.bmp');
 im = idivide(im,16,'floor');
 image(im);
 A = [];
@@ -17,19 +17,5 @@ for i = 1:imgWidth
     end
 end
 
-
-%{
-test = out;
-res = [];
-
-for i = 1:64
-    for j = 1:64
-        res(i,j,1) = mod(test(i,j),16);
-        test(i,j) = idivide(test(i,j),16,'floor');
-        res(i,j,2) = mod(test(i,j),16);
-        test(i,j) = idivide(test(i,j),16,'floor');
-        res(i,j,3) = mod(test(i,j),16);
-    end
-end
-%}
-
+im = im .* 15;
+image(im);

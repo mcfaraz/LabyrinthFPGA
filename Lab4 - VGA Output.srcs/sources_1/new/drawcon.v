@@ -22,7 +22,7 @@ parameter xCells = 32;
 parameter yCells = 20;
 parameter cellWidth = 45;
 parameter ballRad = 15;
-reg [3:0] bkg_r = 0, bkg_g=6, bkg_b=0;
+reg [3:0] bkg_r = 0, bkg_g=0, bkg_b=0;
 
 //TODO: Change the number of cases later
 reg [1:0] cells [yCells:0][xCells:0];
@@ -36,14 +36,21 @@ reg [9:0] LHoleCenterY;
 reg [5:0] LCurrCellX;
 reg [5:0] LCurrCellY;
 reg [1:0] LCurrCell;
-reg drawGrids = 1;
+reg drawGrids = 0;
 
-reg [10 : 0] a;
-wire [11 : 0] spo;
+reg [10 : 0] aBlackHole;
+wire [11 : 0] spoBlackHole;
+reg [10 : 0] aMinecraftDirt;
+wire [11 : 0] spoMinecraftDirt;
 
-dist_mem_gen_0 ROM (
-  .a(a),      // input wire [10 : 0] a
-  .spo(spo)  // output wire [11 : 0] spo
+dist_mem_gen_0 blackHoleROM (
+  .a(aBlackHole),      // input wire [10 : 0] a
+  .spo(spoBlackHole)  // output wire [11 : 0] spo
+);
+
+dist_mem_gen_minecraftDirt minecraftDirtROM (
+  .a(aMinecraftDirt),      // input wire [10 : 0] a
+  .spo(spoMinecraftDirt)  // output wire [11 : 0] spo
 );
 
 initial
@@ -180,28 +187,39 @@ begin
         else if (currCell == 1)
         begin
             //Draw wallls
-            draw_r = 8;
-            draw_g = 4;
-            draw_b = 1;
+            aMinecraftDirt = (draw_y - currCellY*cellWidth)*cellWidth +(draw_x - currCellX*cellWidth); 
+            draw_b[0] = spoMinecraftDirt[3];
+            draw_b[1] = spoMinecraftDirt[2];
+            draw_b[2] = spoMinecraftDirt[1];
+            draw_b[3] = spoMinecraftDirt[0];           
+            draw_g[0] = spoMinecraftDirt[7];
+            draw_g[1] = spoMinecraftDirt[6];
+            draw_g[2] = spoMinecraftDirt[5];
+            draw_g[3] = spoMinecraftDirt[4];
+            draw_r[0] = spoMinecraftDirt[11];
+            draw_r[1] = spoMinecraftDirt[10];
+            draw_r[2] = spoMinecraftDirt[9];
+            draw_r[3] = spoMinecraftDirt[8];  
+            
         end
         else if (currCell == 2)
         begin
             //Draw Hole
             holeCenterX = ((currCellX * cellWidth)+((currCellX+1) * cellWidth))/2;
             holeCenterY = ((currCellY * cellWidth)+((currCellY+1) * cellWidth))/2;
-            a = (draw_y - currCellY*cellWidth)*cellWidth +(draw_x - currCellX*cellWidth); 
-            draw_b[0] = spo[3];
-            draw_b[1] = spo[2];
-            draw_b[2] = spo[1];
-            draw_b[3] = spo[0];           
-            draw_g[0] = spo[7];
-            draw_g[1] = spo[6];
-            draw_g[2] = spo[5];
-            draw_g[3] = spo[4];
-            draw_r[0] = spo[11];
-            draw_r[1] = spo[10];
-            draw_r[2] = spo[9];
-            draw_r[3] = spo[8];    
+            aBlackHole = (draw_y - currCellY*cellWidth)*cellWidth +(draw_x - currCellX*cellWidth); 
+            draw_b[0] = spoBlackHole[3];
+            draw_b[1] = spoBlackHole[2];
+            draw_b[2] = spoBlackHole[1];
+            draw_b[3] = spoBlackHole[0];           
+            draw_g[0] = spoBlackHole[7];
+            draw_g[1] = spoBlackHole[6];
+            draw_g[2] = spoBlackHole[5];
+            draw_g[3] = spoBlackHole[4];
+            draw_r[0] = spoBlackHole[11];
+            draw_r[1] = spoBlackHole[10];
+            draw_r[2] = spoBlackHole[9];
+            draw_r[3] = spoBlackHole[8];    
             
         end
         else if (currCell == 3)

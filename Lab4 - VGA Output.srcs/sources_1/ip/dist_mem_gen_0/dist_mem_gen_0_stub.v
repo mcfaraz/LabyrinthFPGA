@@ -1,7 +1,7 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
-// Date        : Fri Dec  1 22:39:02 2017
+// Date        : Sat Dec  2 00:17:02 2017
 // Host        : A205-29 running 64-bit Service Pack 1  (build 7601)
 // Command     : write_verilog -force -mode synth_stub {h:/ES3B2/LabyrinthFPGA/Lab4 - VGA
 //               Output.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_stub.v}

@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
-| Date         : Fri Dec  1 23:08:59 2017
+| Date         : Sat Dec  2 01:15:25 2017
 | Host         : A205-29 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file game_top_utilization_synth.rpt -pb game_top_utilization_synth.pb
 | Design       : game_top
@@ -33,8 +33,8 @@ Table of Contents
 | Slice LUTs*             | 1298 |     0 |     63400 |  2.05 |
 |   LUT as Logic          | 1298 |     0 |     63400 |  2.05 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
-| Slice Registers         |   87 |     0 |    126800 |  0.07 |
-|   Register as Flip Flop |   87 |     0 |    126800 |  0.07 |
+| Slice Registers         |  109 |     0 |    126800 |  0.09 |
+|   Register as Flip Flop |  109 |     0 |    126800 |  0.09 |
 |   Register as Latch     |    0 |     0 |    126800 |  0.00 |
 | F7 Muxes                |    0 |     0 |     31700 |  0.00 |
 | F8 Muxes                |    0 |     0 |     15850 |  0.00 |
@@ -56,8 +56,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 11    |          Yes |         Set |            - |
-| 76    |          Yes |       Reset |            - |
+| 6     |          Yes |         Set |            - |
+| 103   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -147,17 +147,17 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT2     |  432 |                 LUT |
+| LUT2     |  431 |                 LUT |
 | LUT6     |  396 |                 LUT |
-| LUT4     |  264 |                 LUT |
-| LUT5     |  231 |                 LUT |
-| CARRY4   |  205 |          CarryLogic |
-| LUT3     |  185 |                 LUT |
-| FDRE     |   76 |        Flop & Latch |
-| LUT1     |   55 |                 LUT |
+| LUT4     |  258 |                 LUT |
+| LUT5     |  237 |                 LUT |
+| CARRY4   |  203 |          CarryLogic |
+| LUT3     |  199 |                 LUT |
+| FDRE     |  103 |        Flop & Latch |
+| LUT1     |   50 |                 LUT |
 | OBUF     |   14 |                  IO |
 | DSP48E1  |   14 |    Block Arithmetic |
-| FDSE     |   11 |        Flop & Latch |
+| FDSE     |    6 |        Flop & Latch |
 | IBUF     |    5 |                  IO |
 +----------+------+---------------------+
 
@@ -165,12 +165,13 @@ Table of Contents
 8. Black Boxes
 --------------
 
-+----------------+------+
-|    Ref Name    | Used |
-+----------------+------+
-| dist_mem_gen_0 |    1 |
-| clk_wiz_0      |    1 |
-+----------------+------+
++----------------------------+------+
+|          Ref Name          | Used |
++----------------------------+------+
+| dist_mem_gen_minecraftDirt |    1 |
+| dist_mem_gen_0             |    1 |
+| clk_wiz_0                  |    1 |
++----------------------------+------+
 
 
 9. Instantiated Netlists
