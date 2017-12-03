@@ -2,37 +2,16 @@
 # Vivado v2017.2.1 (64-bit)
 # SW Build 1957588 on Wed Aug  9 16:32:24 MDT 2017
 # IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
-# Start of session at: Sat Dec  2 00:36:26 2017
-# Process ID: 11272
+# Start of session at: Sat Dec  2 22:43:38 2017
+# Process ID: 8116
 # Current directory: H:/ES3B2/LabyrinthFPGA
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10788 H:\ES3B2\LabyrinthFPGA\Lab4 - VGA Output.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8720 H:\ES3B2\LabyrinthFPGA\Lab4 - VGA Output.xpr
 # Log file: H:/ES3B2/LabyrinthFPGA/vivado.log
 # Journal file: H:/ES3B2/LabyrinthFPGA\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.xpr}
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-close_project
-open_project {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.xpr}
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-update_compile_order -fileset sources_1
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-close_hw
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
 open_hw
 connect_hw_server
 open_hw_target
@@ -44,30 +23,3 @@ set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-close_hw
-set_property -dict [list CONFIG.coefficient_file {H:/ES3B2/LabyrinthFPGA/etc/COE/minecraftOBSCOE.COE}] [get_ips dist_mem_gen_minecraftDirt]
-generate_target all [get_files  {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_minecraftDirt/dist_mem_gen_minecraftDirt.xci}}]
-catch { config_ip_cache -export [get_ips -all dist_mem_gen_minecraftDirt] }
-export_ip_user_files -of_objects [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_minecraftDirt/dist_mem_gen_minecraftDirt.xci}}] -no_script -sync -force -quiet
-reset_run dist_mem_gen_minecraftDirt_synth_1
-launch_runs -jobs 8 dist_mem_gen_minecraftDirt_synth_1
-export_simulation -of_objects [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_minecraftDirt/dist_mem_gen_minecraftDirt.xci}}] -directory {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.ip_user_files/sim_scripts} -ip_user_files_dir {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.ip_user_files} -ipstatic_source_dir {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.cache/compile_simlib/modelsim} {questa=H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.cache/compile_simlib/questa} {riviera=H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.cache/compile_simlib/riviera} {activehdl=H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-close_hw
-update_files -from_files H:/ES3B2/LabyrinthFPGA/etc/COE/blackholeCOE.coe -to_files H:/ES3B2/LabyrinthFPGA/blackholeCOE.coe -filesets [get_filesets *]
-close [ open {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/accel.v} w ]
-add_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/accel.v}}
-update_compile_order -fileset sources_1

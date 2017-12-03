@@ -2,8 +2,8 @@
 # Vivado v2017.2.1 (64-bit)
 # SW Build 1957588 on Wed Aug  9 16:32:24 MDT 2017
 # IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
-# Start of session at: Sat Dec  2 19:31:13 2017
-# Process ID: 11312
+# Start of session at: Sun Dec  3 01:31:49 2017
+# Process ID: 9048
 # Current directory: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1
 # Command line: vivado.exe -log game_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source game_top.tcl
 # Log file: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/game_top.vds
@@ -15,13 +15,13 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8400 
+INFO: Helper process launched with PID 8100 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 325.387 ; gain = 75.156
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 326.246 ; gain = 74.359
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'game_top' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/game_top.v:3]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-11312-A205-36/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-11312-A205-36/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-638] synthesizing module 'vga_out' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/vga_out.v:3]
 INFO: [Synth 8-256] done synthesizing module 'vga_out' (2#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/vga_out.v:3]
 INFO: [Synth 8-638] synthesizing module 'drawcon' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:2]
@@ -29,133 +29,146 @@ INFO: [Synth 8-638] synthesizing module 'drawcon' [H:/ES3B2/LabyrinthFPGA/Lab4 -
 	Parameter xCells bound to: 32 - type: integer 
 	Parameter yCells bound to: 20 - type: integer 
 	Parameter cellWidth bound to: 45 - type: integer 
-	Parameter ballRad bound to: 15 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-11312-A205-36/realtime/dist_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (3#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-11312-A205-36/realtime/dist_mem_gen_0_stub.v:6]
-WARNING: [Synth 8-689] width (11) of port connection 'a' does not match port width (15) of module 'dist_mem_gen_0' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:49]
-INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_minecraftDirt' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-11312-A205-36/realtime/dist_mem_gen_minecraftDirt_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_minecraftDirt' (4#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-11312-A205-36/realtime/dist_mem_gen_minecraftDirt_stub.v:6]
-WARNING: [Synth 8-6014] Unused sequential element LCurrCellX_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:100]
-WARNING: [Synth 8-6014] Unused sequential element LCurrCellY_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:101]
-WARNING: [Synth 8-6014] Unused sequential element LCurrCell_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:102]
-WARNING: [Synth 8-6014] Unused sequential element LHoleCenterX_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:105]
-WARNING: [Synth 8-6014] Unused sequential element LHoleCenterY_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:106]
-WARNING: [Synth 8-6014] Unused sequential element currCellX_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:167]
-WARNING: [Synth 8-6014] Unused sequential element currCellY_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:168]
-WARNING: [Synth 8-6014] Unused sequential element currCell_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:169]
-WARNING: [Synth 8-6014] Unused sequential element holeCenterX_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:223]
-WARNING: [Synth 8-6014] Unused sequential element holeCenterY_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:224]
-WARNING: [Synth 8-3848] Net cells[20][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[19][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[18][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[17][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[16][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[15][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[14][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[13][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[12][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[11][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[10][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[9][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[8][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[7][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[6][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[5][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[4][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[3][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[2][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[1][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[0][32] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[20][31] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[20][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[18][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[17][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[16][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[15][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[14][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[13][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[12][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[11][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[10][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[9][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[8][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[7][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[6][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[5][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[4][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[3][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[2][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[1][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[20][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[18][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[17][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[16][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[15][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[14][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[13][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[12][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[11][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[10][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[9][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[8][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[7][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[6][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[5][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[4][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[3][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[1][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[20][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[18][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[17][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[16][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[15][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[14][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[13][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[12][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[11][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[10][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[9][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[8][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[7][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[6][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[5][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[4][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[3][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[2][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[1][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[20][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[18][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[17][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[16][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[15][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[14][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[13][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[12][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[11][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[10][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[9][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[8][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[7][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[6][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[5][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[4][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[3][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[2][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[1][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[20][26] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[18][26] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
-WARNING: [Synth 8-3848] Net cells[17][26] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:30]
+	Parameter ballRad bound to: 22 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (3#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/realtime/dist_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (11) of port connection 'a' does not match port width (15) of module 'dist_mem_gen_0' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:53]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_windows' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/realtime/dist_mem_gen_windows_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_windows' (4#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/realtime/dist_mem_gen_windows_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_minecraftDirt' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/realtime/dist_mem_gen_minecraftDirt_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_minecraftDirt' (5#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/realtime/dist_mem_gen_minecraftDirt_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_minecraftCobStone' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/realtime/dist_mem_gen_minecraftCobStone_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_minecraftCobStone' (6#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/realtime/dist_mem_gen_minecraftCobStone_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_astro' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/realtime/dist_mem_gen_astro_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_astro' (7#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/realtime/dist_mem_gen_astro_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'dis_mem_gen_ball2' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/realtime/dis_mem_gen_ball2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dis_mem_gen_ball2' (8#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/realtime/dis_mem_gen_ball2_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_xilinx' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/realtime/dist_mem_gen_xilinx_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_xilinx' (9#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/realtime/dist_mem_gen_xilinx_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_earth' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/realtime/dist_mem_gen_earth_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_earth' (10#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/realtime/dist_mem_gen_earth_stub.v:6]
+WARNING: [Synth 8-6014] Unused sequential element clk30_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:137]
+WARNING: [Synth 8-6014] Unused sequential element LCurrCellX_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:145]
+WARNING: [Synth 8-6014] Unused sequential element LCurrCellY_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:146]
+WARNING: [Synth 8-6014] Unused sequential element LCurrCell_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:147]
+WARNING: [Synth 8-6014] Unused sequential element leftCell_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:149]
+WARNING: [Synth 8-6014] Unused sequential element rightCell_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:150]
+WARNING: [Synth 8-6014] Unused sequential element topCell_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:151]
+WARNING: [Synth 8-6014] Unused sequential element bottomCell_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:152]
+WARNING: [Synth 8-6014] Unused sequential element LHoleCenterX_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:156]
+WARNING: [Synth 8-6014] Unused sequential element LHoleCenterY_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:157]
+WARNING: [Synth 8-6014] Unused sequential element currCellX_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:259]
+WARNING: [Synth 8-6014] Unused sequential element currCellY_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:260]
+WARNING: [Synth 8-6014] Unused sequential element currCell_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:261]
+WARNING: [Synth 8-6014] Unused sequential element holeCenterX_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:320]
+WARNING: [Synth 8-6014] Unused sequential element holeCenterY_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:321]
+WARNING: [Synth 8-3848] Net cells[18][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[17][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[16][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[15][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[14][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[13][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[12][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[11][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[10][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[9][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[8][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[7][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[6][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[5][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[4][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[3][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[2][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[1][30] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[18][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[17][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[16][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[15][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[14][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[13][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[12][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[11][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[10][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[9][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[8][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[7][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[6][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[5][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[4][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[3][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[1][29] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[18][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[17][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[16][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[15][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[14][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[13][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[12][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[11][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[10][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[9][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[8][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[7][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[6][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[5][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[4][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[3][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[2][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[1][28] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[18][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[17][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[16][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[15][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[14][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[13][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[12][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[11][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[10][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[9][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[8][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[7][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[6][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[5][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[4][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[3][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[2][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[1][27] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[18][26] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[17][26] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[16][26] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[15][26] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[13][26] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[12][26] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[11][26] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[10][26] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[9][26] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[8][26] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[7][26] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[6][26] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[5][26] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[4][26] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[3][26] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[2][26] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[1][26] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[18][25] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[17][25] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[16][25] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[15][25] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[14][25] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[13][25] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[12][25] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[11][25] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[10][25] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[9][25] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[8][25] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
+WARNING: [Synth 8-3848] Net cells[7][25] in module/entity drawcon does not have driver. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:27]
 INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-256] done synthesizing module 'drawcon' (5#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:2]
+INFO: [Synth 8-256] done synthesizing module 'drawcon' (11#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:2]
 INFO: [Synth 8-638] synthesizing module 'accelControl' [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/accel.v:27]
-INFO: [Synth 8-256] done synthesizing module 'accelControl' (6#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/accel.v:27]
-INFO: [Synth 8-256] done synthesizing module 'game_top' (7#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/game_top.v:3]
-WARNING: [Synth 8-3331] design drawcon has unconnected port leftBtn
-WARNING: [Synth 8-3331] design drawcon has unconnected port rightBtn
-WARNING: [Synth 8-3331] design drawcon has unconnected port upBtn
-WARNING: [Synth 8-3331] design drawcon has unconnected port downBtn
+INFO: [Synth 8-256] done synthesizing module 'accelControl' (12#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/accel.v:27]
+INFO: [Synth 8-256] done synthesizing module 'game_top' (13#1) [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/game_top.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 372.875 ; gain = 122.645
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 380.660 ; gain = 128.773
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -165,23 +178,33 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 372.875 ; gain = 122.645
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 380.660 ; gain = 128.773
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-11312-A205-36/dcp7/clk_wiz_0_in_context.xdc] for cell 'disp_clk'
-Finished Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-11312-A205-36/dcp7/clk_wiz_0_in_context.xdc] for cell 'disp_clk'
-Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-11312-A205-36/dcp9/dist_mem_gen_0_in_context.xdc] for cell 'draw_mod/blackHoleROM'
-Finished Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-11312-A205-36/dcp9/dist_mem_gen_0_in_context.xdc] for cell 'draw_mod/blackHoleROM'
-Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-11312-A205-36/dcp11/dist_mem_gen_minecraftDirt_in_context.xdc] for cell 'draw_mod/minecraftDirtROM'
-Finished Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-11312-A205-36/dcp11/dist_mem_gen_minecraftDirt_in_context.xdc] for cell 'draw_mod/minecraftDirtROM'
+Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/dcp19/clk_wiz_0_in_context.xdc] for cell 'disp_clk'
+Finished Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/dcp19/clk_wiz_0_in_context.xdc] for cell 'disp_clk'
+Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/dcp21/dist_mem_gen_0_in_context.xdc] for cell 'draw_mod/blackHoleROM'
+Finished Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/dcp21/dist_mem_gen_0_in_context.xdc] for cell 'draw_mod/blackHoleROM'
+Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/dcp23/dist_mem_gen_minecraftDirt_in_context.xdc] for cell 'draw_mod/minecraftOBSROM'
+Finished Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/dcp23/dist_mem_gen_minecraftDirt_in_context.xdc] for cell 'draw_mod/minecraftOBSROM'
+Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/dcp25/dis_mem_gen_ball2_in_context.xdc] for cell 'draw_mod/ball2ROM'
+Finished Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/dcp25/dis_mem_gen_ball2_in_context.xdc] for cell 'draw_mod/ball2ROM'
+Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/dcp27/dist_mem_gen_astro_in_context.xdc] for cell 'draw_mod/astroBallROM'
+Finished Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/dcp27/dist_mem_gen_astro_in_context.xdc] for cell 'draw_mod/astroBallROM'
+Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/dcp29/dist_mem_gen_xilinx_in_context.xdc] for cell 'draw_mod/xilinxTargetROM'
+Finished Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/dcp29/dist_mem_gen_xilinx_in_context.xdc] for cell 'draw_mod/xilinxTargetROM'
+Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/dcp31/dist_mem_gen_minecraftCobStone_in_context.xdc] for cell 'draw_mod/minecraftCobStoneROM'
+Finished Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/dcp31/dist_mem_gen_minecraftCobStone_in_context.xdc] for cell 'draw_mod/minecraftCobStoneROM'
+Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/dcp33/dist_mem_gen_earth_in_context.xdc] for cell 'draw_mod/earthTargetROM'
+Finished Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/dcp33/dist_mem_gen_earth_in_context.xdc] for cell 'draw_mod/earthTargetROM'
+Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/dcp35/dist_mem_gen_windows_in_context.xdc] for cell 'draw_mod/windowsROM'
+Finished Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/dcp35/dist_mem_gen_windows_in_context.xdc] for cell 'draw_mod/windowsROM'
 Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Nexys4 _Master.xdc]
-WARNING: [Vivado 12-584] No ports matched 'LEDTEST'. [H:/ES3B2/LabyrinthFPGA/Nexys4 _Master.xdc:34]
 Finished Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Nexys4 _Master.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [H:/ES3B2/LabyrinthFPGA/Nexys4 _Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/game_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [H:/ES3B2/LabyrinthFPGA/Nexys4 _Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/game_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/game_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
@@ -189,36 +212,41 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 692.156 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 697.805 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:01:12 . Memory (MB): peak = 692.156 ; gain = 441.926
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:31 . Memory (MB): peak = 697.805 ; gain = 445.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:01:12 . Memory (MB): peak = 692.156 ; gain = 441.926
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:31 . Memory (MB): peak = 697.805 ; gain = 445.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-11312-A205-36/dcp7/clk_wiz_0_in_context.xdc}, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-11312-A205-36/dcp7/clk_wiz_0_in_context.xdc}, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/dcp19/clk_wiz_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/.Xil/Vivado-9048-A205-36/dcp19/clk_wiz_0_in_context.xdc}, line 4).
 Applied set_property DONT_TOUCH = true for disp_clk. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for draw_mod/astroBallROM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for draw_mod/ball2ROM. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for draw_mod/blackHoleROM. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for draw_mod/minecraftDirtROM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for draw_mod/earthTargetROM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for draw_mod/minecraftCobStoneROM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for draw_mod/minecraftOBSROM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for draw_mod/windowsROM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for draw_mod/xilinxTargetROM. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:01:12 . Memory (MB): peak = 692.156 ; gain = 441.926
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:31 . Memory (MB): peak = 697.805 ; gain = 445.918
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "vcount" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5544] ROM "draw_r" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "draw_r" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "draw_g" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:168]
+DSP Debug: swapped A/B pins for adder 000000001A1244A0
 WARNING: [Synth 8-6014] Unused sequential element clkcount_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/accel.v:48]
 WARNING: [Synth 8-6014] Unused sequential element phasecount_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/accel.v:53]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:01:14 . Memory (MB): peak = 692.156 ; gain = 441.926
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:34 . Memory (MB): peak = 697.805 ; gain = 445.918
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -231,35 +259,45 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input     32 Bit       Adders := 4     
-	   2 Input     32 Bit       Adders := 4     
-	   2 Input     12 Bit       Adders := 1     
-	   2 Input     11 Bit       Adders := 4     
-	   3 Input     11 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 12    
+	   3 Input     32 Bit       Adders := 9     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 5     
+	   3 Input     11 Bit       Adders := 2     
 	   2 Input     10 Bit       Adders := 4     
 	   3 Input     10 Bit       Adders := 1     
 	   2 Input      9 Bit       Adders := 2     
 	   2 Input      8 Bit       Adders := 1     
 	   2 Input      7 Bit       Adders := 1     
 +---Registers : 
-	               11 Bit    Registers := 5     
+	               11 Bit    Registers := 11    
 	               10 Bit    Registers := 3     
 	                8 Bit    Registers := 4     
 	                7 Bit    Registers := 1     
 	                4 Bit    Registers := 6     
 	                1 Bit    Registers := 3     
 +---Multipliers : 
-	                32x32  Multipliers := 4     
+	                32x32  Multipliers := 8     
+	                 6x32  Multipliers := 2     
 +---Muxes : 
-	   2 Input     11 Bit        Muxes := 11    
-	   2 Input     10 Bit        Muxes := 8     
-	   2 Input      4 Bit        Muxes := 8     
-	   3 Input      4 Bit        Muxes := 5     
-	   2 Input      2 Bit        Muxes := 1     
-	  21 Input      2 Bit        Muxes := 14    
-	  33 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 6     
-	   4 Input      1 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 22    
+	   2 Input     10 Bit        Muxes := 19    
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 9     
+	   5 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 8     
+	  20 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 2     
+	  32 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -285,28 +323,40 @@ Detailed RTL Component Info :
 Module drawcon 
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input     32 Bit       Adders := 4     
-	   2 Input     32 Bit       Adders := 4     
-	   3 Input     11 Bit       Adders := 1     
-	   2 Input     11 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 12    
+	   3 Input     32 Bit       Adders := 9     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 3     
+	   3 Input     11 Bit       Adders := 2     
 	   3 Input     10 Bit       Adders := 1     
 	   2 Input     10 Bit       Adders := 2     
 	   2 Input      9 Bit       Adders := 2     
 +---Registers : 
-	               11 Bit    Registers := 3     
+	               11 Bit    Registers := 9     
 	               10 Bit    Registers := 1     
 	                4 Bit    Registers := 3     
 +---Multipliers : 
-	                32x32  Multipliers := 4     
+	                32x32  Multipliers := 8     
+	                 6x32  Multipliers := 2     
 +---Muxes : 
-	   2 Input     11 Bit        Muxes := 10    
-	   2 Input     10 Bit        Muxes := 8     
-	   3 Input      4 Bit        Muxes := 5     
-	   2 Input      4 Bit        Muxes := 5     
-	  21 Input      2 Bit        Muxes := 14    
-	  33 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 3     
-	   4 Input      1 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 21    
+	   2 Input     10 Bit        Muxes := 19    
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 6     
+	   5 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 3     
+	  20 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 7     
+	  32 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
 Module accelControl 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -333,10 +383,37 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:107]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:107]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:158]
 INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:178]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:178]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:168]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:188]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:188]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:198]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:198]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v:158]
+DSP Debug: swapped A/B pins for adder 0000000019200350
+DSP Debug: swapped A/B pins for adder 000000001920BB10
+DSP Debug: swapped A/B pins for adder 000000001920BB10
+DSP Debug: swapped A/B pins for adder 0000000019200350
+DSP Report: Generating DSP blkpos_x7, operation Mode is: (A:0x2d)*B.
+DSP Report: operator blkpos_x7 is absorbed into DSP blkpos_x7.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x7, operation Mode is: A*(B:0x2d).
+DSP Report: operator blkpos_x7 is absorbed into DSP blkpos_x7.
+DSP Report: Generating DSP blkpos_x6, operation Mode is: PCIN+A*(B:0x2d).
+DSP Report: operator blkpos_x6 is absorbed into DSP blkpos_x6.
+DSP Report: operator blkpos_x7 is absorbed into DSP blkpos_x6.
 DSP Report: Generating DSP blkpos_x3, operation Mode is: A*B.
 DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
 DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
@@ -361,71 +438,144 @@ DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
 DSP Report: Generating DSP blkpos_x3, operation Mode is: (PCIN>>17)+A*B.
 DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
 DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
-DSP Report: Generating DSP draw_r3, operation Mode is: A*B.
-DSP Report: operator draw_r3 is absorbed into DSP draw_r3.
-DSP Report: operator draw_r3 is absorbed into DSP draw_r3.
-DSP Report: Generating DSP draw_r3, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator draw_r3 is absorbed into DSP draw_r3.
-DSP Report: operator draw_r3 is absorbed into DSP draw_r3.
-DSP Report: Generating DSP draw_r3, operation Mode is: A*B.
-DSP Report: operator draw_r3 is absorbed into DSP draw_r3.
-DSP Report: operator draw_r3 is absorbed into DSP draw_r3.
-DSP Report: Generating DSP draw_r3, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator draw_r3 is absorbed into DSP draw_r3.
-DSP Report: operator draw_r3 is absorbed into DSP draw_r3.
-DSP Report: Generating DSP draw_r3, operation Mode is: A*B.
-DSP Report: operator draw_r3 is absorbed into DSP draw_r3.
-DSP Report: operator draw_r3 is absorbed into DSP draw_r3.
-DSP Report: Generating DSP draw_r3, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator draw_r3 is absorbed into DSP draw_r3.
-DSP Report: operator draw_r3 is absorbed into DSP draw_r3.
-DSP Report: Generating DSP draw_r3, operation Mode is: A*B.
-DSP Report: operator draw_r3 is absorbed into DSP draw_r3.
-DSP Report: operator draw_r3 is absorbed into DSP draw_r3.
-DSP Report: Generating DSP draw_r3, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator draw_r3 is absorbed into DSP draw_r3.
-DSP Report: operator draw_r3 is absorbed into DSP draw_r3.
-DSP Report: Generating DSP aMinecraftDirt1, operation Mode is: A*(B:0x2d).
-DSP Report: operator aMinecraftDirt1 is absorbed into DSP aMinecraftDirt1.
-DSP Report: Generating DSP aMinecraftDirt0, operation Mode is: PCIN+(A:0x0):B+C.
-DSP Report: operator aMinecraftDirt0 is absorbed into DSP aMinecraftDirt0.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x6, operation Mode is: PCIN+A*(B:0x2d).
+DSP Report: operator blkpos_x6 is absorbed into DSP blkpos_x6.
+DSP Report: operator blkpos_x7 is absorbed into DSP blkpos_x6.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP blkpos_x3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: operator blkpos_x3 is absorbed into DSP blkpos_x3.
+DSP Report: Generating DSP p_3_in, operation Mode is: A*(B:0x2d).
+DSP Report: operator p_3_in is absorbed into DSP p_3_in.
+DSP Report: Generating DSP p_4_out, operation Mode is: PCIN+(A:0x0):B+C.
+DSP Report: operator p_4_out is absorbed into DSP p_4_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*(B:0x2d).
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: PCIN+(A:0x0):B+(C:0x16).
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
 INFO: [Synth 8-5546] ROM "display/vcount" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-6014] Unused sequential element accel0/clkcount_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/accel.v:48]
 WARNING: [Synth 8-6014] Unused sequential element accel0/phasecount_reg was removed.  [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/accel.v:53]
-WARNING: [Synth 8-3331] design drawcon has unconnected port leftBtn
-WARNING: [Synth 8-3331] design drawcon has unconnected port rightBtn
-WARNING: [Synth 8-3331] design drawcon has unconnected port upBtn
-WARNING: [Synth 8-3331] design drawcon has unconnected port downBtn
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:01:25 . Memory (MB): peak = 692.156 ; gain = 441.926
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:55 . Memory (MB): peak = 704.523 ; gain = 452.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 DSP: Preliminary Mapping  Report (see note below)
-+------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|drawcon     | A*B              | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | (PCIN>>17)+A*B   | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | A*B              | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | (PCIN>>17)+A*B   | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | A*B              | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | (PCIN>>17)+A*B   | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | A*B              | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | (PCIN>>17)+A*B   | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | A*B              | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | (PCIN>>17)+A*B   | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | A*B              | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | (PCIN>>17)+A*B   | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | A*B              | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | (PCIN>>17)+A*B   | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | A*B              | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | (PCIN>>17)+A*B   | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | A*(B:0x2d)       | 11     | 6      | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|drawcon     | PCIN+(A:0x0):B+C | 30     | 11     | 11     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
-+------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++------------+-------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping             | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|drawcon     | (A:0x2d)*B              | 5      | 6      | -      | -      | 11     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B          | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B                     | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B          | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*(B:0x2d)              | 6      | 6      | -      | -      | 12     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | PCIN+A*(B:0x2d)         | 12     | 6      | -      | -      | 12     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B          | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B                     | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B          | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B          | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B                     | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B          | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B                     | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B                     | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B          | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B          | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B                     | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B          | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | PCIN+A*(B:0x2d)         | 11     | 6      | -      | -      | 11     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B          | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B                     | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B          | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B          | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B                     | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B          | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B          | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B                     | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B          | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B                     | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B          | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*B                     | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | (PCIN>>17)+A*B          | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | A*(B:0x2d)              | 11     | 6      | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | PCIN+(A:0x0):B+C        | 30     | 11     | 11     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|drawcon     | A*(B:0x2d)              | 11     | 6      | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|drawcon     | PCIN+(A:0x0):B+(C:0x16) | 30     | 11     | 6      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+-------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
@@ -443,13 +593,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'disp_clk/clk_out1' to pin 'disp_clk/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:01:40 . Memory (MB): peak = 736.313 ; gain = 486.082
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:01:11 . Memory (MB): peak = 752.375 ; gain = 500.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:01:46 . Memory (MB): peak = 896.375 ; gain = 646.145
+Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:20 . Memory (MB): peak = 899.980 ; gain = 648.094
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -461,7 +611,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:01:47 . Memory (MB): peak = 896.375 ; gain = 646.145
+Finished Technology Mapping : Time (s): cpu = 00:01:03 ; elapsed = 00:01:22 . Memory (MB): peak = 899.980 ; gain = 648.094
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -485,7 +635,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:01:48 . Memory (MB): peak = 896.375 ; gain = 646.145
+Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:22 . Memory (MB): peak = 899.980 ; gain = 648.094
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -498,7 +648,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:01:48 . Memory (MB): peak = 896.375 ; gain = 646.145
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:22 . Memory (MB): peak = 899.980 ; gain = 648.094
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -510,79 +660,91 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:01:48 . Memory (MB): peak = 896.375 ; gain = 646.145
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:04 ; elapsed = 00:01:23 . Memory (MB): peak = 899.980 ; gain = 648.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:01:48 . Memory (MB): peak = 896.375 ; gain = 646.145
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:04 ; elapsed = 00:01:23 . Memory (MB): peak = 899.980 ; gain = 648.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:01:48 . Memory (MB): peak = 896.375 ; gain = 646.145
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:04 ; elapsed = 00:01:23 . Memory (MB): peak = 899.980 ; gain = 648.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:01:48 . Memory (MB): peak = 896.375 ; gain = 646.145
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:04 ; elapsed = 00:01:23 . Memory (MB): peak = 899.980 ; gain = 648.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+------+---------------------------+----------+
-|      |BlackBox name              |Instances |
-+------+---------------------------+----------+
-|1     |clk_wiz_0                  |         1|
-|2     |dist_mem_gen_0             |         1|
-|3     |dist_mem_gen_minecraftDirt |         1|
-+------+---------------------------+----------+
++------+-------------------------------+----------+
+|      |BlackBox name                  |Instances |
++------+-------------------------------+----------+
+|1     |clk_wiz_0                      |         1|
+|2     |dist_mem_gen_0                 |         1|
+|3     |dist_mem_gen_windows           |         1|
+|4     |dist_mem_gen_minecraftDirt     |         1|
+|5     |dist_mem_gen_minecraftCobStone |         1|
+|6     |dist_mem_gen_astro             |         1|
+|7     |dis_mem_gen_ball2              |         1|
+|8     |dist_mem_gen_xilinx            |         1|
+|9     |dist_mem_gen_earth             |         1|
++------+-------------------------------+----------+
 
 Report Cell Usage: 
-+------+---------------------------+------+
-|      |Cell                       |Count |
-+------+---------------------------+------+
-|1     |clk_wiz_0                  |     1|
-|2     |dist_mem_gen_0             |     1|
-|3     |dist_mem_gen_minecraftDirt |     1|
-|4     |CARRY4                     |   215|
-|5     |DSP48E1                    |    13|
-|6     |DSP48E1_2                  |     1|
-|7     |LUT1                       |    66|
-|8     |LUT2                       |   450|
-|9     |LUT3                       |   209|
-|10    |LUT4                       |   264|
-|11    |LUT5                       |   252|
-|12    |LUT6                       |   406|
-|13    |MUXF7                      |     2|
-|14    |FDRE                       |   145|
-|15    |FDSE                       |     6|
-|16    |IBUF                       |     2|
-|17    |OBUF                       |    17|
-+------+---------------------------+------+
++------+-------------------------------+------+
+|      |Cell                           |Count |
++------+-------------------------------+------+
+|1     |clk_wiz_0                      |     1|
+|2     |dis_mem_gen_ball2              |     1|
+|3     |dist_mem_gen_0                 |     1|
+|4     |dist_mem_gen_astro             |     1|
+|5     |dist_mem_gen_earth             |     1|
+|6     |dist_mem_gen_minecraftCobStone |     1|
+|7     |dist_mem_gen_minecraftDirt     |     1|
+|8     |dist_mem_gen_windows           |     1|
+|9     |dist_mem_gen_xilinx            |     1|
+|10    |CARRY4                         |   321|
+|11    |DSP48E1                        |    33|
+|12    |DSP48E1_1                      |     1|
+|13    |DSP48E1_2                      |     1|
+|14    |LUT1                           |    89|
+|15    |LUT2                           |   685|
+|16    |LUT3                           |   240|
+|17    |LUT4                           |   401|
+|18    |LUT5                           |   385|
+|19    |LUT6                           |   523|
+|20    |FDRE                           |   200|
+|21    |FDSE                           |     6|
+|22    |IBUF                           |    18|
+|23    |OBUF                           |    17|
++------+-------------------------------+------+
 
 Report Instance Areas: 
 +------+-----------+-------------+------+
 |      |Instance   |Module       |Cells |
 +------+-----------+-------------+------+
-|1     |top        |             |  2073|
-|2     |  accel0   |accelControl |    95|
-|3     |  display  |vga_out      |   385|
-|4     |  draw_mod |drawcon      |  1282|
+|1     |top        |             |  3017|
+|2     |  accel0   |accelControl |   120|
+|3     |  display  |vga_out      |   366|
+|4     |  draw_mod |drawcon      |  2116|
 +------+-----------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:01:48 . Memory (MB): peak = 896.375 ; gain = 646.145
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:01:23 . Memory (MB): peak = 899.980 ; gain = 648.094
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:01:13 . Memory (MB): peak = 896.375 ; gain = 326.863
-Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:01:49 . Memory (MB): peak = 896.375 ; gain = 646.145
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:53 ; elapsed = 00:01:04 . Memory (MB): peak = 899.980 ; gain = 330.949
+Synthesis Optimization Complete : Time (s): cpu = 00:01:04 ; elapsed = 00:01:23 . Memory (MB): peak = 899.980 ; gain = 648.094
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 231 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 374 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
@@ -590,9 +752,9 @@ INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-38 Infos, 125 Warnings, 0 Critical Warnings and 0 Errors encountered.
+52 Infos, 120 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:02:08 . Memory (MB): peak = 896.375 ; gain = 656.551
+synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:30 . Memory (MB): peak = 899.980 ; gain = 660.129
 INFO: [Common 17-1381] The checkpoint 'H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/game_top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 896.375 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Dec  2 19:33:28 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 899.980 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  3 01:33:29 2017...

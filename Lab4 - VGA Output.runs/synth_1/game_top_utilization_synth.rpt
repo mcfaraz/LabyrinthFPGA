@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
-| Date         : Sat Dec  2 19:33:28 2017
+| Date         : Sun Dec  3 01:33:29 2017
 | Host         : A205-36 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file game_top_utilization_synth.rpt -pb game_top_utilization_synth.pb
 | Design       : game_top
@@ -30,13 +30,13 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             | 1362 |     0 |     63400 |  2.15 |
-|   LUT as Logic          | 1362 |     0 |     63400 |  2.15 |
+| Slice LUTs*             | 1972 |     0 |     63400 |  3.11 |
+|   LUT as Logic          | 1972 |     0 |     63400 |  3.11 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
-| Slice Registers         |  151 |     0 |    126800 |  0.12 |
-|   Register as Flip Flop |  151 |     0 |    126800 |  0.12 |
+| Slice Registers         |  206 |     0 |    126800 |  0.16 |
+|   Register as Flip Flop |  206 |     0 |    126800 |  0.16 |
 |   Register as Latch     |    0 |     0 |    126800 |  0.00 |
-| F7 Muxes                |    2 |     0 |     31700 | <0.01 |
+| F7 Muxes                |    0 |     0 |     31700 |  0.00 |
 | F8 Muxes                |    0 |     0 |     15850 |  0.00 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 6     |          Yes |         Set |            - |
-| 145   |          Yes |       Reset |            - |
+| 200   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -80,8 +80,8 @@ Table of Contents
 +----------------+------+-------+-----------+-------+
 |    Site Type   | Used | Fixed | Available | Util% |
 +----------------+------+-------+-----------+-------+
-| DSPs           |   14 |     0 |       240 |  5.83 |
-|   DSP48E1 only |   14 |       |           |       |
+| DSPs           |   35 |     0 |       240 | 14.58 |
+|   DSP48E1 only |   35 |       |           |       |
 +----------------+------+-------+-----------+-------+
 
 
@@ -91,7 +91,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   20 |     0 |       210 |  9.52 |
+| Bonded IOB                  |   36 |     0 |       210 | 17.14 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         6 |  0.00 |
 | PHASER_REF                  |    0 |     0 |         6 |  0.00 |
@@ -147,32 +147,37 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT2     |  450 |                 LUT |
-| LUT6     |  406 |                 LUT |
-| LUT4     |  264 |                 LUT |
-| LUT5     |  252 |                 LUT |
-| CARRY4   |  215 |          CarryLogic |
-| LUT3     |  209 |                 LUT |
-| FDRE     |  145 |        Flop & Latch |
-| LUT1     |   66 |                 LUT |
+| LUT2     |  685 |                 LUT |
+| LUT6     |  523 |                 LUT |
+| LUT4     |  401 |                 LUT |
+| LUT5     |  385 |                 LUT |
+| CARRY4   |  321 |          CarryLogic |
+| LUT3     |  240 |                 LUT |
+| FDRE     |  200 |        Flop & Latch |
+| LUT1     |   89 |                 LUT |
+| DSP48E1  |   35 |    Block Arithmetic |
+| IBUF     |   19 |                  IO |
 | OBUF     |   17 |                  IO |
-| DSP48E1  |   14 |    Block Arithmetic |
 | FDSE     |    6 |        Flop & Latch |
-| IBUF     |    3 |                  IO |
-| MUXF7    |    2 |               MuxFx |
 +----------+------+---------------------+
 
 
 8. Black Boxes
 --------------
 
-+----------------------------+------+
-|          Ref Name          | Used |
-+----------------------------+------+
-| dist_mem_gen_minecraftDirt |    1 |
-| dist_mem_gen_0             |    1 |
-| clk_wiz_0                  |    1 |
-+----------------------------+------+
++--------------------------------+------+
+|            Ref Name            | Used |
++--------------------------------+------+
+| dist_mem_gen_xilinx            |    1 |
+| dist_mem_gen_windows           |    1 |
+| dist_mem_gen_minecraftDirt     |    1 |
+| dist_mem_gen_minecraftCobStone |    1 |
+| dist_mem_gen_earth             |    1 |
+| dist_mem_gen_astro             |    1 |
+| dist_mem_gen_0                 |    1 |
+| dis_mem_gen_ball2              |    1 |
+| clk_wiz_0                      |    1 |
++--------------------------------+------+
 
 
 9. Instantiated Netlists

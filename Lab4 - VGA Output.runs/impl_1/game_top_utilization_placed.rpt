@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
-| Date         : Sat Dec  2 19:34:36 2017
+| Date         : Sun Dec  3 01:34:56 2017
 | Host         : A205-36 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file game_top_utilization_placed.rpt -pb game_top_utilization_placed.pb
 | Design       : game_top
@@ -31,14 +31,14 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs              | 2326 |     0 |     63400 |  3.67 |
-|   LUT as Logic          | 2326 |     0 |     63400 |  3.67 |
+| Slice LUTs              | 4518 |     0 |     63400 |  7.13 |
+|   LUT as Logic          | 4518 |     0 |     63400 |  7.13 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
-| Slice Registers         |  152 |     0 |    126800 |  0.12 |
-|   Register as Flip Flop |  152 |     0 |    126800 |  0.12 |
+| Slice Registers         |  207 |     0 |    126800 |  0.16 |
+|   Register as Flip Flop |  207 |     0 |    126800 |  0.16 |
 |   Register as Latch     |    0 |     0 |    126800 |  0.00 |
-| F7 Muxes                |  290 |     0 |     31700 |  0.91 |
-| F8 Muxes                |  106 |     0 |     15850 |  0.67 |
+| F7 Muxes                |  752 |     0 |     31700 |  2.37 |
+| F8 Muxes                |  222 |     0 |     15850 |  1.40 |
 +-------------------------+------+-------+-----------+-------+
 
 
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 6     |          Yes |         Set |            - |
-| 146   |          Yes |       Reset |            - |
+| 201   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -67,21 +67,21 @@ Table of Contents
 +-------------------------------------------+------+-------+-----------+-------+
 |                 Site Type                 | Used | Fixed | Available | Util% |
 +-------------------------------------------+------+-------+-----------+-------+
-| Slice                                     |  690 |     0 |     15850 |  4.35 |
-|   SLICEL                                  |  430 |     0 |           |       |
-|   SLICEM                                  |  260 |     0 |           |       |
-| LUT as Logic                              | 2326 |     0 |     63400 |  3.67 |
+| Slice                                     | 1343 |     0 |     15850 |  8.47 |
+|   SLICEL                                  |  900 |     0 |           |       |
+|   SLICEM                                  |  443 |     0 |           |       |
+| LUT as Logic                              | 4518 |     0 |     63400 |  7.13 |
 |   using O5 output only                    |    0 |       |           |       |
-|   using O6 output only                    | 1995 |       |           |       |
-|   using O5 and O6                         |  331 |       |           |       |
+|   using O6 output only                    | 4120 |       |           |       |
+|   using O5 and O6                         |  398 |       |           |       |
 | LUT as Memory                             |    0 |     0 |     19000 |  0.00 |
 |   LUT as Distributed RAM                  |    0 |     0 |           |       |
 |   LUT as Shift Register                   |    0 |     0 |           |       |
-| LUT Flip Flop Pairs                       |   59 |     0 |     63400 |  0.09 |
-|   fully used LUT-FF pairs                 |   10 |       |           |       |
-|   LUT-FF pairs with one unused LUT output |   45 |       |           |       |
-|   LUT-FF pairs with one unused Flip Flop  |   46 |       |           |       |
-| Unique Control Sets                       |   14 |       |           |       |
+| LUT Flip Flop Pairs                       |   77 |     0 |     63400 |  0.12 |
+|   fully used LUT-FF pairs                 |    6 |       |           |       |
+|   LUT-FF pairs with one unused LUT output |   64 |       |           |       |
+|   LUT-FF pairs with one unused Flip Flop  |   69 |       |           |       |
+| Unique Control Sets                       |   18 |       |           |       |
 +-------------------------------------------+------+-------+-----------+-------+
 * Note: Review the Control Sets Report for more information regarding control sets.
 
@@ -105,8 +105,8 @@ Table of Contents
 +----------------+------+-------+-----------+-------+
 |    Site Type   | Used | Fixed | Available | Util% |
 +----------------+------+-------+-----------+-------+
-| DSPs           |   14 |     0 |       240 |  5.83 |
-|   DSP48E1 only |   14 |       |           |       |
+| DSPs           |   35 |     0 |       240 | 14.58 |
+|   DSP48E1 only |   35 |       |           |       |
 +----------------+------+-------+-----------+-------+
 
 
@@ -116,9 +116,9 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   20 |    20 |       210 |  9.52 |
-|   IOB Master Pads           |   11 |       |           |       |
-|   IOB Slave Pads            |    9 |       |           |       |
+| Bonded IOB                  |   36 |    36 |       210 | 17.14 |
+|   IOB Master Pads           |   16 |       |           |       |
+|   IOB Slave Pads            |   19 |       |           |       |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         6 |  0.00 |
 | PHASER_REF                  |    0 |     0 |         6 |  0.00 |
@@ -174,20 +174,20 @@ Table of Contents
 +------------+------+---------------------+
 |  Ref Name  | Used | Functional Category |
 +------------+------+---------------------+
-| LUT5       |  875 |                 LUT |
-| LUT6       |  751 |                 LUT |
-| LUT2       |  462 |                 LUT |
-| LUT4       |  321 |                 LUT |
-| MUXF7      |  290 |               MuxFx |
-| LUT3       |  224 |                 LUT |
-| CARRY4     |  215 |          CarryLogic |
-| FDRE       |  146 |        Flop & Latch |
-| MUXF8      |  106 |               MuxFx |
+| LUT6       | 2401 |                 LUT |
+| LUT5       | 1062 |                 LUT |
+| MUXF7      |  752 |               MuxFx |
+| LUT2       |  698 |                 LUT |
+| LUT4       |  467 |                 LUT |
+| CARRY4     |  321 |          CarryLogic |
+| LUT3       |  264 |                 LUT |
+| MUXF8      |  222 |               MuxFx |
+| FDRE       |  201 |        Flop & Latch |
+| DSP48E1    |   35 |    Block Arithmetic |
 | LUT1       |   24 |                 LUT |
+| IBUF       |   19 |                  IO |
 | OBUF       |   17 |                  IO |
-| DSP48E1    |   14 |    Block Arithmetic |
 | FDSE       |    6 |        Flop & Latch |
-| IBUF       |    3 |                  IO |
 | BUFG       |    2 |               Clock |
 | MMCME2_ADV |    1 |               Clock |
 +------------+------+---------------------+
@@ -204,12 +204,17 @@ Table of Contents
 10. Instantiated Netlists
 -------------------------
 
-+----------------------------+------+
-|          Ref Name          | Used |
-+----------------------------+------+
-| dist_mem_gen_minecraftDirt |    1 |
-| dist_mem_gen_0             |    1 |
-| clk_wiz_0                  |    1 |
-+----------------------------+------+
++--------------------------------+------+
+|            Ref Name            | Used |
++--------------------------------+------+
+| dist_mem_gen_xilinx            |    1 |
+| dist_mem_gen_windows           |    1 |
+| dist_mem_gen_minecraftCobStone |    1 |
+| dist_mem_gen_earth             |    1 |
+| dist_mem_gen_astro             |    1 |
+| dist_mem_gen_0                 |    1 |
+| dis_mem_gen_ball2              |    1 |
+| clk_wiz_0                      |    1 |
++--------------------------------+------+
 
 

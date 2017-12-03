@@ -1,5 +1,5 @@
 imgWidth = 45;
-im = imread('map/minecraftOBS.bmp');
+im = imread('map/windows.bmp');
 im = idivide(im,16,'floor');
 image(im);
 A = [];
