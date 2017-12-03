@@ -24,7 +24,7 @@ parameter cellWidth = 45;
 parameter ballRad = 22;
 
 //TODO: Change the number of cases later
-reg [1:0] cells [yCells-1:0][xCells-1:0];
+reg [1:0] cells [yCells-1:0][xCells-1:0][2:0];
 reg [5:0] currCellX;
 reg [5:0] currCellY;
 reg [1:0] currCell;
@@ -37,7 +37,7 @@ reg [5:0] LCurrCellY;
 reg [1:0] LCurrCell;
 reg drawGrids = 0;
 
-
+reg [2:0] level;
 reg [10 : 0] aObstacle [1:0];
 wire [11 : 0] spoObstacle [1:0];
 reg [10 : 0] aBall [1:0];
@@ -89,43 +89,45 @@ dist_mem_gen_earth earthTargetROM (
   .spo(spoTarget[0])  // output wire [11 : 0] spo
 );
 
+reg [2:0] mapLevelGen = 0;
 initial
 begin
+//Level 0
 //border start
     for (i=0; i < yCells; i = i+1)
     begin
-        cells[i][0] = 1;
-        cells[i][xCells - 1] = 1;
+        cells[i][0][mapLevelGen] = 1;
+        cells[i][xCells - 1][mapLevelGen] = 1;
     end
     for (i=0; i < xCells; i = i+1)
     begin
-        cells[0][i] = 1;
-        cells[yCells - 1][i] = 1;
+        cells[0][i][mapLevelGen] = 1;
+        cells[yCells - 1][i][mapLevelGen] = 1;
     end
 //border end
     for (i=0; i < 16; i = i+1)
     begin
-        cells[i][8] = 1;
-        cells[i][24] = 1;
+        cells[i][8][mapLevelGen] = 1;
+        cells[i][24][mapLevelGen] = 1;
     end
 
     for (i=0; i < 7; i = i+1)
     begin
-        cells[i][16] = 1;
+        cells[i][16][mapLevelGen] = 1;
     end
 
     for (i=10; i < yCells-1; i = i+1)
     begin
-        cells[i][16] = 1;
+        cells[i][16][mapLevelGen] = 1;
     end
 
-    cells[2][29] = 3; //Finish Hole
+    cells[2][29][mapLevelGen] = 3; //Finish Hole
     //Holes
-    cells[yCells - 3][2] = 2;
-    cells[3][10] = 2;
-    cells[3][22] = 2;
-    cells[yCells - 3][12] = 2;
-    cells[14][26] = 2;
+    cells[yCells - 3][2][mapLevelGen] = 2;
+    cells[3][10][mapLevelGen] = 2;
+    cells[3][22][mapLevelGen] = 2;
+    cells[yCells - 3][12][mapLevelGen] = 2;
+    cells[14][26][mapLevelGen] = 2;
 end
 
 reg clk30;
@@ -142,17 +144,17 @@ always @ (posedge frameclk)
 begin
     LCurrCellX = blkpos_x / cellWidth;
     LCurrCellY = blkpos_y / cellWidth;
-    LCurrCell = cells[LCurrCellY][LCurrCellX];
+    LCurrCell = cells[LCurrCellY][LCurrCellX][level];
      
-    leftCell = (LCurrCellX>0)?cells[LCurrCellY][LCurrCellX-1]:0;
-    rightCell = (LCurrCellX<xCells-1)?cells[LCurrCellY][LCurrCellX+1]:0;
-    topCell = (LCurrCellY>0)?cells[LCurrCellY-1][LCurrCellX]:0;
-    bottomCell = (LCurrCellY<yCells-1)?cells[LCurrCellY+1][LCurrCellX]:0;
+    leftCell = (LCurrCellX>0)?cells[LCurrCellY][LCurrCellX-1][level]:0;
+    rightCell = (LCurrCellX<xCells-1)?cells[LCurrCellY][LCurrCellX+1][level]:0;
+    topCell = (LCurrCellY>0)?cells[LCurrCellY-1][LCurrCellX][level]:0;
+    bottomCell = (LCurrCellY<yCells-1)?cells[LCurrCellY+1][LCurrCellX][level]:0;
     
     if (LCurrCell == 2)
     begin
-        LHoleCenterX = ((LCurrCellX * cellWidth)+((LCurrCellX+1) * cellWidth))/2; //LCurrCellX*cellWidth+cellWidth/2
-        LHoleCenterY = ((LCurrCellY * cellWidth)+((LCurrCellY+1) * cellWidth))/2;
+        LHoleCenterX = LCurrCellX*cellWidth+cellWidth/2;//((LCurrCellX * cellWidth)+((LCurrCellX+1) * cellWidth))/2;
+        LHoleCenterY = LCurrCellY*cellWidth+cellWidth/2;//((LCurrCellY * cellWidth)+((LCurrCellY+1) * cellWidth))/2;
         if (((LHoleCenterX - blkpos_x)**2 + (LHoleCenterY - blkpos_y)**2) <= (ballRad**2))
         begin
             blkpos_x = 200;
@@ -161,8 +163,8 @@ begin
     end
     if (leftCell == 2)
     begin
-        LHoleCenterX = ((LCurrCellX * cellWidth)+((LCurrCellX-1) * cellWidth))/2;
-        LHoleCenterY = ((LCurrCellY * cellWidth)+((LCurrCellY+1) * cellWidth))/2;
+        LHoleCenterX = LCurrCellX*cellWidth-cellWidth/2;//((LCurrCellX * cellWidth)+((LCurrCellX-1) * cellWidth))/2;
+        LHoleCenterY = LCurrCellY*cellWidth+cellWidth/2;//((LCurrCellY * cellWidth)+((LCurrCellY+1) * cellWidth))/2;
         if (((LHoleCenterX - blkpos_x)**2 + (LHoleCenterY - blkpos_y)**2) <= (ballRad**2)*4)
         begin
             blkpos_x = 200;
@@ -171,8 +173,8 @@ begin
     end
     else if (rightCell == 2)
     begin
-        LHoleCenterX = (((LCurrCellX+2) * cellWidth)+((LCurrCellX+1) * cellWidth))/2;
-        LHoleCenterY = ((LCurrCellY * cellWidth)+((LCurrCellY+1) * cellWidth))/2;
+        LHoleCenterX = (LCurrCellX+1)*cellWidth+cellWidth/2;//(((LCurrCellX+2) * cellWidth)+((LCurrCellX+1) * cellWidth))/2;
+        LHoleCenterY = LCurrCellY*cellWidth+cellWidth/2;//((LCurrCellY * cellWidth)+((LCurrCellY+1) * cellWidth))/2;
         if (((LHoleCenterX - blkpos_x)**2 + (LHoleCenterY - blkpos_y)**2) <= (ballRad**2)*4)
         begin
             blkpos_x = 200;
@@ -181,8 +183,8 @@ begin
     end
     if (topCell == 2)
     begin
-        LHoleCenterX = ((LCurrCellX * cellWidth)+((LCurrCellX+1) * cellWidth))/2;
-        LHoleCenterY = ((LCurrCellY * cellWidth)+((LCurrCellY-1) * cellWidth))/2;
+        LHoleCenterX = LCurrCellX*cellWidth+cellWidth/2;//((LCurrCellX * cellWidth)+((LCurrCellX+1) * cellWidth))/2;
+        LHoleCenterY = (LCurrCellY-1)*cellWidth-cellWidth/2;//(((LCurrCellX+2) * cellWidth)+((LCurrCellX+1) * cellWidth))/2;
         if (((LHoleCenterX - blkpos_x)**2 + (LHoleCenterY - blkpos_y)**2) <= (ballRad**2)*4)
         begin
             blkpos_x = 200;
@@ -191,8 +193,8 @@ begin
     end
     if (bottomCell == 2)
     begin
-        LHoleCenterX = ((LCurrCellX * cellWidth)+((LCurrCellX+1) * cellWidth))/2;
-        LHoleCenterY = (((LCurrCellY+1) * cellWidth)+((LCurrCellY+2) * cellWidth))/2;
+        LHoleCenterX = LCurrCellX*cellWidth+cellWidth/2;//((LCurrCellX * cellWidth)+((LCurrCellX+1) * cellWidth))/2;
+        LHoleCenterY = (LCurrCellY+1)*cellWidth-cellWidth/2;//(((LCurrCellX+2) * cellWidth)+((LCurrCellX+1) * cellWidth))/2;
         if (((LHoleCenterX - blkpos_x)**2 + (LHoleCenterY - blkpos_y)**2) <= (ballRad**2)*4)
         begin
             blkpos_x = 200;
@@ -209,7 +211,7 @@ begin
     begin
         if (~(xData[7]) && xData[6:0]>= 1) // left
         begin
-            if ((cells[blkpos_y/cellWidth][(blkpos_x/cellWidth)-1]!=1) || ((cells[blkpos_y/cellWidth][(blkpos_x/cellWidth)-1]==1) && ((blkpos_x - ((blkpos_x/cellWidth)*cellWidth)) > ballRad)))  begin
+            if ((cells[LCurrCellY][LCurrCellX-1][level]!=1) || ((cells[LCurrCellY][LCurrCellX-1][level]==1) && ((blkpos_x - ((LCurrCellX)*cellWidth)) > ballRad)))  begin
                 if(xData[6:0]>=40)begin
                     blkpos_x=blkpos_x-((40-1)>>>3);
                 end else begin
@@ -219,7 +221,7 @@ begin
         end
         if (xData[7] && (128-xData[6:0])>=1) // right
         begin
-            if ((cells[blkpos_y/cellWidth][(blkpos_x/cellWidth+1)]!=1) || ((cells[blkpos_y/cellWidth][(blkpos_x/cellWidth+1)]==1) && (((((blkpos_x/cellWidth) + 1)*cellWidth) - blkpos_x) > ballRad))) 
+            if ((cells[LCurrCellY][LCurrCellX+1][level]!=1) || ((cells[LCurrCellY][LCurrCellX+1][level]==1) && ((((LCurrCellX+ 1)*cellWidth) - blkpos_x) > ballRad+1))) 
             begin
                 if((128-xData[6:0])>=40)begin
                     blkpos_x=blkpos_x+((40-1)>>>3);
@@ -230,7 +232,7 @@ begin
         end
         if (yData[7] && (128-yData[6:0])>=1) // up
         begin
-            if ((cells[(blkpos_y/cellWidth)-1][blkpos_x/cellWidth]!=1) ||  ((cells[(blkpos_y/cellWidth)-1][blkpos_x/cellWidth]==1) && ((blkpos_y - ((blkpos_y/cellWidth)*cellWidth)) > ballRad))) begin
+            if ((cells[LCurrCellY-1][LCurrCellX][level]!=1) ||  ((cells[LCurrCellY-1][LCurrCellX][level]==1) && ((blkpos_y - (LCurrCellY*cellWidth)) > ballRad))) begin
                 if((128-yData[6:0])>=40)begin
                     blkpos_y=blkpos_y-((40-1)>>>3);
                 end else begin
@@ -240,7 +242,7 @@ begin
         end
         if (~(yData[7]) && yData[6:0]>=1) //down
         begin
-            if ((cells[(blkpos_y/cellWidth)+1][blkpos_x/cellWidth]!=1) || ((cells[(blkpos_y/cellWidth)+1][blkpos_x/cellWidth]==1) && (((((blkpos_y/cellWidth) + 1)*cellWidth) - blkpos_y) > ballRad))) begin
+            if ((cells[LCurrCellY+1][LCurrCellX][level]!=1) || ((cells[LCurrCellY+1][LCurrCellX][level]==1) && ((((LCurrCellY + 1)*cellWidth) - blkpos_y) > ballRad+1))) begin
                 if(yData[6:0]>=40)begin
                     blkpos_y=blkpos_y+((40-1)>>>3);
                 end else begin
@@ -256,7 +258,7 @@ always @ (posedge pixclk)
 begin
     currCellX = draw_x / cellWidth;
     currCellY = draw_y / cellWidth;
-    currCell = cells[currCellY][currCellX];
+    currCell = cells[currCellY][currCellX][level];
 
     if (drawGrids && ((draw_x/cellWidth)*cellWidth == draw_x || (draw_y/cellWidth)*cellWidth == draw_y))
     begin

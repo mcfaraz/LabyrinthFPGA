@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
-| Date         : Sun Dec  3 01:35:42 2017
+| Date         : Sun Dec  3 02:20:47 2017
 | Host         : A205-36 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_drc -file game_top_drc_routed.rpt -pb game_top_drc_routed.pb -rpx game_top_drc_routed.rpx
 | Design       : game_top
@@ -24,15 +24,15 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 130
+             Violations found: 121
 +-------------+----------+------------------------------------------------------------------+------------+
 | Rule        | Severity | Description                                                      | Violations |
 +-------------+----------+------------------------------------------------------------------+------------+
 | CFGBVS-1    | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties              | 1          |
 | CKLD-2      | Warning  | Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads | 1          |
-| DPIP-1      | Warning  | Input pipelining                                                 | 62         |
-| DPOP-1      | Warning  | PREG Output pipelining                                           | 33         |
-| DPOP-2      | Warning  | MREG Output pipelining                                           | 31         |
+| DPIP-1      | Warning  | Input pipelining                                                 | 59         |
+| DPOP-1      | Warning  | PREG Output pipelining                                           | 30         |
+| DPOP-2      | Warning  | MREG Output pipelining                                           | 28         |
 | PDRC-153    | Warning  | Gated clock check                                                | 1          |
 | PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations      | 1          |
 +-------------+----------+------------------------------------------------------------------+------------+
@@ -329,40 +329,25 @@ Related violations: <none>
 
 DPIP-1#55 Warning
 Input pipelining  
-DSP draw_mod/blkpos_x6 input draw_mod/blkpos_x6/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP draw_mod/blkpos_x5 input draw_mod/blkpos_x5/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#56 Warning
 Input pipelining  
-DSP draw_mod/blkpos_x6__0 input draw_mod/blkpos_x6__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP draw_mod/p_0_out input draw_mod/p_0_out/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#57 Warning
 Input pipelining  
-DSP draw_mod/blkpos_x7 input draw_mod/blkpos_x7/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+DSP draw_mod/p_1_out input draw_mod/p_1_out/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPIP-1#58 Warning
 Input pipelining  
-DSP draw_mod/blkpos_x7__0 input draw_mod/blkpos_x7__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#59 Warning
-Input pipelining  
-DSP draw_mod/p_0_out input draw_mod/p_0_out/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#60 Warning
-Input pipelining  
-DSP draw_mod/p_1_out input draw_mod/p_1_out/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#61 Warning
-Input pipelining  
 DSP draw_mod/p_3_in input draw_mod/p_3_in/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
-DPIP-1#62 Warning
+DPIP-1#59 Warning
 Input pipelining  
 DSP draw_mod/p_4_out input draw_mod/p_4_out/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
@@ -504,30 +489,15 @@ Related violations: <none>
 
 DPOP-1#28 Warning
 PREG Output pipelining  
-DSP draw_mod/blkpos_x6 output draw_mod/blkpos_x6/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+DSP draw_mod/blkpos_x5 output draw_mod/blkpos_x5/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
 DPOP-1#29 Warning
 PREG Output pipelining  
-DSP draw_mod/blkpos_x6__0 output draw_mod/blkpos_x6__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-Related violations: <none>
-
-DPOP-1#30 Warning
-PREG Output pipelining  
-DSP draw_mod/blkpos_x7 output draw_mod/blkpos_x7/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-Related violations: <none>
-
-DPOP-1#31 Warning
-PREG Output pipelining  
-DSP draw_mod/blkpos_x7__0 output draw_mod/blkpos_x7__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-Related violations: <none>
-
-DPOP-1#32 Warning
-PREG Output pipelining  
 DSP draw_mod/p_1_out output draw_mod/p_1_out/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
 
-DPOP-1#33 Warning
+DPOP-1#30 Warning
 PREG Output pipelining  
 DSP draw_mod/p_4_out output draw_mod/p_4_out/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 Related violations: <none>
@@ -669,22 +639,7 @@ Related violations: <none>
 
 DPOP-2#28 Warning
 MREG Output pipelining  
-DSP draw_mod/blkpos_x6 multiplier stage draw_mod/blkpos_x6/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-Related violations: <none>
-
-DPOP-2#29 Warning
-MREG Output pipelining  
-DSP draw_mod/blkpos_x6__0 multiplier stage draw_mod/blkpos_x6__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-Related violations: <none>
-
-DPOP-2#30 Warning
-MREG Output pipelining  
-DSP draw_mod/blkpos_x7 multiplier stage draw_mod/blkpos_x7/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-Related violations: <none>
-
-DPOP-2#31 Warning
-MREG Output pipelining  
-DSP draw_mod/blkpos_x7__0 multiplier stage draw_mod/blkpos_x7__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+DSP draw_mod/blkpos_x5 multiplier stage draw_mod/blkpos_x5/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 Related violations: <none>
 
 PDRC-153#1 Warning

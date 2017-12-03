@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
-| Date             : Sun Dec  3 01:35:47 2017
+| Date             : Sun Dec  3 02:20:53 2017
 | Host             : A205-36 running 64-bit Service Pack 1  (build 7601)
 | Command          : report_power -file game_top_power_routed.rpt -pb game_top_power_summary_routed.pb -rpx game_top_power_routed.rpx
 | Design           : game_top
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.311 |
-| Dynamic (W)              | 0.213 |
+| Total On-Chip Power (W)  | 0.291 |
+| Dynamic (W)              | 0.193 |
 | Device Static (W)        | 0.098 |
 | Effective TJA (C/W)      | 4.6   |
-| Max Ambient (C)          | 83.6  |
-| Junction Temperature (C) | 26.4  |
+| Max Ambient (C)          | 83.7  |
+| Junction Temperature (C) | 26.3  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,19 +49,19 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.003 |        6 |       --- |             --- |
-| Slice Logic    |     0.029 |     6429 |       --- |             --- |
-|   LUT as Logic |     0.027 |     4518 |     63400 |            7.13 |
-|   CARRY4       |     0.002 |      321 |     15850 |            2.03 |
+| Clocks         |     0.002 |        6 |       --- |             --- |
+| Slice Logic    |     0.018 |     5653 |       --- |             --- |
+|   LUT as Logic |     0.017 |     3957 |     63400 |            6.24 |
+|   CARRY4       |     0.001 |      219 |     15850 |            1.38 |
 |   F7/F8 Muxes  |    <0.001 |      974 |     63400 |            1.54 |
 |   Register     |    <0.001 |      207 |    126800 |            0.16 |
 |   Others       |     0.000 |       11 |       --- |             --- |
-| Signals        |     0.030 |     5082 |       --- |             --- |
+| Signals        |     0.023 |     4350 |       --- |             --- |
 | MMCM           |     0.101 |        1 |         6 |           16.67 |
-| DSPs           |     0.034 |       35 |       240 |           14.58 |
+| DSPs           |     0.032 |       32 |       240 |           13.33 |
 | I/O            |     0.017 |       36 |       210 |           17.14 |
 | Static Power   |     0.098 |          |           |                 |
-| Total          |     0.311 |          |           |                 |
+| Total          |     0.291 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.111 |       0.095 |      0.016 |
+| Vccint    |       1.000 |     0.091 |       0.075 |      0.015 |
 | Vccaux    |       1.800 |     0.075 |       0.057 |      0.018 |
 | Vcco33    |       3.300 |     0.009 |       0.005 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -143,12 +143,12 @@ Table of Contents
 +-------------------------------------+-----------+
 | Name                                | Power (W) |
 +-------------------------------------+-----------+
-| game_top                            |     0.213 |
-|   accel0                            |     0.001 |
+| game_top                            |     0.193 |
+|   accel0                            |    <0.001 |
 |   disp_clk                          |     0.101 |
 |     inst                            |     0.101 |
 |   display                           |     0.004 |
-|   draw_mod                          |     0.084 |
+|   draw_mod                          |     0.068 |
 |     astroBallROM                    |    <0.001 |
 |       U0                            |    <0.001 |
 |     ball2ROM                        |    <0.001 |
