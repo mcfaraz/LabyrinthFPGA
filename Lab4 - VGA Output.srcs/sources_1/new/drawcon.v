@@ -28,7 +28,7 @@ reg [1:0] cells [yCells-1:0][xCells-1:0][2:0];
 reg [5:0] currCellX;
 reg [5:0] currCellY;
 reg [1:0] currCell;
-integer i;
+integer i,j;
 
 reg [10:0] LHoleCenterX;
 reg [9:0] LHoleCenterY;
@@ -37,7 +37,7 @@ reg [5:0] LCurrCellY;
 reg [1:0] LCurrCell;
 reg drawGrids = 0;
 
-reg [2:0] level;
+reg [2:0] level=1;
 reg [10 : 0] aObstacle [1:0];
 wire [11 : 0] spoObstacle [1:0];
 reg [10 : 0] aBall [1:0];
@@ -92,42 +92,145 @@ dist_mem_gen_earth earthTargetROM (
 reg [2:0] mapLevelGen = 0;
 initial
 begin
-//Level 0
-//border start
-    for (i=0; i < yCells; i = i+1)
-    begin
-        cells[i][0][mapLevelGen] = 1;
-        cells[i][xCells - 1][mapLevelGen] = 1;
+//border start for all levels
+    for(j=0;j<3;j=j+1)begin
+        for (i=0; i < yCells; i = i+1)
+        begin
+            cells[i][0][j] = 1;
+            cells[i][xCells - 1][j] = 1;
+        end
+        for (i=0; i < xCells; i = i+1)
+        begin
+            cells[0][i][j] = 1;
+            cells[yCells - 1][i][j] = 1;
+        end
     end
-    for (i=0; i < xCells; i = i+1)
-    begin
-        cells[0][i][mapLevelGen] = 1;
-        cells[yCells - 1][i][mapLevelGen] = 1;
-    end
-//border end
+//border end for all levels
+//level 0 start
+    //walls
     for (i=0; i < 16; i = i+1)
     begin
-        cells[i][8][mapLevelGen] = 1;
-        cells[i][24][mapLevelGen] = 1;
+        cells[i][8][0] = 1;
+        cells[i][24][0] = 1;
     end
 
     for (i=0; i < 7; i = i+1)
     begin
-        cells[i][16][mapLevelGen] = 1;
+        cells[i][16][0] = 1;
     end
 
     for (i=10; i < yCells-1; i = i+1)
     begin
-        cells[i][16][mapLevelGen] = 1;
+        cells[i][16][0] = 1;
     end
 
-    cells[2][29][mapLevelGen] = 3; //Finish Hole
     //Holes
-    cells[yCells - 3][2][mapLevelGen] = 2;
-    cells[3][10][mapLevelGen] = 2;
-    cells[3][22][mapLevelGen] = 2;
-    cells[yCells - 3][12][mapLevelGen] = 2;
-    cells[14][26][mapLevelGen] = 2;
+    cells[yCells - 3][2][0] = 2;
+    cells[2][10][0] = 2;
+    cells[3][22][0] = 2;
+    cells[yCells - 3][12][0] = 2;
+    cells[14][26][0] = 2;
+    cells[2][29][0] = 3; //Finish Hole
+// level 0 end
+// level 1 start
+    //walls
+    for (i=1; i<17; i=i+1)
+    begin
+    cells[i][13][1] = 1;
+    end
+    
+    for(i=1; i<10; i=i+1)
+    begin
+    cells[5][i][1] = 1;
+    end
+    
+    for(i=5; i<13; i=i+1)
+    begin
+    cells[9][i][1] = 1;
+    end
+    
+    for(i=3; i<19; i=i+1)
+    begin
+    cells[i][16][1] = 1;
+    end
+    
+    for(i=17; i<29; i=i+1)
+    begin
+    cells[3][i][1] = 1;
+    end
+    
+    for(i=7; i<13; i=i+1)
+    begin
+    cells[i][19][1] = 1;
+    end
+    
+    for(i=19; i<31; i=i+1)
+    begin
+    cells[12][i][1] = 1;
+    end
+    
+    for(i=12; i<17; i=i+1)
+    begin
+    cells[i][12][1] = 1;
+    cells[i][8][1] = 1;
+    cells[i][7][1] = 1;
+    cells[i][3][1] = 1;
+    end
+    
+    for(i=12; 1<19; i=i+1) 
+    begin
+    cells[i][3][1] = 1;
+    end
+    
+    for(i=4; i<6; i=i+1)
+    begin
+    cells[13][i][1] = 1;
+    end
+    
+    //holes
+    cells[2][10][1] = 2;
+    cells[8][2][1] = 2;
+    cells[12][2][1] =2;
+    cells[14][1][1] =2;
+    cells[16][2][1] =2;
+    cells[16][6][1] =2;
+    cells[12][9][1] =2;
+    cells[11][12][1] =2;
+    cells[16][11][1] =2;
+    cells[1][15][1] =2;
+    cells[2][18][1] =2;
+    cells[1][21][1] =2;
+    cells[2][24][1] =2;
+    cells[1][27][1] =2;
+    cells[4][20][1] =2;
+    cells[4][28][1] =2;
+    cells[5][25][1] =2;
+    cells[6][22][1] =2;
+    cells[7][28][1] =2;
+    cells[8][25][1] =2;
+    cells[9][22][1] =2;
+    cells[10][28][1] =2;
+    cells[11][25][1] =2;
+    cells[13][20][1] =2;
+    cells[13][24][1] =2;
+    cells[14][19][1] =2;
+    cells[14][25][1] =2;
+    cells[15][22][1] =2;
+    cells[16][21][1] =2;
+    cells[16][23][1] =2;
+    cells[15][26][1] =2;
+    cells[17][20][1] =2;
+    cells[17][24][1] =2;
+    cells[18][22][1] =2;
+    cells[13][29][1] =2;
+    cells[14][29][1] =2;
+    cells[16][29][1] =2;
+    cells[17][29][1] =2;
+    cells[18][29][1] =2;
+    //target 
+    cells[15][30][1] =3;
+    
+
 end
 
 reg clk30;
@@ -145,6 +248,11 @@ begin
     LCurrCellX = blkpos_x / cellWidth;
     LCurrCellY = blkpos_y / cellWidth;
     LCurrCell = cells[LCurrCellY][LCurrCellX][level];
+    if(LCurrCell==3)begin
+        level[0]=~level[0];
+        blkpos_x=200;
+        blkpos_y=200;
+    end
      
     leftCell = (LCurrCellX>0)?cells[LCurrCellY][LCurrCellX-1][level]:0;
     rightCell = (LCurrCellX<xCells-1)?cells[LCurrCellY][LCurrCellX+1][level]:0;
@@ -165,7 +273,7 @@ begin
     begin
         LHoleCenterX = LCurrCellX*cellWidth-cellWidth/2;//((LCurrCellX * cellWidth)+((LCurrCellX-1) * cellWidth))/2;
         LHoleCenterY = LCurrCellY*cellWidth+cellWidth/2;//((LCurrCellY * cellWidth)+((LCurrCellY+1) * cellWidth))/2;
-        if (((LHoleCenterX - blkpos_x)**2 + (LHoleCenterY - blkpos_y)**2) <= (ballRad**2)*4)
+        if (((LHoleCenterX - blkpos_x+1)**2 + (LHoleCenterY - blkpos_y)**2) <= (ballRad**2)*4)
         begin
             blkpos_x = 200;
             blkpos_y = 200;
@@ -195,7 +303,7 @@ begin
     begin
         LHoleCenterX = LCurrCellX*cellWidth+cellWidth/2;//((LCurrCellX * cellWidth)+((LCurrCellX+1) * cellWidth))/2;
         LHoleCenterY = (LCurrCellY+1)*cellWidth-cellWidth/2;//(((LCurrCellX+2) * cellWidth)+((LCurrCellX+1) * cellWidth))/2;
-        if (((LHoleCenterX - blkpos_x)**2 + (LHoleCenterY - blkpos_y)**2) <= (ballRad**2)*4)
+        if (((LHoleCenterX - blkpos_x)**2 + (LHoleCenterY - blkpos_y - 1)**2) <= (ballRad**2)*4)
         begin
             blkpos_x = 200;
             blkpos_y = 200;
