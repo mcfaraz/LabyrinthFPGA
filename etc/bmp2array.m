@@ -1,5 +1,5 @@
 imgWidth = 45;
-im = imread('map/windows.bmp');
+im = imread('map/Suhaibpink.bmp');
 im = idivide(im,16,'floor');
 image(im);
 A = [];

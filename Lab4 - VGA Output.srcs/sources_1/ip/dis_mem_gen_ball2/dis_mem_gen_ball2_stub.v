@@ -1,9 +1,9 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
-// Date        : Sat Dec  2 22:08:18 2017
-// Host        : A205-36 running 64-bit Service Pack 1  (build 7601)
-// Command     : write_verilog -force -mode synth_stub {h:/ES3B2/LabyrinthFPGA/Lab4 - VGA
+// Date        : Thu Dec  7 20:59:38 2017
+// Host        : A205-23 running 64-bit Service Pack 1  (build 7601)
+// Command     : write_verilog -force -mode synth_stub {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA
 //               Output.srcs/sources_1/ip/dis_mem_gen_ball2/dis_mem_gen_ball2_stub.v}
 // Design      : dis_mem_gen_ball2
 // Purpose     : Stub declaration of top-level module interface

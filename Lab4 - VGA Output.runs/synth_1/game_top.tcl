@@ -3,7 +3,6 @@
 # 
 
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -21,26 +20,34 @@ add_files H:/ES3B2/LabyrinthFPGA/etc/COE/blackholeCOE.coe
 add_files H:/ES3B2/LabyrinthFPGA/etc/COE/minecraftDirtCOE.COE
 add_files H:/ES3B2/LabyrinthFPGA/etc/COE/minecraftOBSCOE.COE
 add_files H:/ES3B2/LabyrinthFPGA/etc/COE/SuhaibCOE.coe
-add_files h:/ES3B2/LabyrinthFPGA/etc/COE/astro.coe
-add_files h:/ES3B2/LabyrinthFPGA/etc/COE/XilinxCOE.coe
-add_files h:/ES3B2/LabyrinthFPGA/etc/COE/minecraftCobStone.coe
-add_files h:/ES3B2/LabyrinthFPGA/etc/COE/earthCOE.coe
-add_files h:/ES3B2/LabyrinthFPGA/etc/COE/windows.coe
+add_files H:/ES3B2/LabyrinthFPGA/etc/COE/astro.coe
+add_files H:/ES3B2/LabyrinthFPGA/etc/COE/XilinxCOE.coe
+add_files H:/ES3B2/LabyrinthFPGA/etc/COE/minecraftCobStone.coe
+add_files H:/ES3B2/LabyrinthFPGA/etc/COE/earthCOE.coe
+add_files H:/ES3B2/LabyrinthFPGA/etc/COE/windows.coe
+add_files H:/ES3B2/LabyrinthFPGA/etc/COE/blackhole2COE.coe
+add_files H:/ES3B2/LabyrinthFPGA/etc/COE/blackhole2.coe.coe
+add_files H:/ES3B2/LabyrinthFPGA/etc/COE/astropinkCOE.coe
+add_files h:/ES3B2/LabyrinthFPGA/etc/COE/SuhaibpinkCOE.coe
 read_verilog -library xil_defaultlib {
   {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/accel.v}
   {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v}
   {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/vga_out.v}
   {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/game_top.v}
 }
+read_ip -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_astro_1/dist_mem_gen_astro.xci}}
+set_property used_in_implementation false [get_files -all {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_astro_1/dist_mem_gen_astro_ooc.xdc}}]
+set_property is_locked true [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_astro_1/dist_mem_gen_astro.xci}}]
+
+read_ip -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_galaxy/dist_mem_gen_galaxy.xci}}
+set_property used_in_implementation false [get_files -all {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_galaxy/dist_mem_gen_galaxy_ooc.xdc}}]
+set_property is_locked true [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_galaxy/dist_mem_gen_galaxy.xci}}]
+
 read_ip -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci}}
 set_property used_in_implementation false [get_files -all {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc}}]
 set_property used_in_implementation false [get_files -all {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc}}]
 set_property used_in_implementation false [get_files -all {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_ooc.xdc}}]
 set_property is_locked true [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci}}]
-
-read_ip -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}}
-set_property used_in_implementation false [get_files -all {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_ooc.xdc}}]
-set_property is_locked true [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}}]
 
 read_ip -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_minecraftDirt/dist_mem_gen_minecraftDirt.xci}}
 set_property used_in_implementation false [get_files -all {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_minecraftDirt/dist_mem_gen_minecraftDirt_ooc.xdc}}]
@@ -50,25 +57,21 @@ read_ip -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dis_
 set_property used_in_implementation false [get_files -all {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dis_mem_gen_ball2/dis_mem_gen_ball2_ooc.xdc}}]
 set_property is_locked true [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dis_mem_gen_ball2/dis_mem_gen_ball2.xci}}]
 
-read_ip -quiet {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_astro_1/dist_mem_gen_astro.xci}}
-set_property used_in_implementation false [get_files -all {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_astro_1/dist_mem_gen_astro_ooc.xdc}}]
-set_property is_locked true [get_files {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_astro_1/dist_mem_gen_astro.xci}}]
-
-read_ip -quiet {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_xilinx/dist_mem_gen_xilinx.xci}}
+read_ip -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_xilinx/dist_mem_gen_xilinx.xci}}
 set_property used_in_implementation false [get_files -all {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_xilinx/dist_mem_gen_xilinx_ooc.xdc}}]
-set_property is_locked true [get_files {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_xilinx/dist_mem_gen_xilinx.xci}}]
+set_property is_locked true [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_xilinx/dist_mem_gen_xilinx.xci}}]
 
-read_ip -quiet {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_minecraftCobStone/dist_mem_gen_minecraftCobStone.xci}}
+read_ip -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_minecraftCobStone/dist_mem_gen_minecraftCobStone.xci}}
 set_property used_in_implementation false [get_files -all {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_minecraftCobStone/dist_mem_gen_minecraftCobStone_ooc.xdc}}]
-set_property is_locked true [get_files {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_minecraftCobStone/dist_mem_gen_minecraftCobStone.xci}}]
+set_property is_locked true [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_minecraftCobStone/dist_mem_gen_minecraftCobStone.xci}}]
 
-read_ip -quiet {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_earth/dist_mem_gen_earth.xci}}
+read_ip -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_earth/dist_mem_gen_earth.xci}}
 set_property used_in_implementation false [get_files -all {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_earth/dist_mem_gen_earth_ooc.xdc}}]
-set_property is_locked true [get_files {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_earth/dist_mem_gen_earth.xci}}]
+set_property is_locked true [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_earth/dist_mem_gen_earth.xci}}]
 
-read_ip -quiet {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_windows/dist_mem_gen_windows.xci}}
+read_ip -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_windows/dist_mem_gen_windows.xci}}
 set_property used_in_implementation false [get_files -all {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_windows/dist_mem_gen_windows_ooc.xdc}}]
-set_property is_locked true [get_files {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_windows/dist_mem_gen_windows.xci}}]
+set_property is_locked true [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_windows/dist_mem_gen_windows.xci}}]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -81,6 +84,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc {{H:/ES3B2/LabyrinthFPGA/Nexys4 _Master.xdc}}
 set_property used_in_implementation false [get_files {{H:/ES3B2/LabyrinthFPGA/Nexys4 _Master.xdc}}]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 
 synth_design -top game_top -part xc7a100tcsg324-1
 

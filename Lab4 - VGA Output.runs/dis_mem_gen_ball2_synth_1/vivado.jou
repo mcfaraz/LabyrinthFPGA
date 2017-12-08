@@ -2,8 +2,8 @@
 # Vivado v2017.2.1 (64-bit)
 # SW Build 1957588 on Wed Aug  9 16:32:24 MDT 2017
 # IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
-# Start of session at: Sat Dec  2 22:07:10 2017
-# Process ID: 9240
+# Start of session at: Thu Dec  7 20:58:28 2017
+# Process ID: 10156
 # Current directory: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/dis_mem_gen_ball2_synth_1
 # Command line: vivado.exe -log dis_mem_gen_ball2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dis_mem_gen_ball2.tcl
 # Log file: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/dis_mem_gen_ball2_synth_1/dis_mem_gen_ball2.vds

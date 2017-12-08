@@ -42,7 +42,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -58,24 +57,24 @@ set rc [catch {
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
   add_files -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/synth_1/game_top.dcp}}
+  read_ip -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_astro_1/dist_mem_gen_astro.xci}}
+  set_property is_locked true [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_astro_1/dist_mem_gen_astro.xci}}]
+  read_ip -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_galaxy/dist_mem_gen_galaxy.xci}}
+  set_property is_locked true [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_galaxy/dist_mem_gen_galaxy.xci}}]
   read_ip -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci}}
   set_property is_locked true [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci}}]
-  read_ip -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}}
-  set_property is_locked true [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}}]
   read_ip -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_minecraftDirt/dist_mem_gen_minecraftDirt.xci}}
   set_property is_locked true [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_minecraftDirt/dist_mem_gen_minecraftDirt.xci}}]
   read_ip -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dis_mem_gen_ball2/dis_mem_gen_ball2.xci}}
   set_property is_locked true [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dis_mem_gen_ball2/dis_mem_gen_ball2.xci}}]
-  read_ip -quiet {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_astro_1/dist_mem_gen_astro.xci}}
-  set_property is_locked true [get_files {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_astro_1/dist_mem_gen_astro.xci}}]
-  read_ip -quiet {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_xilinx/dist_mem_gen_xilinx.xci}}
-  set_property is_locked true [get_files {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_xilinx/dist_mem_gen_xilinx.xci}}]
-  read_ip -quiet {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_minecraftCobStone/dist_mem_gen_minecraftCobStone.xci}}
-  set_property is_locked true [get_files {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_minecraftCobStone/dist_mem_gen_minecraftCobStone.xci}}]
-  read_ip -quiet {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_earth/dist_mem_gen_earth.xci}}
-  set_property is_locked true [get_files {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_earth/dist_mem_gen_earth.xci}}]
-  read_ip -quiet {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_windows/dist_mem_gen_windows.xci}}
-  set_property is_locked true [get_files {{h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_windows/dist_mem_gen_windows.xci}}]
+  read_ip -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_xilinx/dist_mem_gen_xilinx.xci}}
+  set_property is_locked true [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_xilinx/dist_mem_gen_xilinx.xci}}]
+  read_ip -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_minecraftCobStone/dist_mem_gen_minecraftCobStone.xci}}
+  set_property is_locked true [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_minecraftCobStone/dist_mem_gen_minecraftCobStone.xci}}]
+  read_ip -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_earth/dist_mem_gen_earth.xci}}
+  set_property is_locked true [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_earth/dist_mem_gen_earth.xci}}]
+  read_ip -quiet {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_windows/dist_mem_gen_windows.xci}}
+  set_property is_locked true [get_files {{H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_windows/dist_mem_gen_windows.xci}}]
   read_xdc {{H:/ES3B2/LabyrinthFPGA/Nexys4 _Master.xdc}}
   link_design -top game_top -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb

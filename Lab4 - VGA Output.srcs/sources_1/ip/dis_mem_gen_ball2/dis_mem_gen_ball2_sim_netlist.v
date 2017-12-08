@@ -1,9 +1,9 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
-// Date        : Sat Dec  2 22:08:18 2017
-// Host        : A205-36 running 64-bit Service Pack 1  (build 7601)
-// Command     : write_verilog -force -mode funcsim {h:/ES3B2/LabyrinthFPGA/Lab4 - VGA
+// Date        : Thu Dec  7 20:59:38 2017
+// Host        : A205-23 running 64-bit Service Pack 1  (build 7601)
+// Command     : write_verilog -force -mode funcsim {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA
 //               Output.srcs/sources_1/ip/dis_mem_gen_ball2/dis_mem_gen_ball2_sim_netlist.v}
 // Design      : dis_mem_gen_ball2
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
@@ -127,7 +127,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
 
   wire \<const0> ;
   wire [10:0]a;
-  wire g0_b11_n_0;
+  wire g0_b7_n_0;
   wire g10_b0_n_0;
   wire g10_b10_n_0;
   wire g10_b11_n_0;
@@ -252,6 +252,8 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
   wire g1_b11_n_0;
   wire g1_b2_n_0;
   wire g1_b3_n_0;
+  wire g1_b4_n_0;
+  wire g1_b5_n_0;
   wire g1_b6_n_0;
   wire g1_b7_n_0;
   wire g1_b8_n_0;
@@ -367,6 +369,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
   wire g29_b11_n_0;
   wire g29_b2_n_0;
   wire g29_b3_n_0;
+  wire g29_b4_n_0;
   wire g29_b5_n_0;
   wire g29_b6_n_0;
   wire g29_b7_n_0;
@@ -376,15 +379,19 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
   wire g2_b11_n_0;
   wire g2_b2_n_0;
   wire g2_b3_n_0;
+  wire g2_b4_n_0;
+  wire g2_b5_n_0;
   wire g2_b6_n_0;
   wire g2_b7_n_0;
   wire g2_b8_n_0;
   wire g2_b9_n_0;
-  wire g30_b11_n_0;
+  wire g30_b7_n_0;
+  wire g31_b11_n_0;
   wire g3_b10_n_0;
   wire g3_b11_n_0;
   wire g3_b2_n_0;
   wire g3_b3_n_0;
+  wire g3_b4_n_0;
   wire g3_b5_n_0;
   wire g3_b6_n_0;
   wire g3_b7_n_0;
@@ -393,6 +400,9 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
   wire g4_b11_n_0;
   wire g4_b2_n_0;
   wire g4_b3_n_0;
+  wire g4_b4_n_0;
+  wire g4_b5_n_0;
+  wire g4_b6_n_0;
   wire g4_b7_n_0;
   wire g4_b8_n_0;
   wire g4_b9_n_0;
@@ -400,6 +410,8 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
   wire g5_b11_n_0;
   wire g5_b2_n_0;
   wire g5_b3_n_0;
+  wire g5_b4_n_0;
+  wire g5_b5_n_0;
   wire g5_b6_n_0;
   wire g5_b7_n_0;
   wire g5_b8_n_0;
@@ -407,6 +419,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
   wire g6_b10_n_0;
   wire g6_b11_n_0;
   wire g6_b3_n_0;
+  wire g6_b4_n_0;
   wire g6_b5_n_0;
   wire g6_b6_n_0;
   wire g6_b7_n_0;
@@ -457,6 +470,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
   wire \spo[0]_INST_0_i_6_n_0 ;
   wire \spo[0]_INST_0_i_7_n_0 ;
   wire \spo[0]_INST_0_i_8_n_0 ;
+  wire \spo[0]_INST_0_i_9_n_0 ;
   wire \spo[10]_INST_0_i_10_n_0 ;
   wire \spo[10]_INST_0_i_11_n_0 ;
   wire \spo[10]_INST_0_i_12_n_0 ;
@@ -530,6 +544,13 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
   wire \spo[3]_INST_0_i_7_n_0 ;
   wire \spo[3]_INST_0_i_8_n_0 ;
   wire \spo[3]_INST_0_i_9_n_0 ;
+  wire \spo[4]_INST_0_i_10_n_0 ;
+  wire \spo[4]_INST_0_i_11_n_0 ;
+  wire \spo[4]_INST_0_i_12_n_0 ;
+  wire \spo[4]_INST_0_i_13_n_0 ;
+  wire \spo[4]_INST_0_i_14_n_0 ;
+  wire \spo[4]_INST_0_i_15_n_0 ;
+  wire \spo[4]_INST_0_i_16_n_0 ;
   wire \spo[4]_INST_0_i_1_n_0 ;
   wire \spo[4]_INST_0_i_2_n_0 ;
   wire \spo[4]_INST_0_i_3_n_0 ;
@@ -648,16 +669,16 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
        (.G(\<const0> ));
   LUT6 #(
     .INIT(64'hE000000001FC0000)) 
-    g0_b11
+    g0_b7
        (.I0(a[0]),
         .I1(a[1]),
         .I2(a[2]),
         .I3(a[3]),
         .I4(a[4]),
         .I5(a[5]),
-        .O(g0_b11_n_0));
+        .O(g0_b7_n_0));
   LUT6 #(
-    .INIT(64'h05FF0800020027F8)) 
+    .INIT(64'h05FF0FFFFE0027F8)) 
     g10_b0
        (.I0(a[0]),
         .I1(a[1]),
@@ -667,7 +688,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g10_b0_n_0));
   LUT6 #(
-    .INIT(64'hFA00E800033FD807)) 
+    .INIT(64'hFA00EFFFFF3FD807)) 
     g10_b1
        (.I0(a[0]),
         .I1(a[1]),
@@ -677,7 +698,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g10_b1_n_0));
   LUT6 #(
-    .INIT(64'h7000780003670003)) 
+    .INIT(64'h70007FFFFF670003)) 
     g10_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -687,7 +708,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g10_b10_n_0));
   LUT6 #(
-    .INIT(64'hB03E780003E901F3)) 
+    .INIT(64'hB03E7FFFFFE901F3)) 
     g10_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -697,7 +718,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g10_b11_n_0));
   LUT6 #(
-    .INIT(64'h7A00D8000303D806)) 
+    .INIT(64'h7A00DFFFFF03D806)) 
     g10_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -707,7 +728,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g10_b2_n_0));
   LUT6 #(
-    .INIT(64'h9A3C880003CCD9E4)) 
+    .INIT(64'h9A3C8FFFFFCCD9E4)) 
     g10_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -757,7 +778,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g10_b7_n_0));
   LUT6 #(
-    .INIT(64'hFFFFC800021FFFFE)) 
+    .INIT(64'hFFFFCFFFFE1FFFFE)) 
     g10_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -767,7 +788,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g10_b8_n_0));
   LUT6 #(
-    .INIT(64'h0FFFA8000320FFFD)) 
+    .INIT(64'h0FFFAFFFFF20FFFD)) 
     g10_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -777,7 +798,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g10_b9_n_0));
   LUT6 #(
-    .INIT(64'h000800EFE1000040)) 
+    .INIT(64'hFFF800EFE1FFFFC0)) 
     g11_b0
        (.I0(a[0]),
         .I1(a[1]),
@@ -787,7 +808,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g11_b0_n_0));
   LUT6 #(
-    .INIT(64'h000C7F101D000063)) 
+    .INIT(64'hFFFC7F101DFFFFE3)) 
     g11_b1
        (.I0(a[0]),
         .I1(a[1]),
@@ -797,7 +818,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g11_b1_n_0));
   LUT6 #(
-    .INIT(64'h000E8E0001000074)) 
+    .INIT(64'hFFFE8E0001FFFFF4)) 
     g11_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -807,7 +828,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g11_b10_n_0));
   LUT6 #(
-    .INIT(64'h000CB607C5000041)) 
+    .INIT(64'hFFFCB607C5FFFFC1)) 
     g11_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -817,7 +838,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g11_b11_n_0));
   LUT6 #(
-    .INIT(64'h000D8F101B00004C)) 
+    .INIT(64'hFFFD8F101BFFFFCC)) 
     g11_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -827,7 +848,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g11_b2_n_0));
   LUT6 #(
-    .INIT(64'h000AB3179D000075)) 
+    .INIT(64'hFFFAB3179DFFFFF5)) 
     g11_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -877,7 +898,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g11_b7_n_0));
   LUT6 #(
-    .INIT(64'h00087FFFFD000043)) 
+    .INIT(64'hFFF87FFFFDFFFFC3)) 
     g11_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -887,7 +908,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g11_b8_n_0));
   LUT6 #(
-    .INIT(64'h000D81FFFB00006C)) 
+    .INIT(64'hFFFD81FFFBFFFFEC)) 
     g11_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -897,7 +918,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g11_b9_n_0));
   LUT6 #(
-    .INIT(64'h7C020001000FFC30)) 
+    .INIT(64'h7C03FFFF000FFC3F)) 
     g12_b0
        (.I0(a[0]),
         .I1(a[1]),
@@ -907,7 +928,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g12_b0_n_0));
   LUT6 #(
-    .INIT(64'h83F600019FF003B0)) 
+    .INIT(64'h83F7FFFF9FF003BF)) 
     g12_b1
        (.I0(a[0]),
         .I1(a[1]),
@@ -917,7 +938,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g12_b1_n_0));
   LUT6 #(
-    .INIT(64'h06320001D3C001B0)) 
+    .INIT(64'h0633FFFFD3C001BF)) 
     g12_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -927,7 +948,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g12_b10_n_0));
   LUT6 #(
-    .INIT(64'h04FE00019440E1B0)) 
+    .INIT(64'h04FFFFFF9440E1BF)) 
     g12_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -937,7 +958,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g12_b11_n_0));
   LUT6 #(
-    .INIT(64'h82BA0001A1F003F0)) 
+    .INIT(64'h82BBFFFFA1F003FF)) 
     g12_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -947,7 +968,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g12_b2_n_0));
   LUT6 #(
-    .INIT(64'h8B42000146707230)) 
+    .INIT(64'h8B43FFFF4670723F)) 
     g12_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -997,7 +1018,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g12_b7_n_0));
   LUT6 #(
-    .INIT(64'hFFF200010FFFFFB0)) 
+    .INIT(64'hFFF3FFFF0FFFFFBF)) 
     g12_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -1007,7 +1028,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g12_b8_n_0));
   LUT6 #(
-    .INIT(64'hF80E0001B03FFE70)) 
+    .INIT(64'hF80FFFFFB03FFE7F)) 
     g12_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -1017,7 +1038,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g12_b9_n_0));
   LUT6 #(
-    .INIT(64'h0400000060002001)) 
+    .INIT(64'hFC0000007FFFE001)) 
     g13_b0
        (.I0(a[0]),
         .I1(a[1]),
@@ -1027,7 +1048,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g13_b0_n_0));
   LUT6 #(
-    .INIT(64'h06C0FF03E00033FE)) 
+    .INIT(64'hFEC0FF03FFFFF3FE)) 
     g13_b1
        (.I0(a[0]),
         .I1(a[1]),
@@ -1037,7 +1058,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g13_b1_n_0));
   LUT6 #(
-    .INIT(64'h077E436360002FC8)) 
+    .INIT(64'hFF7E43637FFFEFC8)) 
     g13_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -1047,7 +1068,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g13_b10_n_0));
   LUT6 #(
-    .INIT(64'h077E037C60003BD8)) 
+    .INIT(64'hFF7E037C7FFFFBD8)) 
     g13_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -1057,7 +1078,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g13_b11_n_0));
   LUT6 #(
-    .INIT(64'h06017E1CE000241E)) 
+    .INIT(64'hFE017E1CFFFFE41E)) 
     g13_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -1067,7 +1088,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g13_b2_n_0));
   LUT6 #(
-    .INIT(64'h053EFEFAE0003CEE)) 
+    .INIT(64'hFD3EFEFAFFFFFCEE)) 
     g13_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -1117,7 +1138,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g13_b7_n_0));
   LUT6 #(
-    .INIT(64'h0480FE02E000203F)) 
+    .INIT(64'hFC80FE02FFFFE03F)) 
     g13_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -1127,7 +1148,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g13_b8_n_0));
   LUT6 #(
-    .INIT(64'h06413D9D600037C7)) 
+    .INIT(64'hFE413D9D7FFFF7C7)) 
     g13_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -1137,7 +1158,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g13_b9_n_0));
   LUT6 #(
-    .INIT(64'h0180008000060C00)) 
+    .INIT(64'h01FFFF8000060FFF)) 
     g14_b0
        (.I0(a[0]),
         .I1(a[1]),
@@ -1147,7 +1168,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g14_b0_n_0));
   LUT6 #(
-    .INIT(64'h7E8000DBC7B9F400)) 
+    .INIT(64'h7EFFFFDBC7B9F7FF)) 
     g14_b1
        (.I0(a[0]),
         .I1(a[1]),
@@ -1157,7 +1178,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g14_b1_n_0));
   LUT6 #(
-    .INIT(64'h7C80003AEFD95400)) 
+    .INIT(64'h7CFFFF3AEFD957FF)) 
     g14_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -1167,7 +1188,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g14_b10_n_0));
   LUT6 #(
-    .INIT(64'h7D8000BF33E8A400)) 
+    .INIT(64'h7DFFFFBF33E8A7FF)) 
     g14_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -1177,7 +1198,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g14_b11_n_0));
   LUT6 #(
-    .INIT(64'hBF800044FFD93C00)) 
+    .INIT(64'hBFFFFF44FFD93FFF)) 
     g14_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -1187,7 +1208,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g14_b2_n_0));
   LUT6 #(
-    .INIT(64'h138000212968CC00)) 
+    .INIT(64'h13FFFF212968CFFF)) 
     g14_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -1237,7 +1258,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g14_b7_n_0));
   LUT6 #(
-    .INIT(64'h3F8000C1C7BFFC00)) 
+    .INIT(64'h3FFFFFC1C7BFFFFF)) 
     g14_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -1247,7 +1268,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g14_b8_n_0));
   LUT6 #(
-    .INIT(64'hC380009E38460C00)) 
+    .INIT(64'hC3FFFF9E38460FFF)) 
     g14_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -1257,7 +1278,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g14_b9_n_0));
   LUT6 #(
-    .INIT(64'h0084103000100020)) 
+    .INIT(64'h0084103FFFF00020)) 
     g15_b0
        (.I0(a[0]),
         .I1(a[1]),
@@ -1267,7 +1288,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g15_b0_n_0));
   LUT6 #(
-    .INIT(64'hF34B6BD0000B46D8)) 
+    .INIT(64'hF34B6BDFFFEB46D8)) 
     g15_b1
        (.I0(a[0]),
         .I1(a[1]),
@@ -1277,7 +1298,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g15_b1_n_0));
   LUT6 #(
-    .INIT(64'hC42BB0900017FE44)) 
+    .INIT(64'hC42BB09FFFF7FE44)) 
     g15_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -1287,7 +1308,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g15_b10_n_0));
   LUT6 #(
-    .INIT(64'hC98EDCB00017C2C2)) 
+    .INIT(64'hC98EDCBFFFF7C2C2)) 
     g15_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -1297,7 +1318,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g15_b11_n_0));
   LUT6 #(
-    .INIT(64'h0EBAC7F00000A056)) 
+    .INIT(64'h0EBAC7FFFFE0A056)) 
     g15_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -1307,7 +1328,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g15_b2_n_0));
   LUT6 #(
-    .INIT(64'h04D18F500014AB92)) 
+    .INIT(64'h04D18F5FFFF4AB92)) 
     g15_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -1357,7 +1378,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g15_b7_n_0));
   LUT6 #(
-    .INIT(64'h32DF5FF0001800F8)) 
+    .INIT(64'h32DF5FFFFFF800F8)) 
     g15_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -1367,7 +1388,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g15_b8_n_0));
   LUT6 #(
-    .INIT(64'hCDA4A3700003E736)) 
+    .INIT(64'hCDA4A37FFFE3E736)) 
     g15_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -1377,7 +1398,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g15_b9_n_0));
   LUT6 #(
-    .INIT(64'hC000400000060002)) 
+    .INIT(64'hFFFFC0000007FFFE)) 
     g16_b0
        (.I0(a[0]),
         .I1(a[1]),
@@ -1387,7 +1408,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g16_b0_n_0));
   LUT6 #(
-    .INIT(64'hC0006FF9FFFA0001)) 
+    .INIT(64'hFFFFEFF9FFFBFFFD)) 
     g16_b1
        (.I0(a[0]),
         .I1(a[1]),
@@ -1397,7 +1418,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g16_b1_n_0));
   LUT6 #(
-    .INIT(64'hC000589167920000)) 
+    .INIT(64'hFFFFD8916793FFFC)) 
     g16_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -1407,7 +1428,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g16_b10_n_0));
   LUT6 #(
-    .INIT(64'hC0007895FB960003)) 
+    .INIT(64'hFFFFF895FB97FFFF)) 
     g16_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -1417,7 +1438,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g16_b11_n_0));
   LUT6 #(
-    .INIT(64'hC0005017E7FE0002)) 
+    .INIT(64'hFFFFD017E7FFFFFE)) 
     g16_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -1427,7 +1448,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g16_b2_n_0));
   LUT6 #(
-    .INIT(64'hC00050728B6E0002)) 
+    .INIT(64'hFFFFD0728B6FFFFE)) 
     g16_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -1477,7 +1498,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g16_b7_n_0));
   LUT6 #(
-    .INIT(64'hC000677BFFFE0003)) 
+    .INIT(64'hFFFFE77BFFFFFFFF)) 
     g16_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -1487,7 +1508,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g16_b8_n_0));
   LUT6 #(
-    .INIT(64'hC0005884806E0002)) 
+    .INIT(64'hFFFFD884806FFFFE)) 
     g16_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -1497,7 +1518,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g16_b9_n_0));
   LUT6 #(
-    .INIT(64'h020F300008001071)) 
+    .INIT(64'h020F3FFFF8001071)) 
     g17_b0
        (.I0(a[0]),
         .I1(a[1]),
@@ -1507,7 +1528,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g17_b0_n_0));
   LUT6 #(
-    .INIT(64'hEDF0D0000DFF6F8E)) 
+    .INIT(64'hEDF0DFFFFDFF6F8E)) 
     g17_b1
        (.I0(a[0]),
         .I1(a[1]),
@@ -1517,7 +1538,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g17_b1_n_0));
   LUT6 #(
-    .INIT(64'hE40050000B36A102)) 
+    .INIT(64'hE4005FFFFB36A102)) 
     g17_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -1527,7 +1548,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g17_b10_n_0));
   LUT6 #(
-    .INIT(64'hC603500009C9A143)) 
+    .INIT(64'hC6035FFFF9C9A143)) 
     g17_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -1537,7 +1558,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g17_b11_n_0));
   LUT6 #(
-    .INIT(64'hD5F0D0000A20AF8E)) 
+    .INIT(64'hD5F0DFFFFA20AF8E)) 
     g17_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -1547,7 +1568,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g17_b2_n_0));
   LUT6 #(
-    .INIT(64'h3170900008DF8A8C)) 
+    .INIT(64'h31709FFFF8DF8A8C)) 
     g17_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -1597,7 +1618,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g17_b7_n_0));
   LUT6 #(
-    .INIT(64'hFFFFF0000CFF7FFF)) 
+    .INIT(64'hFFFFFFFFFCFF7FFF)) 
     g17_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -1607,7 +1628,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g17_b8_n_0));
   LUT6 #(
-    .INIT(64'h03FFB0000B009EFD)) 
+    .INIT(64'h03FFBFFFFB009EFD)) 
     g17_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -1617,7 +1638,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g17_b9_n_0));
   LUT6 #(
-    .INIT(64'h00300001E6000100)) 
+    .INIT(64'hFFF00001E7FFFF00)) 
     g18_b0
        (.I0(a[0]),
         .I1(a[1]),
@@ -1627,7 +1648,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g18_b0_n_0));
   LUT6 #(
-    .INIT(64'h003FFDFE1E0001BF)) 
+    .INIT(64'hFFFFFDFE1FFFFFBF)) 
     g18_b1
        (.I0(a[0]),
         .I1(a[1]),
@@ -1637,7 +1658,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g18_b1_n_0));
   LUT6 #(
-    .INIT(64'h0034EA800E000145)) 
+    .INIT(64'hFFF4EA800FFFFF45)) 
     g18_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -1647,7 +1668,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g18_b10_n_0));
   LUT6 #(
-    .INIT(64'h0025EF81E200014D)) 
+    .INIT(64'hFFE5EF81E3FFFF4D)) 
     g18_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -1657,7 +1678,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g18_b11_n_0));
   LUT6 #(
-    .INIT(64'h0020FAFE1A000147)) 
+    .INIT(64'hFFE0FAFE1BFFFF47)) 
     g18_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -1667,7 +1688,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g18_b2_n_0));
   LUT6 #(
-    .INIT(64'h0021026E1200018A)) 
+    .INIT(64'hFFE1026E13FFFF8A)) 
     g18_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -1717,7 +1738,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g18_b7_n_0));
   LUT6 #(
-    .INIT(64'h003BFDFFFE0001BF)) 
+    .INIT(64'hFFFBFDFFFFFFFFBF)) 
     g18_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -1727,7 +1748,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g18_b8_n_0));
   LUT6 #(
-    .INIT(64'h0034127FF6000142)) 
+    .INIT(64'hFFF4127FF7FFFF42)) 
     g18_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -1737,7 +1758,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g18_b9_n_0));
   LUT6 #(
-    .INIT(64'h8E100006000C70C0)) 
+    .INIT(64'h8E1FFFFE000C70FF)) 
     g19_b0
        (.I0(a[0]),
         .I1(a[1]),
@@ -1747,7 +1768,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g19_b0_n_0));
   LUT6 #(
-    .INIT(64'h71D00007FF338FC0)) 
+    .INIT(64'h71DFFFFFFF338FFF)) 
     g19_b1
        (.I0(a[0]),
         .I1(a[1]),
@@ -1757,7 +1778,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g19_b1_n_0));
   LUT6 #(
-    .INIT(64'h207000079D6200C0)) 
+    .INIT(64'h207FFFFF9D6200FF)) 
     g19_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -1767,7 +1788,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g19_b10_n_0));
   LUT6 #(
-    .INIT(64'h3F7000078D4FF8C0)) 
+    .INIT(64'h3F7FFFFF8D4FF8FF)) 
     g19_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -1777,7 +1798,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g19_b11_n_0));
   LUT6 #(
-    .INIT(64'h71F000060FF38EC0)) 
+    .INIT(64'h71FFFFFE0FF38EFF)) 
     g19_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -1787,7 +1808,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g19_b2_n_0));
   LUT6 #(
-    .INIT(64'h55B0000710D18EC0)) 
+    .INIT(64'h55BFFFFF10D18EFF)) 
     g19_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -1837,7 +1858,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g19_b7_n_0));
   LUT6 #(
-    .INIT(64'hFFD000067FBFFFC0)) 
+    .INIT(64'hFFDFFFFE7FBFFFFF)) 
     g19_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -1847,7 +1868,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g19_b8_n_0));
   LUT6 #(
-    .INIT(64'hDFB00007825DFEC0)) 
+    .INIT(64'hDFBFFFFF825DFEFF)) 
     g19_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -1857,7 +1878,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g19_b9_n_0));
   LUT6 #(
-    .INIT(64'h01C18F80000003F6)) 
+    .INIT(64'hFFC18FFFFFFFFFF6)) 
     g1_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -1867,7 +1888,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g1_b10_n_0));
   LUT6 #(
-    .INIT(64'h01FE7780000003F7)) 
+    .INIT(64'hFFFE77FFFFFFFFF7)) 
     g1_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -1877,7 +1898,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g1_b11_n_0));
   LUT6 #(
-    .INIT(64'h01C00780000003F6)) 
+    .INIT(64'hFFC007FFFFFFFFF6)) 
     g1_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -1886,16 +1907,35 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I4(a[4]),
         .I5(a[5]),
         .O(g1_b2_n_0));
-  LUT6 #(
-    .INIT(64'h01FFFF80000003F5)) 
+  LUT5 #(
+    .INIT(32'hFFFFFFFD)) 
     g1_b3
+       (.I0(a[0]),
+        .I1(a[2]),
+        .I2(a[3]),
+        .I3(a[4]),
+        .I4(a[5]),
+        .O(g1_b3_n_0));
+  LUT6 #(
+    .INIT(64'h01C00780000003E0)) 
+    g1_b4
        (.I0(a[0]),
         .I1(a[1]),
         .I2(a[2]),
         .I3(a[3]),
         .I4(a[4]),
         .I5(a[5]),
-        .O(g1_b3_n_0));
+        .O(g1_b4_n_0));
+  LUT6 #(
+    .INIT(64'h01E00780000003E9)) 
+    g1_b5
+       (.I0(a[0]),
+        .I1(a[1]),
+        .I2(a[2]),
+        .I3(a[3]),
+        .I4(a[4]),
+        .I5(a[5]),
+        .O(g1_b5_n_0));
   LUT6 #(
     .INIT(64'h01C00F80000003F6)) 
     g1_b6
@@ -1917,7 +1957,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g1_b7_n_0));
   LUT6 #(
-    .INIT(64'h01C00780000003E0)) 
+    .INIT(64'hFFC007FFFFFFFFE0)) 
     g1_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -1927,7 +1967,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g1_b8_n_0));
   LUT6 #(
-    .INIT(64'h01E00780000003E9)) 
+    .INIT(64'hFFE007FFFFFFFFE9)) 
     g1_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -1937,7 +1977,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g1_b9_n_0));
   LUT6 #(
-    .INIT(64'h0C0001C200004001)) 
+    .INIT(64'hFC0001C3FFFFC001)) 
     g20_b0
        (.I0(a[0]),
         .I1(a[1]),
@@ -1947,7 +1987,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g20_b0_n_0));
   LUT6 #(
-    .INIT(64'h09FC6E3E00006FEE)) 
+    .INIT(64'hF9FC6E3FFFFFEFEE)) 
     g20_b1
        (.I0(a[0]),
         .I1(a[1]),
@@ -1957,7 +1997,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g20_b1_n_0));
   LUT6 #(
-    .INIT(64'h0D7FF80E00005BB4)) 
+    .INIT(64'hFD7FF80FFFFFDBB4)) 
     g20_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -1967,7 +2007,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g20_b10_n_0));
   LUT6 #(
-    .INIT(64'h0B1DE9CE000049A5)) 
+    .INIT(64'hFB1DE9CFFFFFC9A5)) 
     g20_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -1977,7 +2017,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g20_b11_n_0));
   LUT6 #(
-    .INIT(64'h0A1FFE3A000051F7)) 
+    .INIT(64'hFA1FFE3BFFFFD1F7)) 
     g20_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -1987,7 +2027,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g20_b2_n_0));
   LUT6 #(
-    .INIT(64'h0A61E03A00007202)) 
+    .INIT(64'hFA61E03BFFFFF202)) 
     g20_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -2037,7 +2077,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g20_b7_n_0));
   LUT6 #(
-    .INIT(64'h0CFC6FFA000067EF)) 
+    .INIT(64'hFCFC6FFBFFFFE7EF)) 
     g20_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -2047,7 +2087,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g20_b8_n_0));
   LUT6 #(
-    .INIT(64'h0B0397F600005853)) 
+    .INIT(64'hFB0397F7FFFFD853)) 
     g20_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -2057,7 +2097,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g20_b9_n_0));
   LUT6 #(
-    .INIT(64'h1800018000304000)) 
+    .INIT(64'h1FFFFF8000307FFF)) 
     g21_b0
        (.I0(a[0]),
         .I1(a[1]),
@@ -2067,7 +2107,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g21_b0_n_0));
   LUT6 #(
-    .INIT(64'hE80001FFCFCFC000)) 
+    .INIT(64'hEFFFFFFFCFCFFFFF)) 
     g21_b1
        (.I0(a[0]),
         .I1(a[1]),
@@ -2077,7 +2117,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g21_b1_n_0));
   LUT6 #(
-    .INIT(64'h180001A6AC014000)) 
+    .INIT(64'h1FFFFFA6AC017FFF)) 
     g21_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -2087,7 +2127,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g21_b10_n_0));
   LUT6 #(
-    .INIT(64'h380001EAFE304000)) 
+    .INIT(64'h3FFFFFEAFE307FFF)) 
     g21_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -2097,7 +2137,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g21_b11_n_0));
   LUT6 #(
-    .INIT(64'hD8000183B5CFC000)) 
+    .INIT(64'hDFFFFF83B5CFFFFF)) 
     g21_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -2107,7 +2147,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g21_b2_n_0));
   LUT6 #(
-    .INIT(64'hE800018D238EC000)) 
+    .INIT(64'hEFFFFF8D238EFFFF)) 
     g21_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -2157,7 +2197,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g21_b7_n_0));
   LUT6 #(
-    .INIT(64'hF800019FC7FFC000)) 
+    .INIT(64'hFFFFFF9FC7FFFFFF)) 
     g21_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -2167,7 +2207,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g21_b8_n_0));
   LUT6 #(
-    .INIT(64'hC80001E139FE4000)) 
+    .INIT(64'hCFFFFFE139FE7FFF)) 
     g21_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -2177,7 +2217,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g21_b9_n_0));
   LUT6 #(
-    .INIT(64'h0000030000100002)) 
+    .INIT(64'h000003FFFFF00002)) 
     g22_b0
        (.I0(a[0]),
         .I1(a[1]),
@@ -2187,7 +2227,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g22_b0_n_0));
   LUT6 #(
-    .INIT(64'h7C7CFF00001FF83D)) 
+    .INIT(64'h7C7CFFFFFFFFF83D)) 
     g22_b1
        (.I0(a[0]),
         .I1(a[1]),
@@ -2197,7 +2237,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g22_b1_n_0));
   LUT6 #(
-    .INIT(64'h189B1B00001CF210)) 
+    .INIT(64'h189B1BFFFFFCF210)) 
     g22_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -2207,7 +2247,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g22_b10_n_0));
   LUT6 #(
-    .INIT(64'hA2689500001D2CD2)) 
+    .INIT(64'hA26895FFFFFD2CD2)) 
     g22_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -2217,7 +2257,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g22_b11_n_0));
   LUT6 #(
-    .INIT(64'h839B7900001834DD)) 
+    .INIT(64'h839B79FFFFF834DD)) 
     g22_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -2227,7 +2267,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g22_b2_n_0));
   LUT6 #(
-    .INIT(64'hB8E3F7000011CF7D)) 
+    .INIT(64'hB8E3F7FFFFF1CF7D)) 
     g22_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -2277,7 +2317,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g22_b7_n_0));
   LUT6 #(
-    .INIT(64'h7C7CFF000013F83F)) 
+    .INIT(64'h7C7CFFFFFFF3F83F)) 
     g22_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -2287,7 +2327,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g22_b8_n_0));
   LUT6 #(
-    .INIT(64'h83836300001C05CF)) 
+    .INIT(64'h838363FFFFFC05CF)) 
     g22_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -2297,7 +2337,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g22_b9_n_0));
   LUT6 #(
-    .INIT(64'h0000200008400003)) 
+    .INIT(64'hFFFFE000087FFFFF)) 
     g23_b0
        (.I0(a[0]),
         .I1(a[1]),
@@ -2307,7 +2347,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g23_b0_n_0));
   LUT6 #(
-    .INIT(64'h00003F2FC7C00003)) 
+    .INIT(64'hFFFFFF2FC7FFFFFF)) 
     g23_b1
        (.I0(a[0]),
         .I1(a[1]),
@@ -2317,7 +2357,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g23_b1_n_0));
   LUT6 #(
-    .INIT(64'h00003373A3400003)) 
+    .INIT(64'hFFFFF373A37FFFFF)) 
     g23_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -2327,7 +2367,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g23_b10_n_0));
   LUT6 #(
-    .INIT(64'h000020F452C00002)) 
+    .INIT(64'hFFFFE0F452FFFFFE)) 
     g23_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -2337,7 +2377,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g23_b11_n_0));
   LUT6 #(
-    .INIT(64'h0000219037400002)) 
+    .INIT(64'hFFFFE190377FFFFE)) 
     g23_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -2347,7 +2387,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g23_b2_n_0));
   LUT6 #(
-    .INIT(64'h00002253E6C00003)) 
+    .INIT(64'hFFFFE253E6FFFFFF)) 
     g23_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -2397,7 +2437,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g23_b7_n_0));
   LUT6 #(
-    .INIT(64'h00002F0FCFC00003)) 
+    .INIT(64'hFFFFEF0FCFFFFFFF)) 
     g23_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -2407,7 +2447,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g23_b8_n_0));
   LUT6 #(
-    .INIT(64'h000030B03C400003)) 
+    .INIT(64'hFFFFF0B03C7FFFFF)) 
     g23_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -2416,18 +2456,18 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I4(a[4]),
         .I5(a[5]),
         .O(g23_b9_n_0));
-  LUT6 #(
-    .INIT(64'h0003000004000008)) 
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT5 #(
+    .INIT(32'h01FFE003)) 
     g24_b0
-       (.I0(a[0]),
-        .I1(a[1]),
-        .I2(a[2]),
-        .I3(a[3]),
-        .I4(a[4]),
-        .I5(a[5]),
+       (.I0(a[1]),
+        .I1(a[2]),
+        .I2(a[3]),
+        .I3(a[4]),
+        .I4(a[5]),
         .O(g24_b0_n_0));
   LUT6 #(
-    .INIT(64'h7FBD000007623DF8)) 
+    .INIT(64'h7FBDFFFFFF623DFF)) 
     g24_b1
        (.I0(a[0]),
         .I1(a[1]),
@@ -2437,7 +2477,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g24_b1_n_0));
   LUT6 #(
-    .INIT(64'hABF5000007BC7248)) 
+    .INIT(64'hABF5FFFFFFBC724F)) 
     g24_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -2447,7 +2487,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g24_b10_n_0));
   LUT6 #(
-    .INIT(64'h8F61000004C04E28)) 
+    .INIT(64'h8F61FFFFFCC04E2F)) 
     g24_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -2457,7 +2497,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g24_b11_n_0));
   LUT6 #(
-    .INIT(64'h9777000004BDC3C8)) 
+    .INIT(64'h9777FFFFFCBDC3CF)) 
     g24_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -2467,7 +2507,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g24_b2_n_0));
   LUT6 #(
-    .INIT(64'hACE3000004DDBFB8)) 
+    .INIT(64'hACE3FFFFFCDDBFBF)) 
     g24_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -2517,7 +2557,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g24_b7_n_0));
   LUT6 #(
-    .INIT(64'h7FBF00000463BDF8)) 
+    .INIT(64'h7FBFFFFFFC63BDFF)) 
     g24_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -2527,7 +2567,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g24_b8_n_0));
   LUT6 #(
-    .INIT(64'h94430000079C4388)) 
+    .INIT(64'h9443FFFFFF9C438F)) 
     g24_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -2537,7 +2577,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g24_b9_n_0));
   LUT6 #(
-    .INIT(64'h00180000600000C0)) 
+    .INIT(64'hFFF800007FFFFFC0)) 
     g25_b0
        (.I0(a[0]),
         .I1(a[1]),
@@ -2547,7 +2587,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g25_b0_n_0));
   LUT6 #(
-    .INIT(64'h001DEFFFE00000AE)) 
+    .INIT(64'hFFFDEFFFFFFFFFAE)) 
     g25_b1
        (.I0(a[0]),
         .I1(a[1]),
@@ -2557,7 +2597,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g25_b1_n_0));
   LUT6 #(
-    .INIT(64'h001D1BEDE00000B9)) 
+    .INIT(64'hFFFD1BEDFFFFFFB9)) 
     g25_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -2567,7 +2607,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g25_b10_n_0));
   LUT6 #(
-    .INIT(64'h001A580CE000008C)) 
+    .INIT(64'hFFFA580CFFFFFF8C)) 
     g25_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -2577,7 +2617,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g25_b11_n_0));
   LUT6 #(
-    .INIT(64'h001A111D600000D5)) 
+    .INIT(64'hFFFA111D7FFFFFD5)) 
     g25_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -2587,7 +2627,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g25_b2_n_0));
   LUT6 #(
-    .INIT(64'h001A52F0E00000D1)) 
+    .INIT(64'hFFFA52F0FFFFFFD1)) 
     g25_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -2637,7 +2677,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g25_b7_n_0));
   LUT6 #(
-    .INIT(64'h0018E7FF600000C6)) 
+    .INIT(64'hFFF8E7FF7FFFFFC6)) 
     g25_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -2647,7 +2687,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g25_b8_n_0));
   LUT6 #(
-    .INIT(64'h001F1810E00000F9)) 
+    .INIT(64'hFFFF1810FFFFFFF9)) 
     g25_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -2656,18 +2696,18 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I4(a[4]),
         .I5(a[5]),
         .O(g25_b9_n_0));
-  LUT6 #(
-    .INIT(64'h0300000100000800)) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  LUT5 #(
+    .INIT(32'h1FFF003F)) 
     g26_b0
-       (.I0(a[0]),
-        .I1(a[1]),
-        .I2(a[2]),
-        .I3(a[3]),
-        .I4(a[4]),
-        .I5(a[5]),
+       (.I0(a[1]),
+        .I1(a[2]),
+        .I2(a[3]),
+        .I3(a[4]),
+        .I4(a[5]),
         .O(g26_b0_n_0));
   LUT6 #(
-    .INIT(64'hFB0000010F1FE800)) 
+    .INIT(64'hFBFFFFFF0F1FEFFF)) 
     g26_b1
        (.I0(a[0]),
         .I1(a[1]),
@@ -2677,7 +2717,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g26_b1_n_0));
   LUT6 #(
-    .INIT(64'h9B000001B0EB8800)) 
+    .INIT(64'h9BFFFFFFB0EB8FFF)) 
     g26_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -2687,7 +2727,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g26_b10_n_0));
   LUT6 #(
-    .INIT(64'hDF000001041A5800)) 
+    .INIT(64'hDFFFFFFF041A5FFF)) 
     g26_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -2697,7 +2737,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g26_b11_n_0));
   LUT6 #(
-    .INIT(64'hC7000001F0EF9800)) 
+    .INIT(64'hC7FFFFFFF0EF9FFF)) 
     g26_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -2707,7 +2747,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g26_b2_n_0));
   LUT6 #(
-    .INIT(64'h0F000001FCFC7800)) 
+    .INIT(64'h0FFFFFFFFCFC7FFF)) 
     g26_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -2757,7 +2797,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g26_b7_n_0));
   LUT6 #(
-    .INIT(64'hE30000010F1FE800)) 
+    .INIT(64'hE3FFFFFF0F1FEFFF)) 
     g26_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -2767,7 +2807,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g26_b8_n_0));
   LUT6 #(
-    .INIT(64'h1F000001F0E41800)) 
+    .INIT(64'h1FFFFFFFF0E41FFF)) 
     g26_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -2777,7 +2817,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g26_b9_n_0));
   LUT6 #(
-    .INIT(64'h0200004000003000)) 
+    .INIT(64'hFE00007FFFFFF000)) 
     g27_b0
        (.I0(a[0]),
         .I1(a[1]),
@@ -2787,7 +2827,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g27_b0_n_0));
   LUT6 #(
-    .INIT(64'h0203FE400000303F)) 
+    .INIT(64'hFE03FE7FFFFFF03F)) 
     g27_b1
        (.I0(a[0]),
         .I1(a[1]),
@@ -2797,7 +2837,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g27_b1_n_0));
   LUT6 #(
-    .INIT(64'h0285EE40000031CF)) 
+    .INIT(64'hFE85EE7FFFFFF1CF)) 
     g27_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -2807,7 +2847,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g27_b10_n_0));
   LUT6 #(
-    .INIT(64'h03D807C000003EFF)) 
+    .INIT(64'hFFD807FFFFFFFEFF)) 
     g27_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -2817,7 +2857,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g27_b11_n_0));
   LUT6 #(
-    .INIT(64'h03FCE1C000003FCF)) 
+    .INIT(64'hFFFCE1FFFFFFFFCF)) 
     g27_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -2827,7 +2867,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g27_b2_n_0));
   LUT6 #(
-    .INIT(64'h034517C000003DD3)) 
+    .INIT(64'hFF4517FFFFFFFDD3)) 
     g27_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -2877,7 +2917,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g27_b7_n_0));
   LUT6 #(
-    .INIT(64'h0203F0400000303F)) 
+    .INIT(64'hFE03F07FFFFFF03F)) 
     g27_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -2887,7 +2927,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g27_b8_n_0));
   LUT6 #(
-    .INIT(64'h037C0FC000003FC0)) 
+    .INIT(64'hFF7C0FFFFFFFFFC0)) 
     g27_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -2897,7 +2937,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g27_b9_n_0));
   LUT6 #(
-    .INIT(64'h000000607C180000)) 
+    .INIT(64'hFFFFFFE07C1FFFFF)) 
     g28_b1
        (.I0(a[0]),
         .I1(a[1]),
@@ -2907,7 +2947,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g28_b1_n_0));
   LUT6 #(
-    .INIT(64'h0000006745180000)) 
+    .INIT(64'hFFFFFFE7451FFFFF)) 
     g28_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -2917,7 +2957,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g28_b10_n_0));
   LUT6 #(
-    .INIT(64'h0000006245780000)) 
+    .INIT(64'hFFFFFFE2457FFFFF)) 
     g28_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -2927,7 +2967,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g28_b11_n_0));
   LUT6 #(
-    .INIT(64'h0000007A83F80000)) 
+    .INIT(64'hFFFFFFFA83FFFFFF)) 
     g28_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -2937,7 +2977,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g28_b2_n_0));
   LUT6 #(
-    .INIT(64'h0000006506F80000)) 
+    .INIT(64'hFFFFFFE506FFFFFF)) 
     g28_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -2987,7 +3027,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g28_b7_n_0));
   LUT6 #(
-    .INIT(64'h0000006038180000)) 
+    .INIT(64'hFFFFFFE0381FFFFF)) 
     g28_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -2997,7 +3037,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g28_b8_n_0));
   LUT6 #(
-    .INIT(64'h00000078C6F80000)) 
+    .INIT(64'hFFFFFFF8C6FFFFFF)) 
     g28_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -3007,7 +3047,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g28_b9_n_0));
   LUT6 #(
-    .INIT(64'h31FB00000007B26E)) 
+    .INIT(64'hF1FBFFFFFFFFB26F)) 
     g29_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -3017,7 +3057,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g29_b10_n_0));
   LUT6 #(
-    .INIT(64'h326B00000007C54E)) 
+    .INIT(64'hF26BFFFFFFFFC54F)) 
     g29_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -3027,7 +3067,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g29_b11_n_0));
   LUT6 #(
-    .INIT(64'h3C6B000000078FDE)) 
+    .INIT(64'hFC6BFFFFFFFF8FDF)) 
     g29_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -3037,7 +3077,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g29_b2_n_0));
   LUT6 #(
-    .INIT(64'h3F93000000077F3E)) 
+    .INIT(64'hFF93FFFFFFFF7F3F)) 
     g29_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -3046,6 +3086,16 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I4(a[4]),
         .I5(a[5]),
         .O(g29_b3_n_0));
+  LUT6 #(
+    .INIT(64'h300300000007000E)) 
+    g29_b4
+       (.I0(a[0]),
+        .I1(a[1]),
+        .I2(a[2]),
+        .I3(a[3]),
+        .I4(a[4]),
+        .I5(a[5]),
+        .O(g29_b4_n_0));
   LUT6 #(
     .INIT(64'h3C0300000007061E)) 
     g29_b5
@@ -3076,18 +3126,18 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I4(a[4]),
         .I5(a[5]),
         .O(g29_b7_n_0));
-  LUT6 #(
-    .INIT(64'h300300000007000E)) 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT5 #(
+    .INIT(32'hC1FFFF03)) 
     g29_b8
-       (.I0(a[0]),
-        .I1(a[1]),
-        .I2(a[2]),
-        .I3(a[3]),
-        .I4(a[4]),
-        .I5(a[5]),
+       (.I0(a[1]),
+        .I1(a[2]),
+        .I2(a[3]),
+        .I3(a[4]),
+        .I4(a[5]),
         .O(g29_b8_n_0));
   LUT6 #(
-    .INIT(64'h3C03000000070F9E)) 
+    .INIT(64'hFC03FFFFFFFF0F9F)) 
     g29_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -3097,7 +3147,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g29_b9_n_0));
   LUT6 #(
-    .INIT(64'h8000006001F80000)) 
+    .INIT(64'hFFFFFFE001FFFFFF)) 
     g2_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -3107,7 +3157,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g2_b10_n_0));
   LUT6 #(
-    .INIT(64'h80000077FE180000)) 
+    .INIT(64'hFFFFFFF7FE1FFFFF)) 
     g2_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -3117,7 +3167,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g2_b11_n_0));
   LUT6 #(
-    .INIT(64'h8000006001180000)) 
+    .INIT(64'hFFFFFFE0011FFFFF)) 
     g2_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -3127,7 +3177,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g2_b2_n_0));
   LUT6 #(
-    .INIT(64'h8000006586F80000)) 
+    .INIT(64'hFFFFFFE586FFFFFF)) 
     g2_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -3136,6 +3186,26 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I4(a[4]),
         .I5(a[5]),
         .O(g2_b3_n_0));
+  LUT6 #(
+    .INIT(64'h8000006000180000)) 
+    g2_b4
+       (.I0(a[0]),
+        .I1(a[1]),
+        .I2(a[2]),
+        .I3(a[3]),
+        .I4(a[4]),
+        .I5(a[5]),
+        .O(g2_b4_n_0));
+  LUT6 #(
+    .INIT(64'h8000007000380000)) 
+    g2_b5
+       (.I0(a[0]),
+        .I1(a[1]),
+        .I2(a[2]),
+        .I3(a[3]),
+        .I4(a[4]),
+        .I5(a[5]),
+        .O(g2_b5_n_0));
   LUT6 #(
     .INIT(64'h8000006001780000)) 
     g2_b6
@@ -3157,7 +3227,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g2_b7_n_0));
   LUT6 #(
-    .INIT(64'h8000006000180000)) 
+    .INIT(64'hFFFFFFE0001FFFFF)) 
     g2_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -3166,28 +3236,38 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I4(a[4]),
         .I5(a[5]),
         .O(g2_b8_n_0));
-  LUT6 #(
-    .INIT(64'h8000007000380000)) 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT5 #(
+    .INIT(32'hFFFC07FF)) 
     g2_b9
-       (.I0(a[0]),
-        .I1(a[1]),
-        .I2(a[2]),
-        .I3(a[3]),
-        .I4(a[4]),
-        .I5(a[5]),
+       (.I0(a[1]),
+        .I1(a[2]),
+        .I2(a[3]),
+        .I3(a[4]),
+        .I4(a[5]),
         .O(g2_b9_n_0));
   LUT6 #(
     .INIT(64'h000003FF80000000)) 
-    g30_b11
+    g30_b7
        (.I0(a[0]),
         .I1(a[1]),
         .I2(a[2]),
         .I3(a[3]),
         .I4(a[4]),
         .I5(a[5]),
-        .O(g30_b11_n_0));
+        .O(g30_b7_n_0));
   LUT6 #(
-    .INIT(64'h02393800000C020F)) 
+    .INIT(64'h000001FFFFFFFFFF)) 
+    g31_b11
+       (.I0(a[0]),
+        .I1(a[1]),
+        .I2(a[2]),
+        .I3(a[3]),
+        .I4(a[4]),
+        .I5(a[5]),
+        .O(g31_b11_n_0));
+  LUT6 #(
+    .INIT(64'h02393FFFFFFC020F)) 
     g3_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -3197,7 +3277,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g3_b10_n_0));
   LUT6 #(
-    .INIT(64'hEDC6F800000FBDF3)) 
+    .INIT(64'hEDC6FFFFFFFFBDF3)) 
     g3_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -3206,18 +3286,18 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I4(a[4]),
         .I5(a[5]),
         .O(g3_b11_n_0));
-  LUT6 #(
-    .INIT(64'h00003800000C000F)) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  LUT5 #(
+    .INIT(32'h007FFE03)) 
     g3_b2
-       (.I0(a[0]),
-        .I1(a[1]),
-        .I2(a[2]),
-        .I3(a[3]),
-        .I4(a[4]),
-        .I5(a[5]),
+       (.I0(a[1]),
+        .I1(a[2]),
+        .I2(a[3]),
+        .I3(a[4]),
+        .I4(a[5]),
         .O(g3_b2_n_0));
   LUT6 #(
-    .INIT(64'h03FBD800000E0F91)) 
+    .INIT(64'h03FBDFFFFFFE0F91)) 
     g3_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -3226,6 +3306,16 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I4(a[4]),
         .I5(a[5]),
         .O(g3_b3_n_0));
+  LUT6 #(
+    .INIT(64'h0000180000080001)) 
+    g3_b4
+       (.I0(a[0]),
+        .I1(a[1]),
+        .I2(a[2]),
+        .I3(a[3]),
+        .I4(a[4]),
+        .I5(a[5]),
+        .O(g3_b4_n_0));
   LUT6 #(
     .INIT(64'h00001800000C0001)) 
     g3_b5
@@ -3257,7 +3347,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g3_b7_n_0));
   LUT6 #(
-    .INIT(64'h0000180000080001)) 
+    .INIT(64'h00001FFFFFF80001)) 
     g3_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -3267,7 +3357,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g3_b9_n_0));
   LUT6 #(
-    .INIT(64'h0000E0147D000003)) 
+    .INIT(64'hFFFFE0147DFFFFFF)) 
     g4_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -3277,7 +3367,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g4_b10_n_0));
   LUT6 #(
-    .INIT(64'h0000E2EBC3000003)) 
+    .INIT(64'hFFFFE2EBC3FFFFFF)) 
     g4_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -3287,7 +3377,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g4_b11_n_0));
   LUT6 #(
-    .INIT(64'h0000E01451000003)) 
+    .INIT(64'hFFFFE01451FFFFFF)) 
     g4_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -3297,7 +3387,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g4_b2_n_0));
   LUT6 #(
-    .INIT(64'h0000E009AF000003)) 
+    .INIT(64'hFFFFE009AFFFFFFF)) 
     g4_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -3306,6 +3396,36 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I4(a[4]),
         .I5(a[5]),
         .O(g4_b3_n_0));
+  LUT6 #(
+    .INIT(64'h0000C00001000003)) 
+    g4_b4
+       (.I0(a[0]),
+        .I1(a[1]),
+        .I2(a[2]),
+        .I3(a[3]),
+        .I4(a[4]),
+        .I5(a[5]),
+        .O(g4_b4_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT5 #(
+    .INIT(32'h00801001)) 
+    g4_b5
+       (.I0(a[1]),
+        .I1(a[2]),
+        .I2(a[3]),
+        .I3(a[4]),
+        .I4(a[5]),
+        .O(g4_b5_n_0));
+  LUT6 #(
+    .INIT(64'h0000E0147D000003)) 
+    g4_b6
+       (.I0(a[0]),
+        .I1(a[1]),
+        .I2(a[2]),
+        .I3(a[3]),
+        .I4(a[4]),
+        .I5(a[5]),
+        .O(g4_b6_n_0));
   LUT6 #(
     .INIT(64'h0000E009C3000003)) 
     g4_b7
@@ -3317,7 +3437,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g4_b7_n_0));
   LUT6 #(
-    .INIT(64'h0000C00001000003)) 
+    .INIT(64'hFFFFC00001FFFFFF)) 
     g4_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -3326,8 +3446,9 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I4(a[4]),
         .I5(a[5]),
         .O(g4_b8_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT5 #(
-    .INIT(32'h00801001)) 
+    .INIT(32'hFF801FFF)) 
     g4_b9
        (.I0(a[1]),
         .I1(a[2]),
@@ -3336,7 +3457,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I4(a[5]),
         .O(g4_b9_n_0));
   LUT6 #(
-    .INIT(64'h5F6A000010034FF0)) 
+    .INIT(64'h5F6BFFFFF0034FFF)) 
     g5_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -3346,7 +3467,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g5_b10_n_0));
   LUT6 #(
-    .INIT(64'hA196000011DCB0B0)) 
+    .INIT(64'hA197FFFFF1DCB0BF)) 
     g5_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -3356,7 +3477,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g5_b11_n_0));
   LUT6 #(
-    .INIT(64'h0102000010000FB0)) 
+    .INIT(64'h0103FFFFF0000FBF)) 
     g5_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -3366,7 +3487,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g5_b2_n_0));
   LUT6 #(
-    .INIT(64'hDE6E000010135070)) 
+    .INIT(64'hDE6FFFFFF013507F)) 
     g5_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -3375,6 +3496,26 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I4(a[4]),
         .I5(a[5]),
         .O(g5_b3_n_0));
+  LUT6 #(
+    .INIT(64'h0002000010000030)) 
+    g5_b4
+       (.I0(a[0]),
+        .I1(a[1]),
+        .I2(a[2]),
+        .I3(a[3]),
+        .I4(a[4]),
+        .I5(a[5]),
+        .O(g5_b4_n_0));
+  LUT6 #(
+    .INIT(64'h0006000010000030)) 
+    g5_b5
+       (.I0(a[0]),
+        .I1(a[1]),
+        .I2(a[2]),
+        .I3(a[3]),
+        .I4(a[4]),
+        .I5(a[5]),
+        .O(g5_b5_n_0));
   LUT6 #(
     .INIT(64'h1302000010010FB0)) 
     g5_b6
@@ -3395,18 +3536,18 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I4(a[4]),
         .I5(a[5]),
         .O(g5_b7_n_0));
-  LUT6 #(
-    .INIT(64'h0002000010000030)) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  LUT5 #(
+    .INIT(32'h01FFC007)) 
     g5_b8
-       (.I0(a[0]),
-        .I1(a[1]),
-        .I2(a[2]),
-        .I3(a[3]),
-        .I4(a[4]),
-        .I5(a[5]),
+       (.I0(a[1]),
+        .I1(a[2]),
+        .I2(a[3]),
+        .I3(a[4]),
+        .I4(a[5]),
         .O(g5_b8_n_0));
   LUT6 #(
-    .INIT(64'h0006000010000030)) 
+    .INIT(64'h0007FFFFF000003F)) 
     g5_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -3416,7 +3557,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g5_b9_n_0));
   LUT6 #(
-    .INIT(64'h00C98387E0000201)) 
+    .INIT(64'hFFC98387FFFFFE01)) 
     g6_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -3426,7 +3567,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g6_b10_n_0));
   LUT6 #(
-    .INIT(64'h00C1E1C06000037E)) 
+    .INIT(64'hFFC1E1C07FFFFF7E)) 
     g6_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -3436,7 +3577,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g6_b11_n_0));
   LUT6 #(
-    .INIT(64'h00C1E3C3E0000305)) 
+    .INIT(64'hFFC1E3C3FFFFFF05)) 
     g6_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -3445,6 +3586,16 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I4(a[4]),
         .I5(a[5]),
         .O(g6_b3_n_0));
+  LUT6 #(
+    .INIT(64'h00C0000060000200)) 
+    g6_b4
+       (.I0(a[0]),
+        .I1(a[1]),
+        .I2(a[2]),
+        .I3(a[3]),
+        .I4(a[4]),
+        .I5(a[5]),
+        .O(g6_b4_n_0));
   LUT6 #(
     .INIT(64'h00C0400060000200)) 
     g6_b5
@@ -3476,7 +3627,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g6_b7_n_0));
   LUT6 #(
-    .INIT(64'h00C0000060000200)) 
+    .INIT(64'hFFC000007FFFFE00)) 
     g6_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -3486,7 +3637,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g6_b8_n_0));
   LUT6 #(
-    .INIT(64'h00C67C7860000200)) 
+    .INIT(64'hFFC67C787FFFFE00)) 
     g6_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -3496,7 +3647,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g6_b9_n_0));
   LUT6 #(
-    .INIT(64'h8080001000000400)) 
+    .INIT(64'h80FFFFF0000007FF)) 
     g7_b0
        (.I0(a[0]),
         .I1(a[1]),
@@ -3506,7 +3657,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g7_b0_n_0));
   LUT6 #(
-    .INIT(64'h7C8000101F9FCC00)) 
+    .INIT(64'h7CFFFFF01F9FCFFF)) 
     g7_b1
        (.I0(a[0]),
         .I1(a[1]),
@@ -3516,7 +3667,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g7_b1_n_0));
   LUT6 #(
-    .INIT(64'h1B8000182761DC00)) 
+    .INIT(64'h1BFFFFF82761DFFF)) 
     g7_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -3526,7 +3677,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g7_b10_n_0));
   LUT6 #(
-    .INIT(64'h1B800016C026C400)) 
+    .INIT(64'h1BFFFFF6C026C7FF)) 
     g7_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -3536,7 +3687,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g7_b11_n_0));
   LUT6 #(
-    .INIT(64'h7B800019E3612400)) 
+    .INIT(64'h7BFFFFF9E36127FF)) 
     g7_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -3546,7 +3697,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g7_b2_n_0));
   LUT6 #(
-    .INIT(64'h6C80001024661C00)) 
+    .INIT(64'h6CFFFFF024661FFF)) 
     g7_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -3596,7 +3747,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g7_b7_n_0));
   LUT6 #(
-    .INIT(64'hFC8000101F9F0400)) 
+    .INIT(64'hFCFFFFF01F9F07FF)) 
     g7_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -3606,7 +3757,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g7_b8_n_0));
   LUT6 #(
-    .INIT(64'hE0800011E060EC00)) 
+    .INIT(64'hE0FFFFF1E060EFFF)) 
     g7_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -3616,7 +3767,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g7_b9_n_0));
   LUT6 #(
-    .INIT(64'h4000FC1000020005)) 
+    .INIT(64'hC000FC1FFFFE0005)) 
     g8_b0
        (.I0(a[0]),
         .I1(a[1]),
@@ -3626,7 +3777,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g8_b0_n_0));
   LUT6 #(
-    .INIT(64'h47FF039000021FFA)) 
+    .INIT(64'hC7FF039FFFFE1FFA)) 
     g8_b1
        (.I0(a[0]),
         .I1(a[1]),
@@ -3636,7 +3787,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g8_b1_n_0));
   LUT6 #(
-    .INIT(64'h506000B0000263C8)) 
+    .INIT(64'hD06000BFFFFE63C8)) 
     g8_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -3646,7 +3797,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g8_b10_n_0));
   LUT6 #(
-    .INIT(64'h69A038100003E5C8)) 
+    .INIT(64'hE9A0381FFFFFE5C8)) 
     g8_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -3656,7 +3807,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g8_b11_n_0));
   LUT6 #(
-    .INIT(64'h487F03F0000223FA)) 
+    .INIT(64'hC87F03FFFFFE23FA)) 
     g8_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -3666,7 +3817,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g8_b2_n_0));
   LUT6 #(
-    .INIT(64'h51BF031000036472)) 
+    .INIT(64'hD1BF031FFFFF6472)) 
     g8_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -3716,7 +3867,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g8_b7_n_0));
   LUT6 #(
-    .INIT(64'h47FFFF9000021FFF)) 
+    .INIT(64'hC7FFFF9FFFFE1FFF)) 
     g8_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -3726,7 +3877,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g8_b8_n_0));
   LUT6 #(
-    .INIT(64'h481FFF5000022037)) 
+    .INIT(64'hC81FFF5FFFFE2037)) 
     g8_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -3736,7 +3887,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g8_b9_n_0));
   LUT6 #(
-    .INIT(64'h400018011FC20000)) 
+    .INIT(64'h7FFFF8011FC3FFFF)) 
     g9_b0
        (.I0(a[0]),
         .I1(a[1]),
@@ -3746,7 +3897,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g9_b0_n_0));
   LUT6 #(
-    .INIT(64'h400011FEE0320000)) 
+    .INIT(64'h7FFFF1FEE033FFFF)) 
     g9_b1
        (.I0(a[0]),
         .I1(a[1]),
@@ -3756,7 +3907,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g9_b1_n_0));
   LUT6 #(
-    .INIT(64'hC000133C001E0000)) 
+    .INIT(64'hFFFFF33C001FFFFF)) 
     g9_b10
        (.I0(a[0]),
         .I1(a[1]),
@@ -3766,7 +3917,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g9_b10_n_0));
   LUT6 #(
-    .INIT(64'hC0001C4C0F920000)) 
+    .INIT(64'hFFFFFC4C0F93FFFF)) 
     g9_b11
        (.I0(a[0]),
         .I1(a[1]),
@@ -3776,7 +3927,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g9_b11_n_0));
   LUT6 #(
-    .INIT(64'hC000101EE03A0000)) 
+    .INIT(64'hFFFFF01EE03BFFFF)) 
     g9_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -3786,7 +3937,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g9_b2_n_0));
   LUT6 #(
-    .INIT(64'h40001266EF2E0000)) 
+    .INIT(64'h7FFFF266EF2FFFFF)) 
     g9_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -3836,7 +3987,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g9_b7_n_0));
   LUT6 #(
-    .INIT(64'h400018FFFFF20000)) 
+    .INIT(64'h7FFFF8FFFFF3FFFF)) 
     g9_b8
        (.I0(a[0]),
         .I1(a[1]),
@@ -3846,7 +3997,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(a[5]),
         .O(g9_b8_n_0));
   LUT6 #(
-    .INIT(64'h40001103FFEA0000)) 
+    .INIT(64'h7FFFF103FFEBFFFF)) 
     g9_b9
        (.I0(a[0]),
         .I1(a[1]),
@@ -3873,12 +4024,12 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \spo[0]_INST_0_i_2 
-       (.I0(\spo[4]_INST_0_i_6_n_0 ),
-        .I1(\spo[0]_INST_0_i_6_n_0 ),
+       (.I0(\spo[0]_INST_0_i_6_n_0 ),
+        .I1(\spo[0]_INST_0_i_7_n_0 ),
         .I2(a[9]),
-        .I3(\spo[0]_INST_0_i_7_n_0 ),
+        .I3(\spo[0]_INST_0_i_8_n_0 ),
         .I4(a[8]),
-        .I5(\spo[0]_INST_0_i_8_n_0 ),
+        .I5(\spo[0]_INST_0_i_9_n_0 ),
         .O(\spo[0]_INST_0_i_2_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -3910,36 +4061,45 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I4(a[6]),
         .I5(g4_b8_n_0),
         .O(\spo[0]_INST_0_i_5_n_0 ));
+  LUT5 #(
+    .INIT(32'hB8FFB8CC)) 
+    \spo[0]_INST_0_i_6 
+       (.I0(g31_b11_n_0),
+        .I1(a[7]),
+        .I2(g29_b8_n_0),
+        .I3(a[6]),
+        .I4(g2_b8_n_0),
+        .O(\spo[0]_INST_0_i_6_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    \spo[0]_INST_0_i_6 
+    \spo[0]_INST_0_i_7 
        (.I0(g27_b0_n_0),
         .I1(g26_b0_n_0),
         .I2(a[7]),
         .I3(g25_b0_n_0),
         .I4(a[6]),
         .I5(g24_b0_n_0),
-        .O(\spo[0]_INST_0_i_6_n_0 ));
+        .O(\spo[0]_INST_0_i_7_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    \spo[0]_INST_0_i_7 
+    \spo[0]_INST_0_i_8 
        (.I0(g23_b0_n_0),
         .I1(g22_b0_n_0),
         .I2(a[7]),
         .I3(g21_b0_n_0),
         .I4(a[6]),
         .I5(g20_b0_n_0),
-        .O(\spo[0]_INST_0_i_7_n_0 ));
+        .O(\spo[0]_INST_0_i_8_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    \spo[0]_INST_0_i_8 
+    \spo[0]_INST_0_i_9 
        (.I0(g19_b0_n_0),
         .I1(g18_b0_n_0),
         .I2(a[7]),
         .I3(g17_b0_n_0),
         .I4(a[6]),
         .I5(g16_b0_n_0),
-        .O(\spo[0]_INST_0_i_8_n_0 ));
+        .O(\spo[0]_INST_0_i_9_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \spo[10]_INST_0 
@@ -3980,15 +4140,14 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I1(g9_b10_n_0),
         .O(\spo[10]_INST_0_i_14_n_0 ),
         .S(a[6]));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+  LUT5 #(
+    .INIT(32'hAFA0CFCF)) 
     \spo[10]_INST_0_i_15 
        (.I0(g3_b10_n_0),
         .I1(g2_b10_n_0),
         .I2(a[7]),
         .I3(g1_b10_n_0),
         .I4(a[6]),
-        .I5(g0_b11_n_0),
         .O(\spo[10]_INST_0_i_15_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -4036,9 +4195,9 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(g24_b10_n_0),
         .O(\spo[10]_INST_0_i_5_n_0 ));
   LUT5 #(
-    .INIT(32'h30BB3088)) 
+    .INIT(32'hB8FFB8CC)) 
     \spo[10]_INST_0_i_6 
-       (.I0(g30_b11_n_0),
+       (.I0(g31_b11_n_0),
         .I1(a[7]),
         .I2(g29_b10_n_0),
         .I3(a[6]),
@@ -4099,15 +4258,14 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I1(g9_b11_n_0),
         .O(\spo[11]_INST_0_i_14_n_0 ),
         .S(a[6]));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+  LUT5 #(
+    .INIT(32'hAFA0CFCF)) 
     \spo[11]_INST_0_i_15 
        (.I0(g3_b11_n_0),
         .I1(g2_b11_n_0),
         .I2(a[7]),
         .I3(g1_b11_n_0),
         .I4(a[6]),
-        .I5(g0_b11_n_0),
         .O(\spo[11]_INST_0_i_15_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -4155,9 +4313,9 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(g24_b11_n_0),
         .O(\spo[11]_INST_0_i_5_n_0 ));
   LUT5 #(
-    .INIT(32'h30BB3088)) 
+    .INIT(32'hB8FFB8CC)) 
     \spo[11]_INST_0_i_6 
-       (.I0(g30_b11_n_0),
+       (.I0(g31_b11_n_0),
         .I1(a[7]),
         .I2(g29_b11_n_0),
         .I3(a[6]),
@@ -4234,9 +4392,9 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(g4_b9_n_0),
         .O(\spo[1]_INST_0_i_5_n_0 ));
   LUT5 #(
-    .INIT(32'h30BB3088)) 
+    .INIT(32'hB8FFB8CC)) 
     \spo[1]_INST_0_i_6 
-       (.I0(g30_b11_n_0),
+       (.I0(g31_b11_n_0),
         .I1(a[7]),
         .I2(g29_b8_n_0),
         .I3(a[6]),
@@ -4312,15 +4470,14 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I1(g9_b2_n_0),
         .O(\spo[2]_INST_0_i_14_n_0 ),
         .S(a[6]));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+  LUT5 #(
+    .INIT(32'hAFA0CFCF)) 
     \spo[2]_INST_0_i_15 
        (.I0(g3_b2_n_0),
         .I1(g2_b2_n_0),
         .I2(a[7]),
         .I3(g1_b2_n_0),
         .I4(a[6]),
-        .I5(g0_b11_n_0),
         .O(\spo[2]_INST_0_i_15_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -4368,9 +4525,9 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(g24_b2_n_0),
         .O(\spo[2]_INST_0_i_5_n_0 ));
   LUT5 #(
-    .INIT(32'h30BB3088)) 
+    .INIT(32'hB8FFB8CC)) 
     \spo[2]_INST_0_i_6 
-       (.I0(g30_b11_n_0),
+       (.I0(g31_b11_n_0),
         .I1(a[7]),
         .I2(g29_b2_n_0),
         .I3(a[6]),
@@ -4431,15 +4588,14 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I1(g9_b3_n_0),
         .O(\spo[3]_INST_0_i_14_n_0 ),
         .S(a[6]));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+  LUT5 #(
+    .INIT(32'hAFA0CFCF)) 
     \spo[3]_INST_0_i_15 
        (.I0(g3_b3_n_0),
         .I1(g2_b3_n_0),
         .I2(a[7]),
         .I3(g1_b3_n_0),
         .I4(a[6]),
-        .I5(g0_b11_n_0),
         .O(\spo[3]_INST_0_i_15_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -4487,9 +4643,9 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I5(g24_b3_n_0),
         .O(\spo[3]_INST_0_i_5_n_0 ));
   LUT5 #(
-    .INIT(32'h30BB3088)) 
+    .INIT(32'hB8FFB8CC)) 
     \spo[3]_INST_0_i_6 
-       (.I0(g30_b11_n_0),
+       (.I0(g31_b11_n_0),
         .I1(a[7]),
         .I2(g29_b3_n_0),
         .I3(a[6]),
@@ -4510,100 +4666,125 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I1(g19_b3_n_0),
         .O(\spo[3]_INST_0_i_9_n_0 ),
         .S(a[6]));
-  MUXF7 \spo[4]_INST_0 
-       (.I0(\spo[4]_INST_0_i_1_n_0 ),
-        .I1(\spo[4]_INST_0_i_2_n_0 ),
-        .O(spo[4]),
-        .S(a[10]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    \spo[4]_INST_0_i_1 
-       (.I0(\spo[4]_INST_0_i_3_n_0 ),
-        .I1(\spo[4]_INST_0_i_4_n_0 ),
-        .I2(a[9]),
-        .I3(\spo[4]_INST_0_i_5_n_0 ),
-        .I4(a[8]),
-        .I5(\spo[8]_INST_0_i_6_n_0 ),
-        .O(\spo[4]_INST_0_i_1_n_0 ));
+    \spo[4]_INST_0 
+       (.I0(\spo[4]_INST_0_i_1_n_0 ),
+        .I1(\spo[4]_INST_0_i_2_n_0 ),
+        .I2(a[10]),
+        .I3(\spo[4]_INST_0_i_3_n_0 ),
+        .I4(a[9]),
+        .I5(\spo[4]_INST_0_i_4_n_0 ),
+        .O(spo[4]));
+  MUXF7 \spo[4]_INST_0_i_1 
+       (.I0(\spo[4]_INST_0_i_5_n_0 ),
+        .I1(\spo[4]_INST_0_i_6_n_0 ),
+        .O(\spo[4]_INST_0_i_1_n_0 ),
+        .S(a[8]));
+  MUXF7 \spo[4]_INST_0_i_10 
+       (.I0(g16_b4_n_0),
+        .I1(g17_b4_n_0),
+        .O(\spo[4]_INST_0_i_10_n_0 ),
+        .S(a[6]));
+  MUXF7 \spo[4]_INST_0_i_11 
+       (.I0(g14_b4_n_0),
+        .I1(g15_b4_n_0),
+        .O(\spo[4]_INST_0_i_11_n_0 ),
+        .S(a[6]));
+  MUXF7 \spo[4]_INST_0_i_12 
+       (.I0(g12_b4_n_0),
+        .I1(g13_b4_n_0),
+        .O(\spo[4]_INST_0_i_12_n_0 ),
+        .S(a[6]));
+  MUXF7 \spo[4]_INST_0_i_13 
+       (.I0(g10_b4_n_0),
+        .I1(g11_b4_n_0),
+        .O(\spo[4]_INST_0_i_13_n_0 ),
+        .S(a[6]));
+  MUXF7 \spo[4]_INST_0_i_14 
+       (.I0(g8_b4_n_0),
+        .I1(g9_b4_n_0),
+        .O(\spo[4]_INST_0_i_14_n_0 ),
+        .S(a[6]));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \spo[4]_INST_0_i_15 
+       (.I0(g3_b4_n_0),
+        .I1(g2_b4_n_0),
+        .I2(a[7]),
+        .I3(g1_b4_n_0),
+        .I4(a[6]),
+        .I5(g0_b7_n_0),
+        .O(\spo[4]_INST_0_i_15_n_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \spo[4]_INST_0_i_16 
+       (.I0(g7_b4_n_0),
+        .I1(g6_b4_n_0),
+        .I2(a[7]),
+        .I3(g5_b4_n_0),
+        .I4(a[6]),
+        .I5(g4_b4_n_0),
+        .O(\spo[4]_INST_0_i_16_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \spo[4]_INST_0_i_2 
-       (.I0(\spo[4]_INST_0_i_6_n_0 ),
-        .I1(\spo[4]_INST_0_i_7_n_0 ),
-        .I2(a[9]),
-        .I3(\spo[4]_INST_0_i_8_n_0 ),
-        .I4(a[8]),
-        .I5(\spo[4]_INST_0_i_9_n_0 ),
+       (.I0(\spo[4]_INST_0_i_7_n_0 ),
+        .I1(\spo[4]_INST_0_i_8_n_0 ),
+        .I2(a[8]),
+        .I3(\spo[4]_INST_0_i_9_n_0 ),
+        .I4(a[7]),
+        .I5(\spo[4]_INST_0_i_10_n_0 ),
         .O(\spo[4]_INST_0_i_2_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \spo[4]_INST_0_i_3 
-       (.I0(g15_b4_n_0),
-        .I1(g14_b4_n_0),
-        .I2(a[7]),
-        .I3(g13_b4_n_0),
-        .I4(a[6]),
-        .I5(g12_b4_n_0),
+       (.I0(\spo[4]_INST_0_i_11_n_0 ),
+        .I1(\spo[4]_INST_0_i_12_n_0 ),
+        .I2(a[8]),
+        .I3(\spo[4]_INST_0_i_13_n_0 ),
+        .I4(a[7]),
+        .I5(\spo[4]_INST_0_i_14_n_0 ),
         .O(\spo[4]_INST_0_i_3_n_0 ));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    \spo[4]_INST_0_i_4 
-       (.I0(g11_b4_n_0),
-        .I1(g10_b4_n_0),
-        .I2(a[7]),
-        .I3(g9_b4_n_0),
-        .I4(a[6]),
-        .I5(g8_b4_n_0),
-        .O(\spo[4]_INST_0_i_4_n_0 ));
+  MUXF7 \spo[4]_INST_0_i_4 
+       (.I0(\spo[4]_INST_0_i_15_n_0 ),
+        .I1(\spo[4]_INST_0_i_16_n_0 ),
+        .O(\spo[4]_INST_0_i_4_n_0 ),
+        .S(a[8]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \spo[4]_INST_0_i_5 
-       (.I0(g7_b4_n_0),
-        .I1(g6_b8_n_0),
-        .I2(a[7]),
-        .I3(g5_b8_n_0),
-        .I4(a[6]),
-        .I5(g4_b8_n_0),
-        .O(\spo[4]_INST_0_i_5_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
-    \spo[4]_INST_0_i_6 
-       (.I0(g30_b11_n_0),
-        .I1(a[7]),
-        .I2(g29_b8_n_0),
-        .I3(a[6]),
-        .I4(g28_b4_n_0),
-        .O(\spo[4]_INST_0_i_6_n_0 ));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    \spo[4]_INST_0_i_7 
        (.I0(g27_b4_n_0),
         .I1(g26_b4_n_0),
         .I2(a[7]),
         .I3(g25_b4_n_0),
         .I4(a[6]),
         .I5(g24_b4_n_0),
-        .O(\spo[4]_INST_0_i_7_n_0 ));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    \spo[4]_INST_0_i_8 
-       (.I0(g23_b4_n_0),
-        .I1(g22_b4_n_0),
-        .I2(a[7]),
-        .I3(g21_b4_n_0),
-        .I4(a[6]),
-        .I5(g20_b4_n_0),
-        .O(\spo[4]_INST_0_i_8_n_0 ));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    \spo[4]_INST_0_i_9 
-       (.I0(g19_b4_n_0),
-        .I1(g18_b4_n_0),
-        .I2(a[7]),
-        .I3(g17_b4_n_0),
-        .I4(a[6]),
-        .I5(g16_b4_n_0),
-        .O(\spo[4]_INST_0_i_9_n_0 ));
+        .O(\spo[4]_INST_0_i_5_n_0 ));
+  LUT5 #(
+    .INIT(32'h30BB3088)) 
+    \spo[4]_INST_0_i_6 
+       (.I0(g30_b7_n_0),
+        .I1(a[7]),
+        .I2(g29_b4_n_0),
+        .I3(a[6]),
+        .I4(g28_b4_n_0),
+        .O(\spo[4]_INST_0_i_6_n_0 ));
+  MUXF7 \spo[4]_INST_0_i_7 
+       (.I0(g22_b4_n_0),
+        .I1(g23_b4_n_0),
+        .O(\spo[4]_INST_0_i_7_n_0 ),
+        .S(a[6]));
+  MUXF7 \spo[4]_INST_0_i_8 
+       (.I0(g20_b4_n_0),
+        .I1(g21_b4_n_0),
+        .O(\spo[4]_INST_0_i_8_n_0 ),
+        .S(a[6]));
+  MUXF7 \spo[4]_INST_0_i_9 
+       (.I0(g18_b4_n_0),
+        .I1(g19_b4_n_0),
+        .O(\spo[4]_INST_0_i_9_n_0 ),
+        .S(a[6]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \spo[5]_INST_0 
@@ -4648,11 +4829,11 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \spo[5]_INST_0_i_15 
        (.I0(g3_b5_n_0),
-        .I1(g2_b9_n_0),
+        .I1(g2_b5_n_0),
         .I2(a[7]),
-        .I3(g1_b9_n_0),
+        .I3(g1_b5_n_0),
         .I4(a[6]),
-        .I5(g0_b11_n_0),
+        .I5(g0_b7_n_0),
         .O(\spo[5]_INST_0_i_15_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -4660,9 +4841,9 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
        (.I0(g7_b5_n_0),
         .I1(g6_b5_n_0),
         .I2(a[7]),
-        .I3(g5_b9_n_0),
+        .I3(g5_b5_n_0),
         .I4(a[6]),
-        .I5(g4_b9_n_0),
+        .I5(g4_b5_n_0),
         .O(\spo[5]_INST_0_i_16_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -4702,7 +4883,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \spo[5]_INST_0_i_6 
-       (.I0(g30_b11_n_0),
+       (.I0(g30_b7_n_0),
         .I1(a[7]),
         .I2(g29_b5_n_0),
         .I3(a[6]),
@@ -4771,7 +4952,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I2(a[7]),
         .I3(g1_b6_n_0),
         .I4(a[6]),
-        .I5(g0_b11_n_0),
+        .I5(g0_b7_n_0),
         .O(\spo[6]_INST_0_i_15_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -4781,7 +4962,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I2(a[7]),
         .I3(g5_b6_n_0),
         .I4(a[6]),
-        .I5(g4_b10_n_0),
+        .I5(g4_b6_n_0),
         .O(\spo[6]_INST_0_i_16_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -4821,7 +5002,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \spo[6]_INST_0_i_6 
-       (.I0(g30_b11_n_0),
+       (.I0(g30_b7_n_0),
         .I1(a[7]),
         .I2(g29_b6_n_0),
         .I3(a[6]),
@@ -4890,7 +5071,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I2(a[7]),
         .I3(g1_b7_n_0),
         .I4(a[6]),
-        .I5(g0_b11_n_0),
+        .I5(g0_b7_n_0),
         .O(\spo[7]_INST_0_i_15_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -4940,7 +5121,7 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \spo[7]_INST_0_i_6 
-       (.I0(g30_b11_n_0),
+       (.I0(g30_b7_n_0),
         .I1(a[7]),
         .I2(g29_b7_n_0),
         .I3(a[6]),
@@ -5026,20 +5207,19 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I4(a[6]),
         .I5(g4_b8_n_0),
         .O(\spo[8]_INST_0_i_5_n_0 ));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+  LUT5 #(
+    .INIT(32'hAFA0CFCF)) 
     \spo[8]_INST_0_i_6 
        (.I0(g3_b9_n_0),
         .I1(g2_b8_n_0),
         .I2(a[7]),
         .I3(g1_b8_n_0),
         .I4(a[6]),
-        .I5(g0_b11_n_0),
         .O(\spo[8]_INST_0_i_6_n_0 ));
   LUT5 #(
-    .INIT(32'h30BB3088)) 
+    .INIT(32'hB8FFB8CC)) 
     \spo[8]_INST_0_i_7 
-       (.I0(g30_b11_n_0),
+       (.I0(g31_b11_n_0),
         .I1(a[7]),
         .I2(g29_b8_n_0),
         .I3(a[6]),
@@ -5130,20 +5310,19 @@ module dis_mem_gen_ball2_dist_mem_gen_v8_0_11
         .I4(a[6]),
         .I5(g4_b9_n_0),
         .O(\spo[9]_INST_0_i_5_n_0 ));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+  LUT5 #(
+    .INIT(32'hAFA0CFCF)) 
     \spo[9]_INST_0_i_6 
        (.I0(g3_b9_n_0),
         .I1(g2_b9_n_0),
         .I2(a[7]),
         .I3(g1_b9_n_0),
         .I4(a[6]),
-        .I5(g0_b11_n_0),
         .O(\spo[9]_INST_0_i_6_n_0 ));
   LUT5 #(
-    .INIT(32'h30BB3088)) 
+    .INIT(32'hB8FFB8CC)) 
     \spo[9]_INST_0_i_7 
-       (.I0(g30_b11_n_0),
+       (.I0(g31_b11_n_0),
         .I1(a[7]),
         .I2(g29_b9_n_0),
         .I3(a[6]),

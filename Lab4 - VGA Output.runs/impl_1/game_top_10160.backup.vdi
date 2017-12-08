@@ -1,0 +1,602 @@
+#-----------------------------------------------------------
+# Vivado v2017.2.1 (64-bit)
+# SW Build 1957588 on Wed Aug  9 16:32:24 MDT 2017
+# IP Build 1948039 on Wed Aug  9 18:19:28 MDT 2017
+# Start of session at: Wed Dec  6 01:05:14 2017
+# Process ID: 10160
+# Current directory: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1
+# Command line: vivado.exe -log game_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source game_top.tcl -notrace
+# Log file: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top.vdi
+# Journal file: H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source game_top.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.dcp' for cell 'disp_clk'
+INFO: [Project 1-454] Reading design checkpoint 'h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_astro_1/dist_mem_gen_astro.dcp' for cell 'draw_mod/astroBallROM'
+INFO: [Project 1-454] Reading design checkpoint 'h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dis_mem_gen_ball2/dis_mem_gen_ball2.dcp' for cell 'draw_mod/ball2ROM'
+INFO: [Project 1-454] Reading design checkpoint 'h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp' for cell 'draw_mod/blackHoleROM'
+INFO: [Project 1-454] Reading design checkpoint 'h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_earth/dist_mem_gen_earth.dcp' for cell 'draw_mod/earthTargetROM'
+INFO: [Project 1-454] Reading design checkpoint 'h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_minecraftCobStone/dist_mem_gen_minecraftCobStone.dcp' for cell 'draw_mod/minecraftCobStoneROM'
+INFO: [Project 1-454] Reading design checkpoint 'h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_minecraftDirt/dist_mem_gen_minecraftDirt.dcp' for cell 'draw_mod/minecraftOBSROM'
+INFO: [Project 1-454] Reading design checkpoint 'h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_windows/dist_mem_gen_windows.dcp' for cell 'draw_mod/windowsROM'
+INFO: [Project 1-454] Reading design checkpoint 'h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/dist_mem_gen_xilinx/dist_mem_gen_xilinx.dcp' for cell 'draw_mod/xilinxTargetROM'
+INFO: [Netlist 29-17] Analyzing 244 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2.1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-35] Removing redundant IBUF, disp_clk/inst/clkin1_ibufg, from the path connected to top-level port: clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'disp_clk/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/.Xil/Vivado-10160-A205-40/dcp7/clk_wiz_0.edf:276]
+Parsing XDC File [h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc] for cell 'disp_clk/inst'
+Finished Parsing XDC File [h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc] for cell 'disp_clk/inst'
+Parsing XDC File [h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'disp_clk/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1037.887 ; gain = 501.055
+Finished Parsing XDC File [h:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'disp_clk/inst'
+Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Nexys4 _Master.xdc]
+Finished Parsing XDC File [H:/ES3B2/LabyrinthFPGA/Nexys4 _Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 1037.887 ; gain = 798.324
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t-csg324'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+Command: report_drc (run_mandatory_drcs) for: opt_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.783 . Memory (MB): peak = 1037.887 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[9] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/spo[6]_INST_0
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[10] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/spo[6]_INST_0
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[2] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g29_b10
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[3] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g29_b10
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[4] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g29_b10
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[5] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g29_b10
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[1] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g11_b9
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[2] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g11_b9
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[3] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g11_b9
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[4] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g11_b9
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[5] is driving LUT input pin I4 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g11_b9
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[1] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g13_b7
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[2] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g13_b7
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[3] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g13_b7
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[4] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g13_b7
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[5] is driving LUT input pin I4 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g13_b7
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[1] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g15_b7
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[2] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g15_b7
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[3] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g15_b7
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[4] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g15_b7
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[5] is driving LUT input pin I4 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g15_b7
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[1] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g19_b9
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[2] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g19_b9
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[3] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g19_b9
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[4] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g19_b9
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[5] is driving LUT input pin I4 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g19_b9
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[1] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g7_b9
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[2] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g7_b9
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[3] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g7_b9
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[4] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g7_b9
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[5] is driving LUT input pin I4 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g7_b9
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[1] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g9_b1
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[2] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g9_b1
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[3] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g9_b1
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[4] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g9_b1
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[5] is driving LUT input pin I4 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g9_b1
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[8] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/spo[10]_INST_0_i_3
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[7] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/spo[10]_INST_0_i_3
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[8] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/spo[10]_INST_0_i_6
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[7] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/spo[10]_INST_0_i_6
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[7] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/spo[1]_INST_0_i_6
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[6] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/spo[1]_INST_0_i_6
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[8] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/spo[2]_INST_0_i_3
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[7] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/spo[2]_INST_0_i_3
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[8] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/spo[2]_INST_0_i_6
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[7] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/spo[2]_INST_0_i_6
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[7] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/spo[3]_INST_0_i_6
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[6] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/spo[3]_INST_0_i_6
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[8] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/spo[7]_INST_0_i_1
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[7] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/spo[7]_INST_0_i_1
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[8] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/spo[7]_INST_0_i_4
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[7] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/spo[7]_INST_0_i_4
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[10] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/spo[9]_INST_0
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[9] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/spo[9]_INST_0
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[0] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g0_b11
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g0_b11
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[2] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g0_b11
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[3] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g0_b11
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[4] is driving LUT input pin I4 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g0_b11
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[5] is driving LUT input pin I5 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g0_b11
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[0] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g0_b3
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g0_b3
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[2] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g0_b3
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[3] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g0_b3
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[4] is driving LUT input pin I4 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g0_b3
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[5] is driving LUT input pin I5 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g0_b3
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[0] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b1
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b1
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[2] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b1
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[3] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b1
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[4] is driving LUT input pin I4 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b1
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[5] is driving LUT input pin I5 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b1
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[0] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b10
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b10
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[2] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b10
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[3] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b10
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[4] is driving LUT input pin I4 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b10
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[5] is driving LUT input pin I5 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b10
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[0] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b11
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b11
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[2] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b11
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[3] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b11
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[4] is driving LUT input pin I4 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b11
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[5] is driving LUT input pin I5 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b11
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[0] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b2
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b2
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[2] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b2
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[3] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b2
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[4] is driving LUT input pin I4 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b2
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[5] is driving LUT input pin I5 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b2
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[0] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b3
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b3
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[2] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b3
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[3] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b3
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[4] is driving LUT input pin I4 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b3
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[5] is driving LUT input pin I5 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b3
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[0] is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b7
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[1] is driving LUT input pin I1 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b7
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[2] is driving LUT input pin I2 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b7
+WARNING: [Opt 31-155] Driverless net draw_mod/minecraftOBSROM/U0/a[3] is driving LUT input pin I3 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: draw_mod/minecraftOBSROM/U0/g10_b7
+INFO: [Common 17-14] Message 'Opt 31-155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 192212c81
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.546 . Memory (MB): peak = 1044.664 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 16 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1730bee74
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.652 . Memory (MB): peak = 1044.664 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 3 cells and removed 3 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 189734478
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.835 . Memory (MB): peak = 1044.664 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 1 cells and removed 292 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 189734478
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.965 . Memory (MB): peak = 1044.664 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 189734478
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.977 . Memory (MB): peak = 1044.664 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1044.664 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 189734478
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1044.664 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 10eae417a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1044.664 ; gain = 0.000
+33 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.348 . Memory (MB): peak = 1044.664 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top_opt.dcp' has been generated.
+Command: report_drc -file game_top_drc_opted.rpt
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t-csg324'
+Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+Command: report_drc (run_mandatory_drcs) for: placer_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CKLD-2] Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads: Clock net clk_IBUF is directly driven by an IO rather than a Clock Buffer or may be an IO driving a mix of Clock Buffer and non-Clock loads. This connectivity should be reviewed and corrected as appropriate. Driver(s): clk_IBUF_inst/O
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1044.664 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: e9a2c958
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1044.664 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1044.664 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+WARNING: [Place 30-568] A LUT 'display/fBlkPosY[19]_i_2' is driving clock pin of 26 registers. This could lead to large hold time violations. First few involved registers are:
+	draw_mod/fBlkPosX_reg[10] {FDRE}
+	draw_mod/fBlkPosX_reg[11] {FDRE}
+	draw_mod/fBlkPosX_reg[12] {FDRE}
+	draw_mod/fBlkPosX_reg[13] {FDSE}
+	draw_mod/fBlkPosX_reg[14] {FDRE}
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 49dd49f9
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1044.664 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 598a2236
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1044.664 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 598a2236
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1044.664 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 598a2236
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1044.664 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1c66488d1
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1044.664 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1c66488d1
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1044.664 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 16bc31f0f
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1044.664 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 14df8e7ac
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1044.664 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 14df8e7ac
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1044.664 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 1ab05f217
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1044.664 ; gain = 0.000
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 1ac390e05
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1044.664 ; gain = 0.000
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 140386882
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1044.664 ; gain = 0.000
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: ef846044
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1044.664 ; gain = 0.000
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: ef846044
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1044.664 ; gain = 0.000
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: 8ceb8ca6
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1044.664 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 8ceb8ca6
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 1044.664 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 129b77a1e
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Place 46-41] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 129b77a1e
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 1071.688 ; gain = 27.023
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-8.985. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 14217c478
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 1072.063 ; gain = 27.398
+Phase 4.1 Post Commit Optimization | Checksum: 14217c478
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 1072.063 ; gain = 27.398
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 14217c478
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 1072.063 ; gain = 27.398
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 14217c478
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 1072.063 ; gain = 27.398
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 1bf93d48d
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 1072.063 ; gain = 27.398
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1bf93d48d
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 1072.063 ; gain = 27.398
+Ending Placer Task | Checksum: 104ee8107
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 1072.063 ; gain = 27.398
+52 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:22 . Memory (MB): peak = 1072.063 ; gain = 27.398
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1072.063 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.064 . Memory (MB): peak = 1072.063 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1072.063 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1072.063 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t-csg324'
+Running DRC as a precondition to command route_design
+Command: report_drc (run_mandatory_drcs) for: router_checks
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 6a5293ed ConstDB: 0 ShapeSum: 9a9bed1a RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 14f5d5ab9
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1236.922 ; gain = 162.875
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 14f5d5ab9
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1236.922 ; gain = 162.875
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 14f5d5ab9
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1236.922 ; gain = 162.875
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 14f5d5ab9
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1236.922 ; gain = 162.875
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1d7ed7790
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1236.922 ; gain = 162.875
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-8.778 | TNS=-785.403| WHS=-0.097 | THS=-0.738 |
+
+Phase 2 Router Initialization | Checksum: 109931b3b
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1247.590 ; gain = 173.543
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 23d03e1ae
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:24 . Memory (MB): peak = 1247.590 ; gain = 173.543
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 976
+ Number of Nodes with overlaps = 188
+ Number of Nodes with overlaps = 47
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-9.282 | TNS=-855.923| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 15b82b873
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:27 . Memory (MB): peak = 1247.590 ; gain = 173.543
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 215
+ Number of Nodes with overlaps = 36
+ Number of Nodes with overlaps = 34
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-9.136 | TNS=-858.329| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 8c3fee29
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 1247.590 ; gain = 173.543
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 180
+ Number of Nodes with overlaps = 66
+ Number of Nodes with overlaps = 26
+ Number of Nodes with overlaps = 20
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-9.116 | TNS=-862.012| WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 1715dc6bd
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:31 . Memory (MB): peak = 1247.590 ; gain = 173.543
+Phase 4 Rip-up And Reroute | Checksum: 1715dc6bd
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:31 . Memory (MB): peak = 1247.590 ; gain = 173.543
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 187569c47
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:31 . Memory (MB): peak = 1247.590 ; gain = 173.543
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-9.037 | TNS=-852.506| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 1203c72bc
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:31 . Memory (MB): peak = 1247.590 ; gain = 173.543
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1203c72bc
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:31 . Memory (MB): peak = 1247.590 ; gain = 173.543
+Phase 5 Delay and Skew Optimization | Checksum: 1203c72bc
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:31 . Memory (MB): peak = 1247.590 ; gain = 173.543
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1fdeb0f83
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:31 . Memory (MB): peak = 1247.590 ; gain = 173.543
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-9.017 | TNS=-843.504| WHS=0.073  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1fdeb0f83
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:31 . Memory (MB): peak = 1247.590 ; gain = 173.543
+Phase 6 Post Hold Fix | Checksum: 1fdeb0f83
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:31 . Memory (MB): peak = 1247.590 ; gain = 173.543
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.670497 %
+  Global Horizontal Routing Utilization  = 0.809818 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 36.036%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 42.3423%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 50%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 54.4118%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 15f7327a5
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:31 . Memory (MB): peak = 1247.590 ; gain = 173.543
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 15f7327a5
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:31 . Memory (MB): peak = 1247.590 ; gain = 173.543
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 246c13239
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:31 . Memory (MB): peak = 1247.590 ; gain = 173.543
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-9.017 | TNS=-843.504| WHS=0.073  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 246c13239
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:31 . Memory (MB): peak = 1247.590 ; gain = 173.543
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1247.590 ; gain = 173.543
+
+Routing Is Done.
+66 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:35 . Memory (MB): peak = 1247.590 ; gain = 175.527
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1247.590 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top_routed.dcp' has been generated.
+Command: report_drc -file game_top_drc_routed.rpt -pb game_top_drc_routed.pb -rpx game_top_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top_drc_routed.rpt.
+report_drc completed successfully
+Command: report_methodology -file game_top_methodology_drc_routed.rpt -rpx game_top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.runs/impl_1/game_top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+Command: report_power -file game_top_power_routed.rpt -pb game_top_power_summary_routed.pb -rpx game_top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+73 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  6 01:07:08 2017...

@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
-| Date         : Sat Dec  2 22:08:18 2017
-| Host         : A205-36 running 64-bit Service Pack 1  (build 7601)
+| Date         : Thu Dec  7 20:59:38 2017
+| Host         : A205-23 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file dis_mem_gen_ball2_utilization_synth.rpt -pb dis_mem_gen_ball2_utilization_synth.pb
 | Design       : dis_mem_gen_ball2
 | Device       : 7a100tcsg324-1
@@ -30,13 +30,13 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  416 |     0 |     63400 |  0.66 |
-|   LUT as Logic          |  416 |     0 |     63400 |  0.66 |
+| Slice LUTs*             |  424 |     0 |     63400 |  0.67 |
+|   LUT as Logic          |  424 |     0 |     63400 |  0.67 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
 | Slice Registers         |    0 |     0 |    126800 |  0.00 |
 |   Register as Flip Flop |    0 |     0 |    126800 |  0.00 |
 |   Register as Latch     |    0 |     0 |    126800 |  0.00 |
-| F7 Muxes                |   75 |     0 |     31700 |  0.24 |
+| F7 Muxes                |   84 |     0 |     31700 |  0.26 |
 | F8 Muxes                |    0 |     0 |     15850 |  0.00 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -146,9 +146,9 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     |  404 |                 LUT |
-| MUXF7    |   75 |               MuxFx |
-| LUT5     |   12 |                 LUT |
+| LUT6     |  401 |                 LUT |
+| MUXF7    |   84 |               MuxFx |
+| LUT5     |   27 |                 LUT |
 +----------+------+---------------------+
 
 

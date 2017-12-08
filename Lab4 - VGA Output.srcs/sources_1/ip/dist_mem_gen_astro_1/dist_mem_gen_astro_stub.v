@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
-// Date        : Sat Dec  2 23:39:18 2017
-// Host        : A205-36 running 64-bit Service Pack 1  (build 7601)
-// Command     : write_verilog -force -mode synth_stub {h:/ES3B2/LabyrinthFPGA/Lab4 - VGA
-//               Output.srcs/sources_1/ip/dist_mem_gen_astro_1/dist_mem_gen_astro_stub.v}
+// Date        : Thu Dec  7 20:10:19 2017
+// Host        : A205-23 running 64-bit Service Pack 1  (build 7601)
+// Command     : write_verilog -force -mode synth_stub -rename_top dist_mem_gen_astro -prefix
+//               dist_mem_gen_astro_ dist_mem_gen_astro_stub.v
 // Design      : dist_mem_gen_astro
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a100tcsg324-1
