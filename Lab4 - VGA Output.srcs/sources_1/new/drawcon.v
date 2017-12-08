@@ -13,7 +13,8 @@ module drawcon(
     input [15:0] SW,
     output reg [3:0] draw_r,
     output reg [3:0] draw_g,
-    output reg [3:0] draw_b
+    output reg [3:0] draw_b,
+    output reg [2:0] currLevel
     );
     
 reg [10:0] holeCenterX;
@@ -109,67 +110,68 @@ dist_mem_gen_earth earthTargetROM (
 
 initial
 begin
-//border start
-for (j=0; j<3; j = j+1)
-    begin
-    for (i=0; i < yCells; i = i+1)
-    begin
-        cells[i][0][j] = 1;
-        cells[i][xCells - 1][j] = 1;
+    //border start
+    for (j=0; j<3; j = j+1)
+        begin
+        for (i=0; i < yCells; i = i+1)
+        begin
+            cells[i][0][j] = 1;
+            cells[i][xCells - 1][j] = 1;
+        end
+        for (i=0; i < xCells; i = i+1)
+        begin
+            cells[0][i][j] = 1;
+            cells[yCells - 1][i][j] = 1;
+        end
     end
-    for (i=0; i < xCells; i = i+1)
-    begin
-        cells[0][i][j] = 1;
-        cells[yCells - 1][i][j] = 1;
-    end
-end
-//border end
-
-//level 0 start
-    //walls
-    for (i=1; i<5; i=i+1)
-    begin
-    cells[7][i][0] = 1;
-    end
+    //border end
     
-    for (i=1; i<14; i=i+1)
+    //level 0 start
     begin
-    cells[i][8][0] = 1;
+        //walls
+        for (i=1; i<5; i=i+1)
+        begin
+        cells[7][i][0] = 1;
+        end
+        
+        for (i=1; i<14; i=i+1)
+        begin
+        cells[i][8][0] = 1;
+        end
+        
+        for (i=4; i<8; i=i+1)
+        begin
+        cells[11][i][0] = 1;
+        end
+        
+        for (i=4; i<19; i=i+1)
+        begin
+        cells[i][14][0] = 1;
+        end
+        
+        for (i=15; i<26; i=i+1)
+        begin
+        cells[7][i][0] = 1;
+        end
+        
+        for (i=21; i<31; i=i+1)
+        begin
+        cells[12][i][0] =1;
+        end
+        
+        //holes
+        cells[5][2][0] = 2;
+        cells[14][3][0] = 2;
+        cells[17][8][0] =2;
+        cells[2][10][0] =2;
+        cells[3][19][0] = 2;
+        cells[9][15][0] = 2;
+        cells[17][18][0] = 2;
+        
+        //target
+        cells[16][29][0] = 3;    
     end
-    
-    for (i=4; i<8; i=i+1)
-    begin
-    cells[11][i][0] = 1;
-    end
-    
-    for (i=4; i<18; i=i+1)
-    begin
-    cells[i][14][0] = 1;
-    end
-    
-    for (i=15; i<26; i=i+1)
-    begin
-    cells[7][i][0] = 1;
-    end
-    
-    for (i=21; i<31; i=i+1)
-    begin
-    cells[12][i][0] =1;
-    end
-    
-    //holes
-    cells[5][2][0] = 2;
-    cells[14][3][0] = 2;
-    cells[17][8][0] =2;
-    cells[2][10][0] =2;
-    cells[3][19][0] = 2;
-    cells[9][15][0] = 2;
-    cells[17][18][0] = 2;
-    
-    //target
-    cells[16][29][0] = 3;    
-//level 0 end
-
+    //level 0 end
 
 // level 1 start
     //walls
@@ -272,46 +274,30 @@ end
     
     //level 2 start
     for (i=9; i<17; i=i+1)
-    begin
         cells[i][1][2] = 1;
-    end
     
     for(i=11; i<16; i=i+1)
-    begin
-        cells[i][2][2] = 1;
-    end   
+        cells[i][2][2] = 1; 
     
     for(i=12; i <15; i=i+1)
-    begin
-        cells[i][3][2] =1;
-    end    
+        cells[i][3][2] =1; 
     
     cells[13][4][2] = 1;
     
     for(i=1; i<3; i=i+1)
-    begin
-    cells[6][i][2] = 1;
-    end
+        cells[6][i][2] = 1;
     
     for(i=1; i<7; i=i+1)
-    begin
-    cells[i][5][2] = 1;
-    end
+        cells[i][5][2] = 1;
     
     for(i=8; i<10; i=i+1)
-    begin
-    cells[i][5][2] = 1;
-    end
+        cells[i][5][2] = 1;
     
     for(i=1; i<3; i=i+1)
-    begin
-    cells[18][i][2] =1;
-    end
+        cells[18][i][2] =1;
     
     for(i=6; i<11; i=i+1)
-    begin
-    cells[3][i][2] = 1;
-    end
+        cells[3][i][2] = 1;
     
     cells[2][10][2] = 1;
     cells[6][8][2] = 1;
@@ -320,29 +306,135 @@ end
     cells[14][8][2] = 1;
     
     for(i=11; i<31; i=i+1)
-    begin
-    cells[8][i][2] = 1;
-    end
+        cells[8][i][2] = 1;
     
     for(i=6; i<31; i=i+2)
-    begin
-    cells[19][i][2] = 1;
+        cells[16][i][2] = 1;
     
     for(i=7; i<30; i=i+2)
-    begin
-    cells[18][i][2] = 1;
-    end
+        cells[18][i][2] = 1;
     
     for(i=7; i<10; i=i+1)
-    begin
-    cells[18][i][2] =1;
-    end
+        cells[15][i][2] =1;
+      
+    for(i=11; i<13; i=i+1)
+        cells[i][13][2] = 1;
     
-    for(i=14; i< 16; i=i+1)
-    begin
-    cells[i][13][2] = 1;
-    end
-end
+    //holes
+    for(i=13; i<30; i=i+1)
+        cells[1][i][2] = 2;
+     
+    for(i=2; i<5; i=i+1)
+        cells[i][11][2] = 2;
+    
+    for(i=11; i<30; i=i+1)
+        cells[5][i][2] = 2;
+    
+    for(i=7; i<31; i=i+1)
+        cells[7][i][2] =2;
+    
+    for(i=7; i<31; i=i+1)
+        cells[7][i][2] =2;
+    
+    for(i=7; i<31; i=i+1)
+            cells[7][i][2] =2;
+        
+        for(i=10; i<14; i=i+1)
+                cells[i][10][2] =2;
+        
+        
+        for(i=11; i<14; i=i+1)
+                cells[i][14][2] =2;
+        
+        for(i=7; i<31; i=i+1)
+                cells[7][i][2] =2;
+        
+        for(i=9; i<12; i=i+1)
+                cells[i][17][2] =2;
+        
+        for(i=12; i<15; i=i+1)
+                cells[i][21][2] =2;
+        
+        for(i=3; i<6; i=i+1)
+                cells[18][i][2] =2;
+        
+        for(i=0; i<5; i=i+1)
+                cells[9+i][4+i][2] =2;
+        
+        for(i=0; i<4; i=i+1)
+        
+                cells[10+i][2+i][2] =2;
+        
+        for(i=0; i<4; i=i+1)
+                cells[17-i][1+i][2] =2;
+        
+        for(i=0; i<3; i=i+1)
+                cells[16-i][6+i][2] =2;
+        
+        for(i=7; i<28; i=i+2)
+        begin
+            cells[16][i][2] = 2;
+            cells[18][i+1][2] = 2;
+        end
+        
+        cells[6][2][2] = 2;
+        cells[7][5][2] = 2;
+        cells[17][30][2] = 2;
+        cells[1][7][2] = 2;
+        cells[2][9][2] = 2;
+        cells[5][8][2] = 2;
+        cells[2][13][2] = 2;
+        cells[4][13][2] = 2;
+        cells[3][15][2] = 2;
+        cells[4][15][2] = 2;
+        cells[2][17][2] = 2;
+        cells[4][17][2] = 2;
+        cells[2][19][2] = 2;
+        cells[3][19][2] = 2;
+        cells[3][21][2] = 2;
+        cells[4][21][2] = 2;
+        cells[2][23][2] = 2;
+        cells[3][23][2] = 2;
+        cells[3][25][2] = 2;
+        cells[4][25][2] = 2;
+        cells[2][27][2] = 2;
+        cells[3][27][2] = 2;
+        cells[2][29][2] = 2;
+        cells[4][29][2] = 2;
+        cells[6][7][2] = 2;
+        cells[6][9][2] = 2;
+        cells[9][2][2] = 2;
+        cells[9][8][2] = 2;
+        cells[10][9][2] = 2;
+        cells[9][11][2] = 2;
+        cells[15][11][2] = 2;
+        cells[14][12][2] = 2;
+        cells[15][13][2] = 2;
+        cells[12][12][2] = 2;
+        cells[11][12][2] = 2;
+        cells[10][13][2] = 2;
+        cells[9][15][2] = 2;
+        cells[14][15][2] = 2;
+        cells[14][16][2] = 2;
+        cells[13][16][2] = 2;
+        cells[13][18][2] = 2;
+        cells[14][19][2] = 2;
+        cells[10][20][2] = 2;
+        cells[9][21][2] = 2;
+        cells[10][23][2] = 2;
+        cells[14][23][2] = 2;
+        cells[12][24][2] = 2;
+        cells[9][25][2] = 2;
+        cells[9][27][2] = 2;
+        cells[11][26][2] = 2;
+        cells[13][26][2] = 2;
+        cells[14][25][2] = 2;
+        cells[12][29][2] = 2;
+        cells[15][27][2] = 2;
+    
+    //level2 target
+        cells[1][6][2] = 3;
+    //level 2 end
 end
 
 

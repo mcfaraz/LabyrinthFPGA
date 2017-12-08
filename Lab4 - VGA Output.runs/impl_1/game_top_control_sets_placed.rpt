@@ -1,0 +1,86 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
+| Date         : Fri Dec  8 03:17:02 2017
+| Host         : A205-23 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file game_top_control_sets_placed.rpt
+| Design       : game_top
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    20 |
+| Unused register locations in slices containing registers |    87 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              54 |           28 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              37 |           23 |
+| Yes          | No                    | No                     |             125 |           52 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               9 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+---------------------------------+---------------------------+------------------+----------------+
+|       Clock Signal      |          Enable Signal          |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++-------------------------+---------------------------------+---------------------------+------------------+----------------+
+|  accel0/p_1_in          |                                 | accel0/ACL_CSN_i_1_n_0    |                1 |              1 |
+|  display/CLK            |                                 |                           |                1 |              2 |
+|  clk_IBUF               |                                 |                           |                3 |              8 |
+|  accel0/ACL_SCLK_OBUF   |                                 |                           |                2 |              8 |
+|  accel0/p_1_in          | accel0/xData[7]_i_1_n_0         |                           |                2 |              8 |
+|  accel0/p_1_in          | accel0/yData[7]_i_1_n_0         |                           |                2 |              8 |
+|  disp_clk/inst/clk_out1 | display/vcount_0                | display/vcount[9]_i_1_n_0 |                4 |              9 |
+|  accel0/p_1_in          |                                 |                           |                5 |             10 |
+|  disp_clk/inst/clk_out1 |                                 | display/vcount_0          |                6 |             10 |
+|  disp_clk/inst/clk_out1 | draw_mod/aBall[0][10]_i_1_n_0   |                           |                3 |             11 |
+|  disp_clk/inst/clk_out1 | display/E[0]                    |                           |                5 |             11 |
+|  disp_clk/inst/clk_out1 | display/aObstacle_reg[1][10][0] |                           |                6 |             11 |
+|  disp_clk/inst/clk_out1 | display/aTarget_reg[0][10][0]   |                           |                5 |             11 |
+|  disp_clk/inst/clk_out1 | display/aTarget_reg[1][10][0]   |                           |                3 |             11 |
+|  disp_clk/inst/clk_out1 | display/aWall_reg[0][10][0]     |                           |                6 |             11 |
+|  disp_clk/inst/clk_out1 | display/aWall_reg[1][10][0]     |                           |                3 |             11 |
+|  disp_clk/inst/clk_out1 | draw_mod/E[0]                   |                           |                6 |             11 |
+|  disp_clk/inst/clk_out1 | display/curr_x_reg[10]_1[0]     |                           |               11 |             21 |
+|  display/CLK            |                                 | ctrBtn_IBUF               |               16 |             26 |
+|  disp_clk/inst/clk_out1 |                                 |                           |               17 |             26 |
++-------------------------+---------------------------------+---------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 2      |                     1 |
+| 8      |                     4 |
+| 9      |                     1 |
+| 10     |                     2 |
+| 11     |                     8 |
+| 16+    |                     3 |
++--------+-----------------------+
+
+
