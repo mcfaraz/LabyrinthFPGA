@@ -11,17 +11,16 @@ module drawcon(
     input signed [7:0] xData,
     input signed [7:0] yData,
     input [15:0] SW,
-    input [1:0] currLevel,
+    input gameTheme,
     output reg [3:0] draw_r,
     output reg [3:0] draw_g,
-    output reg [3:0] draw_b,
-    output reg [2:0] currLevel
+    output reg [3:0] draw_b
     );
 
 reg [10:0] holeCenterX;
 reg [9:0] holeCenterY;
 parameter holeRad = 20;
-
+reg [1:0] currLevel;
 reg signed [21:0] fBlkPosX = 200*`FRACTION;
 reg signed [21:0] fBlkPosY = 200*`FRACTION;
 wire [10:0] blkpos_x;
@@ -47,12 +46,11 @@ reg [5:0] playerCurrCellX;
 reg [5:0] playerCurrCellY;
 reg [1:0] playerCurrCell;
 reg drawGrids = 0;
-wire gameTheme = (SW==16'b0001000000001100);
 
 reg [10 : 0] aObstacle [1:0];
 wire [11 : 0] spoObstacle [1:0];
-dist_mem_gen_galaxy GalaxyROM (.a(aObstacle[0]), .spo(spoObstacle[0]);
-dist_mem_gen_windows windowsROM (.a(aObstacle[1]), .spo(spoObstacle[1]);
+dist_mem_gen_galaxy GalaxyROM (.a(aObstacle[0]), .spo(spoObstacle[0]));
+dist_mem_gen_windows windowsROM (.a(aObstacle[1]), .spo(spoObstacle[1]));
 
 reg [10 : 0] aWall [1:0];
 wire [11 : 0] spoWall [1:0];
@@ -441,6 +439,7 @@ begin
 
     if (ctrBtn)
     begin
+        currLevel = 0;
         fBlkPosX=200*`FRACTION;
         fBlkPosY=200*`FRACTION;
     end
@@ -465,7 +464,8 @@ begin
         begin
             if ((cells[playerCurrCellY][playerCurrCellX+1][currLevel]!=1) || ((cells[playerCurrCellY][playerCurrCellX+1][currLevel]==1) && ((((playerCurrCellX+ 1)*cellWidth) - blkpos_x) > ballRad+1)))
             begin
-                if(xData>=$signed(128))'begin
+                if(xData>=$signed(128))
+                begin
                     fBlkPosX=fBlkPosX+($signed(128)<<<`MOVESPEED);
                 end else begin
                     fBlkPosX=fBlkPosX+(xData<<<`MOVESPEED);

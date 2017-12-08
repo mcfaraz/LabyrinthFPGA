@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.2.1 (win64) Build 1957588 Wed Aug  9 16:32:24 MDT 2017
-| Date             : Fri Dec  8 03:17:51 2017
-| Host             : A205-23 running 64-bit Service Pack 1  (build 7601)
+| Date             : Fri Dec  8 14:58:47 2017
+| Host             : A205-30 running 64-bit Service Pack 1  (build 7601)
 | Command          : report_power -file game_top_power_routed.rpt -pb game_top_power_summary_routed.pb -rpx game_top_power_routed.rpx
 | Design           : game_top
 | Device           : xc7a100tcsg324-1
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.317 |
-| Dynamic (W)              | 0.219 |
+| Total On-Chip Power (W)  | 0.308 |
+| Dynamic (W)              | 0.210 |
 | Device Static (W)        | 0.098 |
 | Effective TJA (C/W)      | 4.6   |
 | Max Ambient (C)          | 83.6  |
@@ -50,18 +50,19 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.003 |        6 |       --- |             --- |
-| Slice Logic    |     0.041 |     6282 |       --- |             --- |
-|   LUT as Logic |     0.039 |     4528 |     63400 |            7.14 |
-|   CARRY4       |     0.001 |      202 |     15850 |            1.27 |
-|   F7/F8 Muxes  |    <0.001 |      974 |     63400 |            1.54 |
-|   Register     |    <0.001 |      225 |    126800 |            0.18 |
-|   Others       |     0.000 |       11 |       --- |             --- |
-| Signals        |     0.042 |     4676 |       --- |             --- |
+| Slice Logic    |     0.038 |     6237 |       --- |             --- |
+|   LUT as Logic |     0.036 |     4353 |     63400 |            6.87 |
+|   CARRY4       |     0.001 |      204 |     15850 |            1.29 |
+|   F7/F8 Muxes  |    <0.001 |     1035 |     63400 |            1.63 |
+|   Register     |    <0.001 |      270 |    126800 |            0.21 |
+|   BUFG         |    <0.001 |        1 |        32 |            3.13 |
+|   Others       |     0.000 |       15 |       --- |             --- |
+| Signals        |     0.035 |     4448 |       --- |             --- |
 | MMCM           |     0.101 |        1 |         6 |           16.67 |
 | DSPs           |     0.021 |       22 |       240 |            9.17 |
-| I/O            |     0.010 |       36 |       210 |           17.14 |
+| I/O            |     0.011 |       58 |       210 |           27.62 |
 | Static Power   |     0.098 |          |           |                 |
-| Total          |     0.317 |          |           |                 |
+| Total          |     0.308 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.123 |       0.108 |      0.016 |
+| Vccint    |       1.000 |     0.113 |       0.098 |      0.016 |
 | Vccaux    |       1.800 |     0.075 |       0.056 |      0.018 |
 | Vcco33    |       3.300 |     0.007 |       0.003 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -94,7 +95,7 @@ Table of Contents
 | User Input Data             | Confidence | Details                                                | Action                                                                                                             |
 +-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 | Design implementation state | High       | Design is routed                                       |                                                                                                                    |
-| Clock nodes activity        | Medium     | More than 5% of clocks are missing user specification  | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
 | I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
 | Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
 | Device models               | High       | Device models are Production                           |                                                                                                                    |
@@ -143,16 +144,18 @@ Table of Contents
 +-------------------------------------+-----------+
 | Name                                | Power (W) |
 +-------------------------------------+-----------+
-| game_top                            |     0.219 |
-|   accel0                            |    <0.001 |
+| game_top                            |     0.210 |
+|   OBLED                             |    <0.001 |
+|   accel0                            |     0.001 |
+|   chocolate                         |    <0.001 |
 |   disp_clk                          |     0.101 |
 |     inst                            |     0.101 |
-|   display                           |     0.008 |
-|   draw_mod                          |     0.097 |
+|   display                           |     0.007 |
+|   draw_mod                          |     0.087 |
 |     GalaxyROM                       |    <0.001 |
 |       U0                            |    <0.001 |
-|     astroBallROM                    |     0.007 |
-|       U0                            |     0.007 |
+|     astroBallROM                    |     0.008 |
+|       U0                            |     0.008 |
 |     ball2ROM                        |    <0.001 |
 |       U0                            |    <0.001 |
 |     earthTargetROM                  |    <0.001 |

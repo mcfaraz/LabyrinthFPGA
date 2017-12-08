@@ -28,8 +28,10 @@ add_files H:/ES3B2/LabyrinthFPGA/etc/COE/windows.coe
 add_files H:/ES3B2/LabyrinthFPGA/etc/COE/blackhole2COE.coe
 add_files H:/ES3B2/LabyrinthFPGA/etc/COE/blackhole2.coe.coe
 add_files H:/ES3B2/LabyrinthFPGA/etc/COE/astropinkCOE.coe
-add_files h:/ES3B2/LabyrinthFPGA/etc/COE/SuhaibpinkCOE.coe
+add_files H:/ES3B2/LabyrinthFPGA/etc/COE/SuhaibpinkCOE.coe
 read_verilog -library xil_defaultlib {
+  {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/LED.v}
+  {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/RGB_LED.v}
   {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/accel.v}
   {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/drawcon.v}
   {H:/ES3B2/LabyrinthFPGA/Lab4 - VGA Output.srcs/sources_1/new/vga_out.v}
