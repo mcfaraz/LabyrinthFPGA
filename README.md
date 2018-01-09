@@ -1,6 +1,7 @@
-# LabyrinthFPGA
-<<<<<<< HEAD
 ES3B2 Project
-=======
-ES3b2 Project
->>>>>>> 94a2d0978b3789aaa2a97424d75217ab3bf242ac
+
+Labyrinth game on Nexys4 DDR FPGA board
+
+The code is written in Verilog.
+
+The games uses VGA and accelerometer.
